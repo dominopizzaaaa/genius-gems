@@ -729,38 +729,64 @@ p { color: var(--text-light); line-height: 1.8; }
   top: -80px; left: -60px;
   pointer-events: none;
 }
-.uniform-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 72px;
-  align-items: center;
+.uniform .section-header { margin-bottom: 32px; }
+.uniform-perks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 48px;
   position: relative;
   z-index: 1;
 }
-.uniform-content .section-title { color: var(--dark); }
-.uniform-content p { color: var(--text); margin-bottom: 22px; }
-.uniform-list { display: flex; flex-direction: column; gap: 12px; }
-.uniform-list li {
+.uniform-perk {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
+  background: rgba(255,255,255,0.75);
+  border: 1.5px solid rgba(255,143,171,0.25);
+  border-radius: 50px;
+  padding: 10px 22px;
   font-weight: 700;
+  font-size: 0.9rem;
   color: var(--dark);
-  font-size: 0.95rem;
+  backdrop-filter: blur(6px);
 }
-.uniform-list i { color: #5acd8a; font-size: 1rem; }
-.uniform-img-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-.uniform-img-card {
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-lg);
-  background: rgba(255,255,255,0.6);
+.uniform-perk i { color: #5acd8a; }
+.uniform-photos {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  z-index: 1;
 }
-.uniform-img-card img { width: 100%; height: auto; object-fit: contain; }
+.uniform-photo-card {
+  background: rgba(255,255,255,0.75);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 24px 16px;
+  border: 1.5px solid rgba(255,143,171,0.18);
+}
+.uniform-photo-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+}
+.photo-caption {
+  display: block;
+  margin-top: 12px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--primary-dark);
+}
 
 /* ============================================================
    REVIEWS
@@ -1259,7 +1285,7 @@ p { color: var(--text-light); line-height: 1.8; }
   .nav-links.open { display: flex; }
   .nav-links a { color: var(--text) !important; padding: 12px 16px; border-radius: var(--radius-sm); }
   .nav-toggle { display: flex; }
-  .about-grid, .uniform-grid, .contact-grid { grid-template-columns: 1fr; gap: 36px; }
+  .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 36px; }
   .about-images { display: none; }
   .location-grid { grid-template-columns: 1fr; }
   .map-container { min-height: 280px; }
