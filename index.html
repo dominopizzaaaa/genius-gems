@@ -761,41 +761,48 @@
           </div>
         </div>
         <div class="contact-form-wrap">
-          <form class="contact-form" id="contactForm">
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/xyzennbj" method="POST">
             <h3>Send Us a Message</h3>
             <div class="form-row">
               <div class="form-group">
                 <label for="parentName">Parent's Name</label>
-                <input type="text" id="parentName" placeholder="Your full name" required />
+                <input type="text" id="parentName" name="parentName" placeholder="Your full name" required />
               </div>
               <div class="form-group">
                 <label for="childName">Child's Name</label>
-                <input type="text" id="childName" placeholder="Child's name" required />
+                <input type="text" id="childName" name="childName" placeholder="Child's name" required />
               </div>
             </div>
             <div class="form-row">
               <div class="form-group">
                 <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="your@email.com" required />
+                <input type="email" id="email" name="email" placeholder="your@email.com" required />
               </div>
               <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" placeholder="+65 XXXX XXXX" />
+                <input type="tel" id="phone" name="phone" placeholder="+65 XXXX XXXX" />
               </div>
             </div>
             <div class="form-group">
               <label for="programme">Interested Programme</label>
-              <select id="programme">
+              <select id="programme" name="programme">
                 <option value="">Select a programme</option>
-                <option value="fullday">Full Day ($1,488/month)</option>
-                <option value="halfday">Half Day ($1,088/month)</option>
+                <option value="Full Day ($1,488/month)">Full Day ($1,488/month)</option>
+                <option value="Half Day ($1,088/month)">Half Day ($1,088/month)</option>
               </select>
             </div>
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea id="message" rows="4" placeholder="Tell us about your child, any questions, or preferred start date..."></textarea>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your child, any questions, or preferred start date..."></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-full">Send Enquiry</button>
+            <input type="hidden" name="_subject" value="New Enquiry — Genius Gems Childcare" />
+            <input type="hidden" name="_replyto" value="email" />
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Send Enquiry</button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i>
+              <h3>Enquiry Sent!</h3>
+              <p>Thank you! We'll be in touch within 1–2 business days.</p>
+            </div>
           </form>
         </div>
       </div>

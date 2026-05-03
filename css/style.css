@@ -755,9 +755,12 @@ p { color: var(--text-light); line-height: 1.8; }
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   background: rgba(255,255,255,0.6);
-  min-height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
 }
-.uniform-img-card img { width: 100%; height: 100%; object-fit: cover; }
+.uniform-img-card img { width: 100%; height: auto; object-fit: contain; }
 
 /* ============================================================
    REVIEWS

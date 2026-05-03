@@ -66,23 +66,35 @@ backToTop.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// ---------- Contact form ----------
+// ---------- Contact form (Formspree) ----------
 const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', async (e) => {
   e.preventDefault();
-  const btn = contactForm.querySelector('button[type="submit"]');
-  btn.textContent = 'Sending...';
+  const btn = document.getElementById('submitBtn');
+  const successEl = document.getElementById('formSuccess');
+  btn.textContent = 'Sending…';
   btn.disabled = true;
-  setTimeout(() => {
-    contactForm.innerHTML = `
-      <div class="form-success" style="display:block">
-        <i class="fas fa-check-circle"></i>
-        <h3>Enquiry Sent!</h3>
-        <p>Thank you for reaching out. We'll get back to you within 1-2 business days.</p>
-        <p style="margin-top:8px;font-size:0.9rem">Or contact us directly at <strong>nicole@geniusgems.com.sg</strong></p>
-      </div>
-    `;
-  }, 1200);
+
+  try {
+    const res = await fetch(contactForm.action, {
+      method: 'POST',
+      body: new FormData(contactForm),
+      headers: { Accept: 'application/json' }
+    });
+    if (res.ok) {
+      contactForm.querySelectorAll('.form-row, .form-group').forEach(el => el.style.display = 'none');
+      btn.style.display = 'none';
+      successEl.style.display = 'block';
+    } else {
+      btn.textContent = 'Send Enquiry';
+      btn.disabled = false;
+      alert('Something went wrong. Please email us directly at nicole@geniusgems.com.sg');
+    }
+  } catch {
+    btn.textContent = 'Send Enquiry';
+    btn.disabled = false;
+    alert('Could not send. Please email us directly at nicole@geniusgems.com.sg');
+  }
 });
 
 // ---------- Active nav link on scroll ----------
