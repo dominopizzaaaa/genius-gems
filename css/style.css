@@ -416,9 +416,6 @@ p { color: var(--text-light); line-height: 1.8; }
 /* New photo grid inside about */
 .about-images { position: relative; }
 .about-photo-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
   height: 420px;
 }
 .about-photo {
@@ -427,14 +424,6 @@ p { color: var(--text-light); line-height: 1.8; }
   box-shadow: var(--shadow-lg);
   height: 100%;
 }
-.about-photo.tall { grid-row: span 2; height: 100%; }
-.about-photo-col {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  height: 100%;
-}
-.about-photo-col .about-photo { flex: 1; height: 0; }
 .about-photo img {
   width: 100%;
   height: 100%;
