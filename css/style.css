@@ -553,6 +553,30 @@ p { color: var(--text-light); line-height: 1.8; }
 .values .section-title { color: var(--dark); }
 .values .section-desc { color: var(--text-light); }
 
+/* Values intro row: heading left, photo right */
+.values-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 48px;
+  position: relative;
+  z-index: 1;
+}
+.values-intro .section-header { margin-bottom: 0; }
+.values-intro-photo {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  height: 280px;
+  box-shadow: var(--shadow-lg);
+}
+.values-intro-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 .values-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -628,6 +652,29 @@ p { color: var(--text-light); line-height: 1.8; }
   color: var(--white);
   box-shadow: 0 4px 14px rgba(255,143,171,0.38);
 }
+/* Curriculum body: photo left, tabs content right */
+.curriculum-body {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.curriculum-photo {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  height: 360px;
+  box-shadow: var(--shadow-lg);
+  position: sticky;
+  top: 100px;
+}
+.curriculum-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+.curriculum-tabs-content { flex: 1; }
+
 .tab-content { display: none; }
 .tab-content.active { display: block; }
 .curriculum-grid {
@@ -852,6 +899,28 @@ p { color: var(--text-light); line-height: 1.8; }
 /* ============================================================
    REVIEWS
    ============================================================ */
+/* Reviews intro: photo left, heading right */
+.reviews-intro {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 56px;
+}
+.reviews-intro .section-header { margin-bottom: 0; text-align: left; }
+.reviews-intro-photo {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  height: 300px;
+  box-shadow: var(--shadow-lg);
+}
+.reviews-intro-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
 .reviews { background: var(--bg-sky); position: relative; overflow: hidden; }
 .reviews::before {
   content: '';
@@ -1380,6 +1449,18 @@ p { color: var(--text-light); line-height: 1.8; }
   .hero-stats { margin: 0 auto; }
   .values-grid { grid-template-columns: 1fr 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
+  /* Curriculum: stack photo above content on tablet */
+  .curriculum-body { grid-template-columns: 1fr; }
+  .curriculum-photo { height: 240px; position: static; }
+  /* Reviews: stack on tablet */
+  .reviews-intro { grid-template-columns: 1fr; }
+  .reviews-intro-photo { height: 240px; }
+}
+
+@media (max-width: 768px) {
+  /* Values intro stacks */
+  .values-intro { grid-template-columns: 1fr; gap: 28px; }
+  .values-intro-photo { height: 220px; }
 }
 
 @media (max-width: 768px) {
