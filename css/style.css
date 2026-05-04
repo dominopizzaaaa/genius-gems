@@ -617,6 +617,22 @@ p { color: var(--text-light); line-height: 1.8; }
    CURRICULUM
    ============================================================ */
 .curriculum { background: var(--bg-mint); }
+.curriculum-blossom {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  margin-bottom: 44px;
+  padding: 24px;
+  border: 1.5px solid var(--border);
+}
+.curriculum-blossom img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
 .curriculum-tabs {
   display: flex;
   gap: 8px;
