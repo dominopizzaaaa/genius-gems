@@ -125,24 +125,33 @@ contactForm.addEventListener('submit', (e) => {
     if (!valid) return;
   }
 
-  // Build Google Forms URL — replace entry IDs after you set up your form
-  const ENQUIRY_URL  = 'YOUR_ENQUIRY_GOOGLE_FORM_URL';
-  const INTEREST_URL = 'YOUR_INTEREST_GOOGLE_FORM_URL';
-
-  // Show success immediately (Google Forms submissions are fire-and-forget via hidden iframe)
+  // Submit to Google Forms via hidden iframe (fire-and-forget)
+  const BASE = 'https://docs.google.com/forms/d/e/1FAIpQLSdhrH1C9knKqzxzL0W7n34uvJO8cqbQMSYx7T1e6oexCQVndA/formResponse?';
   const iframe = document.getElementById('formIframe');
+
   if (type === 'enquiry') {
-    const contact = encodeURIComponent(document.getElementById('enquiryContact').value.trim());
-    const message = encodeURIComponent(document.getElementById('enquiryMessage').value.trim());
-    iframe.src = `${ENQUIRY_URL}&entry.CONTACT_ID=${contact}&entry.MESSAGE_ID=${message}`;
+    const contact = document.getElementById('enquiryContact').value.trim();
+    const message = document.getElementById('enquiryMessage').value.trim();
+    // Put contact value into whichever field fits (phone if digits-only, else email)
+    const isPhone = /^[\d\s\+\-]+$/.test(contact);
+    const params = new URLSearchParams({
+      'entry.398255348': 'Enquiry',
+      'entry.984577487': isPhone ? contact : '',
+      'entry.646445583': isPhone ? '' : contact,
+      'entry.1537606288': message,
+    });
+    iframe.src = BASE + params.toString();
   } else {
-    const parent   = encodeURIComponent(document.getElementById('parentName').value.trim());
-    const child    = encodeURIComponent(document.getElementById('childName').value.trim());
-    const email    = encodeURIComponent(document.getElementById('interestEmail').value.trim());
-    const phone    = encodeURIComponent(document.getElementById('interestPhone').value.trim());
-    const prog     = encodeURIComponent(document.getElementById('programme').value);
-    const notes    = encodeURIComponent(document.getElementById('interestMessage').value.trim());
-    iframe.src = `${INTEREST_URL}&entry.PARENT_ID=${parent}&entry.CHILD_ID=${child}&entry.EMAIL_ID=${email}&entry.PHONE_ID=${phone}&entry.PROG_ID=${prog}&entry.NOTES_ID=${notes}`;
+    const params = new URLSearchParams({
+      'entry.398255348': 'Register Interest',
+      'entry.1180059100': document.getElementById('parentName').value.trim(),
+      'entry.211027780':  document.getElementById('childName').value.trim(),
+      'entry.646445583':  document.getElementById('interestEmail').value.trim(),
+      'entry.984577487':  document.getElementById('interestPhone').value.trim(),
+      'entry.1430666171': document.getElementById('programme').value,
+      'entry.1537606288': document.getElementById('interestMessage').value.trim(),
+    });
+    iframe.src = BASE + params.toString();
   }
 
   // Show success state
