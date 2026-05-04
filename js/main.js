@@ -66,35 +66,88 @@ backToTop.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// ---------- Contact form (Formspree) ----------
-const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const btn = document.getElementById('submitBtn');
-  const successEl = document.getElementById('formSuccess');
-  btn.textContent = 'Sending…';
-  btn.disabled = true;
+// ---------- Contact form — type toggle ----------
+const typeBtns = document.querySelectorAll('.type-btn');
+const enquiryFields = document.getElementById('enquiryFields');
+const interestFields = document.getElementById('interestFields');
+const formTypeInput = document.getElementById('formType');
+const submitBtn = document.getElementById('submitBtn');
 
-  try {
-    const res = await fetch(contactForm.action, {
-      method: 'POST',
-      body: new FormData(contactForm),
-      headers: { Accept: 'application/json' }
-    });
-    if (res.ok) {
-      contactForm.querySelectorAll('.form-row, .form-group').forEach(el => el.style.display = 'none');
-      btn.style.display = 'none';
-      successEl.style.display = 'block';
+typeBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    typeBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const type = btn.dataset.type;
+    formTypeInput.value = type;
+    if (type === 'enquiry') {
+      enquiryFields.style.display = 'block';
+      interestFields.style.display = 'none';
+      submitBtn.textContent = 'Send Enquiry';
     } else {
-      btn.textContent = 'Send Enquiry';
-      btn.disabled = false;
-      alert('Something went wrong. Please email us directly at nicole@geniusgems.com.sg');
+      enquiryFields.style.display = 'none';
+      interestFields.style.display = 'block';
+      submitBtn.textContent = 'Register My Interest';
     }
-  } catch {
-    btn.textContent = 'Send Enquiry';
-    btn.disabled = false;
-    alert('Could not send. Please email us directly at nicole@geniusgems.com.sg');
+  });
+});
+
+// ---------- Contact form — submit ----------
+const contactForm = document.getElementById('contactForm');
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const type = formTypeInput.value;
+
+  // Validate: enquiry needs contact + message
+  if (type === 'enquiry') {
+    const contact = document.getElementById('enquiryContact').value.trim();
+    const message = document.getElementById('enquiryMessage').value.trim();
+    if (!contact || !message) {
+      document.getElementById('enquiryContact').style.borderColor = contact ? '' : '#ff8fab';
+      document.getElementById('enquiryMessage').style.borderColor = message ? '' : '#ff8fab';
+      return;
+    }
   }
+
+  // Validate: interest needs at least one contact method + parent + child name
+  if (type === 'interest') {
+    const email = document.getElementById('interestEmail').value.trim();
+    const phone = document.getElementById('interestPhone').value.trim();
+    const parent = document.getElementById('parentName').value.trim();
+    const child = document.getElementById('childName').value.trim();
+    let valid = true;
+    if (!parent) { document.getElementById('parentName').style.borderColor = '#ff8fab'; valid = false; }
+    if (!child)  { document.getElementById('childName').style.borderColor = '#ff8fab';  valid = false; }
+    if (!email && !phone) {
+      document.getElementById('interestEmail').style.borderColor = '#ff8fab';
+      document.getElementById('interestPhone').style.borderColor = '#ff8fab';
+      valid = false;
+    }
+    if (!valid) return;
+  }
+
+  // Build Google Forms URL — replace entry IDs after you set up your form
+  const ENQUIRY_URL  = 'YOUR_ENQUIRY_GOOGLE_FORM_URL';
+  const INTEREST_URL = 'YOUR_INTEREST_GOOGLE_FORM_URL';
+
+  // Show success immediately (Google Forms submissions are fire-and-forget via hidden iframe)
+  const iframe = document.getElementById('formIframe');
+  if (type === 'enquiry') {
+    const contact = encodeURIComponent(document.getElementById('enquiryContact').value.trim());
+    const message = encodeURIComponent(document.getElementById('enquiryMessage').value.trim());
+    iframe.src = `${ENQUIRY_URL}&entry.CONTACT_ID=${contact}&entry.MESSAGE_ID=${message}`;
+  } else {
+    const parent   = encodeURIComponent(document.getElementById('parentName').value.trim());
+    const child    = encodeURIComponent(document.getElementById('childName').value.trim());
+    const email    = encodeURIComponent(document.getElementById('interestEmail').value.trim());
+    const phone    = encodeURIComponent(document.getElementById('interestPhone').value.trim());
+    const prog     = encodeURIComponent(document.getElementById('programme').value);
+    const notes    = encodeURIComponent(document.getElementById('interestMessage').value.trim());
+    iframe.src = `${INTEREST_URL}&entry.PARENT_ID=${parent}&entry.CHILD_ID=${child}&entry.EMAIL_ID=${email}&entry.PHONE_ID=${phone}&entry.PROG_ID=${prog}&entry.NOTES_ID=${notes}`;
+  }
+
+  // Show success state
+  contactForm.querySelectorAll('.form-type-toggle, #enquiryFields, #interestFields, #submitBtn').forEach(el => el.style.display = 'none');
+  document.getElementById('formSuccess').style.display = 'block';
 });
 
 // ---------- Active nav link on scroll ----------

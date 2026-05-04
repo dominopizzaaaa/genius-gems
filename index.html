@@ -759,46 +759,74 @@
           </div>
         </div>
         <div class="contact-form-wrap">
-          <form class="contact-form" id="contactForm" action="https://formspree.io/f/xyzennbj" method="POST">
-            <h3>Send Us a Message</h3>
-            <div class="form-row">
+          <form class="contact-form" id="contactForm">
+
+            <!-- Type toggle -->
+            <div class="form-type-toggle">
+              <button type="button" class="type-btn active" data-type="enquiry">
+                <i class="fas fa-circle-question"></i> Make an Enquiry
+              </button>
+              <button type="button" class="type-btn" data-type="interest">
+                <i class="fas fa-hand-sparkles"></i> Register Interest
+              </button>
+            </div>
+
+            <input type="hidden" name="formType" id="formType" value="enquiry" />
+
+            <!-- ENQUIRY fields -->
+            <div id="enquiryFields">
+              <p class="form-hint">Have a question? Leave your contact details and we'll get back to you.</p>
               <div class="form-group">
-                <label for="parentName">Parent's Name</label>
-                <input type="text" id="parentName" name="parentName" placeholder="Your full name" required />
+                <label for="enquiryContact">Phone Number <span class="or-divider">or</span> Email Address <span class="required-note">*</span></label>
+                <input type="text" id="enquiryContact" name="contact" placeholder="+65 XXXX XXXX  or  you@email.com" />
               </div>
               <div class="form-group">
-                <label for="childName">Child's Name</label>
-                <input type="text" id="childName" name="childName" placeholder="Child's name" required />
+                <label for="enquiryMessage">Your Message <span class="required-note">*</span></label>
+                <textarea id="enquiryMessage" name="message" rows="4" placeholder="What would you like to know?"></textarea>
               </div>
             </div>
-            <div class="form-row">
+
+            <!-- INTEREST fields -->
+            <div id="interestFields" style="display:none">
+              <p class="form-hint">Tell us about your child and we'll be in touch about enrolment.</p>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="parentName">Parent's Name <span class="required-note">*</span></label>
+                  <input type="text" id="parentName" name="parentName" placeholder="Your full name" />
+                </div>
+                <div class="form-group">
+                  <label for="childName">Child's Name <span class="required-note">*</span></label>
+                  <input type="text" id="childName" name="childName" placeholder="Child's name" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="interestEmail">Email Address</label>
+                  <input type="email" id="interestEmail" name="email" placeholder="your@email.com" />
+                </div>
+                <div class="form-group">
+                  <label for="interestPhone">Phone Number</label>
+                  <input type="tel" id="interestPhone" name="phone" placeholder="+65 XXXX XXXX" />
+                </div>
+              </div>
               <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+                <label for="programme">Interested Programme</label>
+                <select id="programme" name="programme">
+                  <option value="">Select a programme</option>
+                  <option value="Full Day ($1,488/month)">Full Day ($1,488/month)</option>
+                  <option value="Half Day ($1,088/month)">Half Day ($1,088/month)</option>
+                </select>
               </div>
               <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="+65 XXXX XXXX" />
+                <label for="interestMessage">Additional Notes</label>
+                <textarea id="interestMessage" name="interestNotes" rows="3" placeholder="Child's age, preferred start date, anything else we should know…"></textarea>
               </div>
             </div>
-            <div class="form-group">
-              <label for="programme">Interested Programme</label>
-              <select id="programme" name="programme">
-                <option value="">Select a programme</option>
-                <option value="Full Day ($1,488/month)">Full Day ($1,488/month)</option>
-                <option value="Half Day ($1,088/month)">Half Day ($1,088/month)</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="4" placeholder="Tell us about your child, any questions, or preferred start date..."></textarea>
-            </div>
-            <input type="hidden" name="_subject" value="New Enquiry — Genius Gems Childcare" />
-            <input type="hidden" name="_replyto" value="email" />
+
             <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Send Enquiry</button>
             <div class="form-success" id="formSuccess">
               <i class="fas fa-check-circle"></i>
-              <h3>Enquiry Sent!</h3>
+              <h3>Message Sent!</h3>
               <p>Thank you! We'll be in touch within 1–2 business days.</p>
             </div>
           </form>
@@ -870,6 +898,8 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
+  <!-- Hidden iframe for Google Forms submission -->
+  <iframe id="formIframe" name="formIframe" style="display:none" aria-hidden="true"></iframe>
   <script src="js/main.js"></script>
 </body>
 </html>

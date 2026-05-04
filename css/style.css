@@ -1087,6 +1087,56 @@ p { color: var(--text-light); line-height: 1.8; }
   padding: 38px;
   box-shadow: var(--shadow);
 }
+/* Form type toggle */
+.form-type-toggle {
+  display: flex;
+  gap: 8px;
+  background: var(--bg-light);
+  border-radius: 50px;
+  padding: 5px;
+  margin-bottom: 24px;
+}
+.type-btn {
+  flex: 1;
+  padding: 10px 16px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-family: var(--font-main);
+}
+.type-btn.active {
+  background: var(--white);
+  color: var(--primary-dark);
+  box-shadow: 0 2px 12px rgba(180,140,200,0.18);
+}
+.type-btn i { font-size: 0.9rem; }
+
+.form-hint {
+  font-size: 0.86rem;
+  color: var(--text-light);
+  margin-bottom: 18px;
+  padding: 10px 14px;
+  background: rgba(255,143,171,0.07);
+  border-left: 3px solid var(--primary);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+.required-note { color: var(--primary); font-weight: 800; }
+.or-divider {
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-light);
+  font-size: 0.8rem;
+}
+
 .contact-form h3 { margin-bottom: 24px; font-size: 1.15rem; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .form-group { margin-bottom: 14px; }
@@ -1110,7 +1160,7 @@ p { color: var(--text-light); line-height: 1.8; }
 .form-group textarea:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(255,143,171,0.13); background: var(--white); }
 .form-group textarea { resize: vertical; }
 .form-success { display: none; text-align: center; padding: 28px; color: var(--dark); }
-.form-success i { font-size: 2.8rem; color: #5acd8a; margin-bottom: 10px; }
+.form-success i { font-size: 2.8rem; color: #5acd8a; margin-bottom: 10px; display: block; }
 
 /* ============================================================
    FOOTER — warm soft dark instead of cold navy
