@@ -165,10 +165,9 @@ p { color: var(--text-light); line-height: 1.8; }
   border-radius: 50px;
   font-weight: 700;
   font-size: 0.88rem;
-  color: rgba(255,255,255,0.92);
+  color: var(--dark);
   transition: var(--transition);
 }
-.navbar.scrolled .nav-links a { color: var(--text); }
 .nav-links a:hover { color: var(--primary-dark) !important; background: rgba(255,143,171,0.12); }
 .nav-cta {
   background: var(--primary) !important;
