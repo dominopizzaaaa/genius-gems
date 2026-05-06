@@ -1503,4 +1503,5 @@ p { color: var(--text-light); line-height: 1.8; }
   .team-row { justify-content: center; }
   .team-card { min-width: 150px; }
   .contact-form-wrap { padding: 22px 18px; }
+  .logo-img { height: 125px; }
 }
