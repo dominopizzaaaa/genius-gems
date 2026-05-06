@@ -48,7 +48,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
-  <link rel="preload" as="image" href="images/4_kids_photo.png" />
+  <link rel="preload" as="image" href="images/4_kids_photo.webp" type="image/webp" />
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/style.css" />
@@ -228,7 +228,10 @@
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#home" class="nav-logo">
-        <img src="images/Logo_1.png" alt="Genius Gems Childcare Centre logo" class="logo-img" width="180" height="60" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+        <picture>
+          <source srcset="images/Logo_1.webp" type="image/webp" />
+          <img src="images/Logo_1.png" alt="Genius Gems Childcare Centre logo" class="logo-img" width="180" height="60" onerror="this.style.display='none'; this.parentElement.nextElementSibling.style.display='flex'" />
+        </picture>
         <div class="logo-fallback" style="display:none">
           <span class="logo-gem">💎</span>
           <span class="logo-text">Genius<span>Gems</span></span>
@@ -273,7 +276,10 @@
       </p>
       <!-- Inline image shown only on mobile, hidden on desktop -->
       <div class="hero-img-mobile">
-        <img src="images/4_kids_photo.png" alt="Happy children learning at Genius Gems Childcare Centre in Changi, Singapore" loading="eager" fetchpriority="high" />
+        <picture>
+          <source srcset="images/4_kids_photo.webp" type="image/webp" />
+          <img src="images/4_kids_photo.png" alt="Happy children learning at Genius Gems Childcare Centre in Changi, Singapore" loading="eager" fetchpriority="high" />
+        </picture>
       </div>
       <div class="hero-actions">
         <a href="#contact" class="btn btn-primary">Enrol Your Child</a>
@@ -298,7 +304,10 @@
     </div>
     <div class="hero-image">
       <div class="hero-img-wrapper">
-        <img src="images/4_kids_photo.png" alt="Children learning together at Genius Gems Childcare Centre, a bilingual preschool in Changi" loading="eager" fetchpriority="high" onerror="this.style.display='none'" />
+        <picture>
+          <source srcset="images/4_kids_photo.webp" type="image/webp" />
+          <img src="images/4_kids_photo.png" alt="Children learning together at Genius Gems Childcare Centre, a bilingual preschool in Changi" loading="eager" fetchpriority="high" onerror="this.style.display='none'" />
+        </picture>
         <div class="hero-img-overlay"></div>
       </div>
     </div>
@@ -314,7 +323,10 @@
         <div class="about-images">
           <div class="about-photo-grid">
             <div class="about-photo tall">
-              <img src="images/children_activity_2.png" alt="Children engaged in hands-on learning activities at Genius Gems preschool" loading="lazy" />
+              <picture>
+                <source srcset="images/children_activity_2.webp" type="image/webp" />
+                <img src="images/children_activity_2.png" alt="Children engaged in hands-on learning activities at Genius Gems preschool" loading="lazy" />
+              </picture>
             </div>
           </div>
           <div class="floating-badge">
@@ -415,7 +427,10 @@
       </div>
 
       <div class="curriculum-blossom">
-        <img src="images/Curriculum.png" alt="Blossom curriculum framework — Genius Gems early childhood education in Singapore" loading="lazy" />
+        <picture>
+          <source srcset="images/Curriculum.webp" type="image/webp" />
+          <img src="images/Curriculum.png" alt="Blossom curriculum framework — Genius Gems early childhood education in Singapore" loading="lazy" />
+        </picture>
       </div>
 
       <div class="curriculum-tabs">
@@ -427,7 +442,10 @@
 
       <div class="curriculum-body">
         <div class="curriculum-photo">
-          <img src="images/children_activity_2.png" alt="Children engaged in bilingual curriculum activities at Genius Gems" loading="lazy" />
+          <picture>
+            <source srcset="images/children_activity_2.webp" type="image/webp" />
+            <img src="images/children_activity_2.png" alt="Children engaged in bilingual curriculum activities at Genius Gems" loading="lazy" />
+          </picture>
         </div>
         <div class="curriculum-tabs-content">
 
@@ -544,7 +562,10 @@
         <div class="team-row leadership-row">
           <div class="team-card featured">
             <div class="team-photo">
-              <img src="images/Ms_Nicole_Ang_Director.png" alt="Ms Nicole Ang, Director of Genius Gems Childcare Centre" loading="lazy" onerror="this.parentElement.classList.add('photo-placeholder'); this.style.display='none'" />
+              <picture>
+                <source srcset="images/Ms_Nicole_Ang_Director.webp" type="image/webp" />
+                <img src="images/Ms_Nicole_Ang_Director.png" alt="Ms Nicole Ang, Director of Genius Gems Childcare Centre" loading="lazy" onerror="this.parentElement.parentElement.classList.add('photo-placeholder'); this.style.display='none'" />
+              </picture>
               <div class="photo-placeholder-icon"><i class="fas fa-user"></i></div>
             </div>
             <div class="team-info">
@@ -555,7 +576,10 @@
           </div>
           <div class="team-card featured">
             <div class="team-photo">
-              <img src="images/Ms_Elizabeth_Lew_Assistant_Director.jpg" alt="Ms Elisabeth Lew, Assistant Director at Genius Gems Childcare Centre" loading="lazy" onerror="this.parentElement.classList.add('photo-placeholder'); this.style.display='none'" />
+              <picture>
+                <source srcset="images/Ms_Elizabeth_Lew_Assistant_Director.webp" type="image/webp" />
+                <img src="images/Ms_Elizabeth_Lew_Assistant_Director.jpg" alt="Ms Elisabeth Lew, Assistant Director at Genius Gems Childcare Centre" loading="lazy" onerror="this.parentElement.parentElement.classList.add('photo-placeholder'); this.style.display='none'" />
+              </picture>
               <div class="photo-placeholder-icon"><i class="fas fa-user"></i></div>
             </div>
             <div class="team-info">
@@ -566,7 +590,10 @@
           </div>
           <div class="team-card featured">
             <div class="team-photo">
-              <img src="images/Ms_Sharifah_Principal.png" alt="Ms Sharifah, Principal at Genius Gems Childcare Centre" loading="lazy" onerror="this.parentElement.classList.add('photo-placeholder'); this.style.display='none'" />
+              <picture>
+                <source srcset="images/Ms_Sharifah_Principal.webp" type="image/webp" />
+                <img src="images/Ms_Sharifah_Principal.png" alt="Ms Sharifah, Principal at Genius Gems Childcare Centre" loading="lazy" onerror="this.parentElement.parentElement.classList.add('photo-placeholder'); this.style.display='none'" />
+              </picture>
               <div class="photo-placeholder-icon"><i class="fas fa-user"></i></div>
             </div>
             <div class="team-info">
@@ -584,7 +611,10 @@
         <div class="team-row teachers-row">
           <div class="team-card">
             <div class="team-photo">
-              <img src="images/Teacher_Rhej.png" alt="Teacher Rhej at Genius Gems Childcare Centre" loading="lazy" onerror="this.parentElement.classList.add('photo-placeholder'); this.style.display='none'" />
+              <picture>
+                <source srcset="images/Teacher_Rhej.webp" type="image/webp" />
+                <img src="images/Teacher_Rhej.png" alt="Teacher Rhej at Genius Gems Childcare Centre" loading="lazy" onerror="this.parentElement.parentElement.classList.add('photo-placeholder'); this.style.display='none'" />
+              </picture>
               <div class="photo-placeholder-icon"><i class="fas fa-user"></i></div>
             </div>
             <div class="team-info">
@@ -595,7 +625,10 @@
           </div>
           <div class="team-card">
             <div class="team-photo">
-              <img src="images/Du_Laoshi.png" alt="Du Laoshi, Mandarin teacher at Genius Gems Childcare Centre" loading="lazy" onerror="this.parentElement.classList.add('photo-placeholder'); this.style.display='none'" />
+              <picture>
+                <source srcset="images/Du_Laoshi.webp" type="image/webp" />
+                <img src="images/Du_Laoshi.png" alt="Du Laoshi, Mandarin teacher at Genius Gems Childcare Centre" loading="lazy" onerror="this.parentElement.parentElement.classList.add('photo-placeholder'); this.style.display='none'" />
+              </picture>
               <div class="photo-placeholder-icon"><i class="fas fa-user"></i></div>
             </div>
             <div class="team-info">
@@ -606,7 +639,10 @@
           </div>
           <div class="team-card">
             <div class="team-photo">
-              <img src="images/Mei_Xin_Laoshi.png" alt="Mei Xin Laoshi, Mandarin teacher at Genius Gems Childcare Centre" loading="lazy" onerror="this.parentElement.classList.add('photo-placeholder'); this.style.display='none'" />
+              <picture>
+                <source srcset="images/Mei_Xin_Laoshi.webp" type="image/webp" />
+                <img src="images/Mei_Xin_Laoshi.png" alt="Mei Xin Laoshi, Mandarin teacher at Genius Gems Childcare Centre" loading="lazy" onerror="this.parentElement.parentElement.classList.add('photo-placeholder'); this.style.display='none'" />
+              </picture>
               <div class="photo-placeholder-icon"><i class="fas fa-user"></i></div>
             </div>
             <div class="team-info">
@@ -617,7 +653,10 @@
           </div>
           <div class="team-card">
             <div class="team-photo">
-              <img src="images/Teacher_Natasha.png" alt="Teacher Natasha at Genius Gems Childcare Centre" loading="lazy" onerror="this.parentElement.classList.add('photo-placeholder'); this.style.display='none'" />
+              <picture>
+                <source srcset="images/Teacher_Natasha.webp" type="image/webp" />
+                <img src="images/Teacher_Natasha.png" alt="Teacher Natasha at Genius Gems Childcare Centre" loading="lazy" onerror="this.parentElement.parentElement.classList.add('photo-placeholder'); this.style.display='none'" />
+              </picture>
               <div class="photo-placeholder-icon"><i class="fas fa-user"></i></div>
             </div>
             <div class="team-info">
@@ -635,7 +674,10 @@
         <div class="team-row support-row">
           <div class="team-card">
             <div class="team-photo">
-              <img src="images/Aunty_Lina.png" alt="Aunty Lina, support staff at Genius Gems Childcare Centre" loading="lazy" onerror="this.parentElement.classList.add('photo-placeholder'); this.style.display='none'" />
+              <picture>
+                <source srcset="images/Aunty_Lina.webp" type="image/webp" />
+                <img src="images/Aunty_Lina.png" alt="Aunty Lina, support staff at Genius Gems Childcare Centre" loading="lazy" onerror="this.parentElement.parentElement.classList.add('photo-placeholder'); this.style.display='none'" />
+              </picture>
               <div class="photo-placeholder-icon"><i class="fas fa-user"></i></div>
             </div>
             <div class="team-info">
@@ -645,7 +687,10 @@
           </div>
           <div class="team-card">
             <div class="team-photo">
-              <img src="images/Aunty_Hani.png" alt="Aunty Hani, support staff at Genius Gems Childcare Centre" loading="lazy" onerror="this.parentElement.classList.add('photo-placeholder'); this.style.display='none'" />
+              <picture>
+                <source srcset="images/Aunty_Hani.webp" type="image/webp" />
+                <img src="images/Aunty_Hani.png" alt="Aunty Hani, support staff at Genius Gems Childcare Centre" loading="lazy" onerror="this.parentElement.parentElement.classList.add('photo-placeholder'); this.style.display='none'" />
+              </picture>
               <div class="photo-placeholder-icon"><i class="fas fa-user"></i></div>
             </div>
             <div class="team-info">
@@ -673,7 +718,10 @@
       </div>
       <div class="uniform-photos">
         <div class="uniform-photo-card">
-          <img src="images/Uniform.png" alt="Genius Gems Childcare Centre school uniform" loading="lazy" />
+          <picture>
+            <source srcset="images/Uniform.webp" type="image/webp" />
+            <img src="images/Uniform.png" alt="Genius Gems Childcare Centre school uniform" loading="lazy" />
+          </picture>
           <span class="photo-caption">School Uniform</span>
         </div>
       </div>
@@ -685,7 +733,10 @@
     <div class="container">
       <div class="reviews-intro">
         <div class="reviews-intro-photo">
-          <img src="images/children_activity_3.png" alt="Happy children playing and learning at Genius Gems Childcare Centre Singapore" loading="lazy" />
+          <picture>
+            <source srcset="images/children_activity_3.webp" type="image/webp" />
+            <img src="images/children_activity_3.png" alt="Happy children playing and learning at Genius Gems Childcare Centre Singapore" loading="lazy" />
+          </picture>
         </div>
         <div class="section-header">
           <div class="section-label">Parent Reviews</div>
@@ -1066,7 +1117,10 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo">
-            <img src="images/Logo_1.png" alt="Genius Gems Childcare Centre" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+            <picture>
+              <source srcset="images/Logo_1.webp" type="image/webp" />
+              <img src="images/Logo_1.png" alt="Genius Gems Childcare Centre" loading="lazy" onerror="this.style.display='none'; this.parentElement.nextElementSibling.style.display='flex'" />
+            </picture>
             <div class="logo-fallback" style="display:none">
               <span class="logo-gem">💎</span>
               <span class="logo-text">Genius<span>Gems</span></span>

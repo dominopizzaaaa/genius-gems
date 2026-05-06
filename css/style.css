@@ -147,7 +147,7 @@ p { color: var(--text-light); line-height: 1.8; }
   justify-content: space-between;
 }
 .nav-logo { display: flex; align-items: center; gap: 10px; }
-.logo-img { height: 72px; width: auto; }
+.logo-img { height: 100px; width: auto; }
 .logo-fallback { display: flex; align-items: center; gap: 8px; }
 .logo-gem { font-size: 1.6rem; }
 .logo-text {
@@ -271,9 +271,13 @@ p { color: var(--text-light); line-height: 1.8; }
   position: relative;
   z-index: 2;
   padding: 130px 24px 90px;
-  max-width: 620px;
-  margin-left: max(24px, calc((100vw - 1200px) / 2));
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
 }
+.hero-actions { justify-content: center; }
+.hero-stats { margin: 0 auto; }
+.hero-subtitle { margin-left: auto; margin-right: auto; }
 .hero-badge {
   display: inline-flex;
   align-items: center;
@@ -341,10 +345,7 @@ p { color: var(--text-light); line-height: 1.8; }
 .stat-divider { width: 1px; height: 38px; background: rgba(201,184,240,0.45); }
 
 .hero-image {
-  position: absolute;
-  right: 0; top: 0; bottom: 0;
-  width: 44%;
-  overflow: hidden;
+  display: none;
 }
 .hero-img-wrapper { width: 100%; height: 100%; position: relative; }
 .hero-img-wrapper img { width: 100%; height: 100%; object-fit: cover; }
@@ -354,11 +355,12 @@ p { color: var(--text-light); line-height: 1.8; }
   background: linear-gradient(to right, #fde8f0 0%, transparent 45%);
 }
 
-/* Mobile-only inline hero image */
+/* Inline hero image — always visible */
 .hero-img-mobile {
-  display: none;
+  display: block;
   width: 100%;
-  margin: 24px 0;
+  max-width: 680px;
+  margin: 24px auto 0;
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
@@ -1448,11 +1450,7 @@ p { color: var(--text-light); line-height: 1.8; }
    RESPONSIVE
    ============================================================ */
 @media (max-width: 1024px) {
-  .hero-image { display: none; }
-  .hero-img-mobile { display: block; }
-  .hero-content { margin-left: 0; max-width: 100%; text-align: center; padding: 130px 24px 90px; }
-  .hero-actions { justify-content: center; }
-  .hero-stats { margin: 0 auto; }
+  .hero-content { max-width: 100%; padding: 130px 24px 90px; }
   .values-grid { grid-template-columns: 1fr 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   /* Curriculum: stack photo above content on tablet */
