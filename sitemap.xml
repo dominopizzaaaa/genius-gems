@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://geniusgems.com.sg/</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://geniusgems.com.sg/images/4_kids_photo.png</image:loc>
+      <image:title>Children at Genius Gems Childcare Centre</image:title>
+      <image:caption>Bilingual childcare in Changi, Singapore</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://geniusgems.com.sg/images/Curriculum.png</image:loc>
+      <image:title>Genius Gems curriculum</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://geniusgems.com.sg/images/Logo_1.png</image:loc>
+      <image:title>Genius Gems logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://geniusgems.com.sg/#about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://geniusgems.com.sg/#values</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://geniusgems.com.sg/#curriculum</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://geniusgems.com.sg/#team</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://geniusgems.com.sg/#fees</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://geniusgems.com.sg/#location</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://geniusgems.com.sg/#contact</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
