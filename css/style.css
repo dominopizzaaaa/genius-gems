@@ -147,7 +147,7 @@ p { color: var(--text-light); line-height: 1.8; }
   justify-content: space-between;
 }
 .nav-logo { display: flex; align-items: center; gap: 10px; }
-.logo-img { height: 100px; width: auto; }
+.logo-img { height: 150px; width: auto; }
 .logo-fallback { display: flex; align-items: center; gap: 8px; }
 .logo-gem { font-size: 1.6rem; }
 .logo-text {
