@@ -417,13 +417,20 @@ p { color: var(--text-light); line-height: 1.8; }
 /* New photo grid inside about */
 .about-images { position: relative; }
 .about-photo-grid {
-  height: 420px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 14px;
+  height: 480px;
 }
 .about-photo {
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   height: 100%;
+}
+.about-photo.tall {
+  grid-row: 1 / span 2;
 }
 .about-photo img {
   width: 100%;
