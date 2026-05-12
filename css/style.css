@@ -602,44 +602,57 @@ p { color: var(--text-light); line-height: 1.8; }
   position: relative;
   background: #ffffff;
   border-radius: var(--radius-lg);
-  padding: 36px 28px 30px;
+  padding: 44px 26px 32px;
   text-align: center;
-  transition: var(--transition);
-  box-shadow: 0 4px 20px rgba(180,140,200,0.1);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  box-shadow: 0 6px 24px rgba(180,140,200,0.12);
   overflow: hidden;
-  border-top: 5px solid #ff8fab;
+  border-top: 6px solid #ff8fab;
 }
+.value-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 110px;
+  opacity: 0.18;
+  background: linear-gradient(180deg, #ffb3c6 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+.value-card > * { position: relative; z-index: 1; }
+
 .value-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 16px 40px rgba(180,140,200,0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 48px rgba(180,140,200,0.25);
 }
-.value-card:hover .value-mark { transform: scale(1.06); }
+.value-card:hover .value-mark { transform: scale(1.08); }
 
 .value-mark {
   font-family: var(--font-accent);
-  font-size: 4.8rem;
+  font-size: 5rem;
   font-weight: 900;
   line-height: 1;
   margin-bottom: 4px;
-  transition: transform 0.3s ease;
+  transition: transform 0.35s ease;
   letter-spacing: -0.02em;
   color: #ff8fab;
 }
 .value-mark::after {
   content: '';
   display: block;
-  width: 38px;
-  height: 3px;
-  border-radius: 2px;
-  margin: 14px auto 0;
-  opacity: 0.6;
+  width: 42px;
+  height: 4px;
+  border-radius: 3px;
+  margin: 16px auto 0;
   background: #ff8fab;
+  opacity: 0.6;
 }
 .value-card h3 {
   color: var(--dark);
-  margin-top: 18px;
+  margin-top: 20px;
   margin-bottom: 10px;
-  font-size: 1.05rem;
+  font-size: 1.08rem;
+  font-weight: 800;
 }
 .value-card p {
   color: var(--text-light);
@@ -648,30 +661,36 @@ p { color: var(--text-light); line-height: 1.8; }
   margin: 0;
 }
 
-/* Per-letter colors — direct definitions, no custom properties */
-.value-card[data-letter="G"]                  { border-top-color: #ff8fab; }
-.value-card[data-letter="G"] .value-mark      { color: #ff8fab; }
-.value-card[data-letter="G"] .value-mark::after { background: #ff8fab; }
+/* Per-letter colours — direct definitions */
+.value-card[data-letter="G"]                       { border-top-color: #ff8fab; }
+.value-card[data-letter="G"]::before               { background: linear-gradient(180deg, #ffb3c6 0%, transparent 100%); }
+.value-card[data-letter="G"] .value-mark           { color: #e8729a; }
+.value-card[data-letter="G"] .value-mark::after    { background: #ff8fab; }
 
-.value-card[data-letter="E"]                  { border-top-color: #5ec9c3; }
-.value-card[data-letter="E"] .value-mark      { color: #5ec9c3; }
-.value-card[data-letter="E"] .value-mark::after { background: #5ec9c3; }
+.value-card[data-letter="E"]                       { border-top-color: #5ec9c3; }
+.value-card[data-letter="E"]::before               { background: linear-gradient(180deg, #a8e8e4 0%, transparent 100%); }
+.value-card[data-letter="E"] .value-mark           { color: #3aaba5; }
+.value-card[data-letter="E"] .value-mark::after    { background: #5ec9c3; }
 
-.value-card[data-letter="N"]                  { border-top-color: #72d4a4; }
-.value-card[data-letter="N"] .value-mark      { color: #72d4a4; }
-.value-card[data-letter="N"] .value-mark::after { background: #72d4a4; }
+.value-card[data-letter="N"]                       { border-top-color: #72d4a4; }
+.value-card[data-letter="N"]::before               { background: linear-gradient(180deg, #b8ead0 0%, transparent 100%); }
+.value-card[data-letter="N"] .value-mark           { color: #3aaa72; }
+.value-card[data-letter="N"] .value-mark::after    { background: #72d4a4; }
 
-.value-card[data-letter="I"]                  { border-top-color: #b09de6; }
-.value-card[data-letter="I"] .value-mark      { color: #b09de6; }
-.value-card[data-letter="I"] .value-mark::after { background: #b09de6; }
+.value-card[data-letter="I"]                       { border-top-color: #b09de6; }
+.value-card[data-letter="I"]::before               { background: linear-gradient(180deg, #d4c3f8 0%, transparent 100%); }
+.value-card[data-letter="I"] .value-mark           { color: #8b70d8; }
+.value-card[data-letter="I"] .value-mark::after    { background: #b09de6; }
 
-.value-card[data-letter="U"]                  { border-top-color: #ffd033; }
-.value-card[data-letter="U"] .value-mark      { color: #d4a814; }
-.value-card[data-letter="U"] .value-mark::after { background: #ffd033; }
+.value-card[data-letter="U"]                       { border-top-color: #ffd033; }
+.value-card[data-letter="U"]::before               { background: linear-gradient(180deg, #ffe599 0%, transparent 100%); }
+.value-card[data-letter="U"] .value-mark           { color: #c49a10; }
+.value-card[data-letter="U"] .value-mark::after    { background: #ffd033; }
 
-.value-card[data-letter="S"]                  { border-top-color: #ff97ae; }
-.value-card[data-letter="S"] .value-mark      { color: #ff97ae; }
-.value-card[data-letter="S"] .value-mark::after { background: #ff97ae; }
+.value-card[data-letter="S"]                       { border-top-color: #ff97ae; }
+.value-card[data-letter="S"]::before               { background: linear-gradient(180deg, #ffc5d0 0%, transparent 100%); }
+.value-card[data-letter="S"] .value-mark           { color: #d6597d; }
+.value-card[data-letter="S"] .value-mark::after    { background: #ff97ae; }
 
 /* ============================================================
    CURRICULUM
