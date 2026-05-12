@@ -414,32 +414,28 @@ p { color: var(--text-light); line-height: 1.8; }
   gap: 64px;
   align-items: center;
 }
-/* New photo grid inside about */
+/* Photo display inside about */
 .about-images { position: relative; }
 .about-photo-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 14px;
-  height: 480px;
+  display: flex;
+  justify-content: center;
 }
 .about-photo {
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
-  height: 100%;
-}
-.about-photo.tall {
-  grid-row: 1 / span 2;
+  background: linear-gradient(135deg, #fde8f0, #e8ecff);
+  max-height: 520px;
 }
 .about-photo img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  max-height: 520px;
+  object-fit: contain;
   display: block;
   transition: transform 0.4s ease;
 }
-.about-photo:hover img { transform: scale(1.04); }
+.about-photo:hover img { transform: scale(1.03); }
 
 .img-placeholder {
   background: linear-gradient(135deg, var(--purple), var(--accent-2));
@@ -620,6 +616,48 @@ p { color: var(--text-light); line-height: 1.8; }
 
 .value-content h3 { color: var(--dark); margin-bottom: 8px; font-size: 1rem; }
 .value-content p { color: var(--text-light); font-size: 0.88rem; line-height: 1.72; }
+.value-initial {
+  font-weight: 900;
+  font-size: 1.25em;
+  letter-spacing: 0.5px;
+}
+.value-card[data-letter="G"] .value-initial { color: #ff8fab; }
+.value-card[data-letter="E"] .value-initial { color: #5ec9c3; }
+.value-card[data-letter="N"] .value-initial { color: #72d4a4; }
+.value-card[data-letter="I"] .value-initial { color: #b09de6; }
+.value-card[data-letter="U"] .value-initial { color: #d4a814; }
+.value-card[data-letter="S"] .value-initial { color: #ff97ae; }
+
+/* GENIUS acronym in section title */
+.acronym-word {
+  display: inline-flex;
+  gap: 6px;
+  margin: 0 6px;
+  vertical-align: baseline;
+}
+.acronym-letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-accent);
+  font-weight: 900;
+  font-size: 1.15em;
+  line-height: 1;
+  padding: 0.18em 0.32em;
+  border-radius: 12px;
+  color: var(--white);
+  box-shadow: 0 4px 14px rgba(180,140,200,0.25);
+  transform: rotate(-2deg);
+  transition: transform 0.3s ease;
+}
+.acronym-letter:nth-child(even) { transform: rotate(2deg); }
+.acronym-letter:hover { transform: translateY(-4px) rotate(0); }
+.acronym-letter[data-letter="G"] { background: linear-gradient(135deg, #ffb3c6, #ff8fab); }
+.acronym-letter[data-letter="E"] { background: linear-gradient(135deg, #a8e8e4, #5ec9c3); }
+.acronym-letter[data-letter="N"] { background: linear-gradient(135deg, #b8ead0, #72d4a4); }
+.acronym-letter[data-letter="I"] { background: linear-gradient(135deg, #d4c3f8, #b09de6); }
+.acronym-letter[data-letter="U"] { background: linear-gradient(135deg, #ffe599, #ffd033); }
+.acronym-letter[data-letter="S"] { background: linear-gradient(135deg, #ffc5d0, #ff97ae); }
 
 /* ============================================================
    CURRICULUM
@@ -675,16 +713,16 @@ p { color: var(--text-light); line-height: 1.8; }
 .curriculum-photo {
   border-radius: var(--radius-lg);
   overflow: hidden;
-  height: 360px;
   box-shadow: var(--shadow-lg);
+  background: linear-gradient(135deg, #f0faf7, #d9f5f0);
   position: sticky;
   top: 100px;
 }
 .curriculum-photo img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
 .curriculum-tabs-content { flex: 1; }
 
@@ -1461,7 +1499,8 @@ p { color: var(--text-light); line-height: 1.8; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   /* Curriculum: stack photo above content on tablet */
   .curriculum-body { grid-template-columns: 1fr; }
-  .curriculum-photo { height: 240px; position: static; }
+  .curriculum-photo { position: static; max-height: 400px; }
+  .curriculum-photo img { max-height: 400px; }
   /* Reviews: stack on tablet */
   .reviews-intro { grid-template-columns: 1fr; }
   .reviews-intro-photo { height: 240px; }
