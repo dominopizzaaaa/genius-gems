@@ -577,98 +577,83 @@ p { color: var(--text-light); line-height: 1.8; }
   position: relative;
   z-index: 1;
 }
-.value-card {
-  background: rgba(255,255,255,0.72);
-  border: 1.5px solid rgba(255,255,255,0.9);
-  border-radius: var(--radius-lg);
-  padding: 32px 24px;
-  display: flex;
-  gap: 18px;
-  transition: var(--transition);
-  backdrop-filter: blur(8px);
-  box-shadow: 0 4px 20px rgba(180,140,200,0.1);
-}
-.value-card:hover {
-  transform: translateY(-8px) rotate(-0.5deg);
-  box-shadow: 0 12px 36px rgba(180,140,200,0.22);
-  border-color: rgba(255,143,171,0.4);
-}
-.value-letter {
-  flex-shrink: 0;
-  width: 54px;
-  height: 54px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, #ffb3c6, #ff8fab);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.55rem;
-  font-weight: 900;
-  color: white;
-  font-family: var(--font-accent);
-  box-shadow: 0 4px 14px rgba(255,143,171,0.35);
-}
-.value-card[data-letter="E"] .value-letter { background: linear-gradient(135deg, #a8e8e4, #5ec9c3); box-shadow: 0 4px 14px rgba(94,201,195,0.35); }
-.value-card[data-letter="N"] .value-letter { background: linear-gradient(135deg, #b8ead0, #72d4a4); box-shadow: 0 4px 14px rgba(114,212,164,0.35); }
-.value-card[data-letter="I"] .value-letter { background: linear-gradient(135deg, #d4c3f8, #b09de6); box-shadow: 0 4px 14px rgba(176,157,230,0.35); }
-.value-card[data-letter="U"] .value-letter { background: linear-gradient(135deg, #ffe599, #ffd033); box-shadow: 0 4px 14px rgba(255,208,51,0.35); }
-.value-card[data-letter="S"] .value-letter { background: linear-gradient(135deg, #ffc5d0, #ff97ae); box-shadow: 0 4px 14px rgba(255,151,174,0.35); }
-
-.value-content h3 { color: var(--dark); margin-bottom: 8px; font-size: 1rem; }
-.value-content p { color: var(--text-light); font-size: 0.88rem; line-height: 1.72; }
-.value-stands-for {
-  display: inline-block;
-  font-family: var(--font-accent);
-  font-size: 0.7rem;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  padding: 4px 10px;
-  border-radius: 50px;
-  margin-bottom: 8px;
-}
-.value-card[data-letter="G"] .value-stands-for { background: rgba(255,143,171,0.18); color: #d8517a; }
-.value-card[data-letter="E"] .value-stands-for { background: rgba(94,201,195,0.18); color: #2f8d87; }
-.value-card[data-letter="N"] .value-stands-for { background: rgba(114,212,164,0.22); color: #2f8a5d; }
-.value-card[data-letter="I"] .value-stands-for { background: rgba(176,157,230,0.22); color: #6a52ba; }
-.value-card[data-letter="U"] .value-stands-for { background: rgba(255,208,51,0.25); color: #a07a08; }
-.value-card[data-letter="S"] .value-stands-for { background: rgba(255,151,174,0.22); color: #c84d6b; }
-
-/* GENIUS acronym banner — big and unmistakable */
-.acronym-banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin: 28px auto 8px;
-  padding: 8px;
-}
-.acronym-letter {
+/* Inline-coloured GENIUS in the section title */
+.title-acronym {
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-accent);
+  gap: 0.08em;
+  margin: 0 0.1em;
   font-weight: 900;
-  font-size: clamp(2.4rem, 6vw, 4rem);
-  line-height: 1;
-  width: clamp(64px, 11vw, 96px);
-  height: clamp(64px, 11vw, 96px);
-  border-radius: 22px;
-  color: var(--white);
-  box-shadow: 0 10px 28px rgba(180,140,200,0.35);
-  transition: transform 0.3s ease;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  letter-spacing: 0.02em;
 }
-.acronym-letter:nth-child(odd)  { transform: rotate(-4deg); }
-.acronym-letter:nth-child(even) { transform: rotate(4deg); }
-.acronym-letter:hover { transform: translateY(-6px) rotate(0) scale(1.08); }
-.acronym-letter[data-letter="G"] { background: linear-gradient(135deg, #ffb3c6, #ff8fab); }
-.acronym-letter[data-letter="E"] { background: linear-gradient(135deg, #a8e8e4, #5ec9c3); }
-.acronym-letter[data-letter="N"] { background: linear-gradient(135deg, #b8ead0, #72d4a4); }
-.acronym-letter[data-letter="I"] { background: linear-gradient(135deg, #d4c3f8, #b09de6); }
-.acronym-letter[data-letter="U"] { background: linear-gradient(135deg, #ffe599, #ffd033); }
-.acronym-letter[data-letter="S"] { background: linear-gradient(135deg, #ffc5d0, #ff97ae); }
+.title-acronym span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.title-acronym span[data-letter="G"] { color: #e8729a; }
+.title-acronym span[data-letter="E"] { color: #3aaba5; }
+.title-acronym span[data-letter="N"] { color: #3aaa72; }
+.title-acronym span[data-letter="I"] { color: #8b70d8; }
+.title-acronym span[data-letter="U"] { color: #c49a10; }
+.title-acronym span[data-letter="S"] { color: #d6597d; }
+.title-acronym:hover span { transform: translateY(-3px); }
+
+/* Value cards — clean, vertical, letter-led */
+.value-card {
+  position: relative;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 36px 28px 30px;
+  text-align: center;
+  transition: var(--transition);
+  box-shadow: 0 4px 20px rgba(180,140,200,0.1);
+  overflow: hidden;
+  border-top: 4px solid var(--card-accent, var(--primary));
+}
+.value-card[data-letter="G"] { --card-accent: #ff8fab; }
+.value-card[data-letter="E"] { --card-accent: #5ec9c3; }
+.value-card[data-letter="N"] { --card-accent: #72d4a4; }
+.value-card[data-letter="I"] { --card-accent: #b09de6; }
+.value-card[data-letter="U"] { --card-accent: #ffd033; }
+.value-card[data-letter="S"] { --card-accent: #ff97ae; }
+
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(180,140,200,0.2);
+}
+.value-card:hover .value-mark { transform: scale(1.06); }
+
+.value-mark {
+  font-family: var(--font-accent);
+  font-size: 4.6rem;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--card-accent);
+  margin-bottom: 4px;
+  transition: transform 0.3s ease;
+  letter-spacing: -0.02em;
+}
+.value-mark::after {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--card-accent);
+  margin: 14px auto 0;
+  opacity: 0.55;
+}
+.value-card h3 {
+  color: var(--dark);
+  margin-top: 18px;
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+.value-card p {
+  color: var(--text-light);
+  font-size: 0.88rem;
+  line-height: 1.72;
+  margin: 0;
+}
 
 /* ============================================================
    CURRICULUM
