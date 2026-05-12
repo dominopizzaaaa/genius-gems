@@ -948,119 +948,6 @@ p { color: var(--text-light); line-height: 1.8; }
 }
 
 /* ============================================================
-   REVIEWS
-   ============================================================ */
-/* Reviews intro: photo left, heading right */
-.reviews-intro {
-  display: grid;
-  grid-template-columns: 340px 1fr;
-  gap: 48px;
-  align-items: center;
-  margin-bottom: 56px;
-}
-.reviews-intro .section-header { margin-bottom: 0; text-align: left; }
-.reviews-intro-photo {
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  height: 300px;
-  box-shadow: var(--shadow-lg);
-}
-.reviews-intro-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-}
-
-.reviews { background: var(--bg-sky); position: relative; overflow: hidden; }
-.reviews::before {
-  content: '';
-  position: absolute;
-  width: 350px; height: 350px;
-  background: rgba(147,217,212,0.12);
-  border-radius: 60% 40% 50% 50% / 50% 55% 45% 50%;
-  top: -100px; right: -80px;
-  pointer-events: none;
-}
-.stars-display {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  margin-top: 14px;
-  font-size: 0.88rem;
-  color: var(--text-light);
-}
-.stars-display i { color: #f6b93b; font-size: 1.1rem; }
-.reviews-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  position: relative;
-  z-index: 1;
-}
-.review-card {
-  background: var(--white);
-  border: 1.5px solid rgba(201,184,240,0.3);
-  border-radius: var(--radius-lg);
-  padding: 28px 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  transition: var(--transition);
-  position: relative;
-}
-.review-card::before {
-  content: '\201C';
-  position: absolute;
-  top: 14px; right: 20px;
-  font-size: 5rem;
-  line-height: 1;
-  color: rgba(255,143,171,0.1);
-  font-family: Georgia, serif;
-  pointer-events: none;
-}
-.review-card:hover {
-  transform: translateY(-6px) rotate(-0.3deg);
-  box-shadow: 0 12px 36px rgba(180,140,200,0.18);
-  border-color: rgba(255,143,171,0.35);
-}
-.review-stars i { color: #f6b93b; font-size: 0.88rem; }
-.review-text {
-  font-size: 0.9rem;
-  line-height: 1.85;
-  color: var(--text);
-  flex: 1;
-  font-style: italic;
-}
-.review-author {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding-top: 14px;
-  border-top: 1.5px solid var(--border);
-}
-.author-avatar {
-  flex-shrink: 0;
-  width: 42px; height: 42px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary), var(--purple));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: 800;
-  font-size: 0.76rem;
-  letter-spacing: 0.04em;
-  font-family: var(--font-accent);
-}
-.author-info strong { display: block; font-size: 0.88rem; color: var(--dark); }
-.author-info span   { font-size: 0.78rem; color: var(--text-light); }
-
-@media (max-width: 1024px) { .reviews-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 600px)  { .reviews-grid { grid-template-columns: 1fr; } }
-
-/* ============================================================
    FEES
    ============================================================ */
 .fees { background: var(--off-white); }
@@ -1501,9 +1388,6 @@ p { color: var(--text-light); line-height: 1.8; }
   .curriculum-body { grid-template-columns: 1fr; }
   .curriculum-photo { position: static; max-height: 400px; }
   .curriculum-photo img { max-height: 400px; }
-  /* Reviews: stack on tablet */
-  .reviews-intro { grid-template-columns: 1fr; }
-  .reviews-intro-photo { height: 240px; }
 }
 
 @media (max-width: 768px) {
