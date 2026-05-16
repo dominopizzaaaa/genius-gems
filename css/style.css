@@ -736,34 +736,30 @@ p { color: var(--text-light); line-height: 1.8; }
   color: var(--white);
   box-shadow: 0 4px 14px rgba(255,143,171,0.38);
 }
-/* Curriculum body: photo left, tabs content right */
-.curriculum-body {
+/* Curriculum hero: two photos side-by-side above the tabs */
+.curriculum-hero {
   display: grid;
-  grid-template-columns: minmax(280px, 420px) 1fr;
-  gap: 40px;
-  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: 0 auto 40px;
+  max-width: 1080px;
 }
-.curriculum-photo {
-  position: sticky;
-  top: 100px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.curriculum-photo picture {
+.curriculum-hero-img {
   display: block;
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   background: linear-gradient(135deg, #f0faf7, #d9f5f0);
+  aspect-ratio: 4 / 3;
 }
-.curriculum-photo img {
+.curriculum-hero-img img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   object-fit: cover;
 }
-.curriculum-tabs-content { flex: 1; }
+.curriculum-body { display: block; }
+.curriculum-tabs-content { width: 100%; }
 
 .tab-content { display: none; }
 .tab-content.active { display: block; }
@@ -1423,10 +1419,9 @@ p { color: var(--text-light); line-height: 1.8; }
   .hero-content { max-width: 100%; padding: 130px 24px 90px; }
   .values-grid { grid-template-columns: 1fr 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
-  /* Curriculum: stack photo above content on tablet */
-  .curriculum-body { grid-template-columns: 1fr; }
-  .curriculum-photo { position: static; max-width: 600px; margin: 0 auto; }
-  .curriculum-photo img { width: 100%; height: auto; }
+  /* Curriculum: stack the two hero photos on tablet/phone */
+  .curriculum-hero { grid-template-columns: 1fr; gap: 16px; max-width: 560px; }
+  .curriculum-hero-img { aspect-ratio: 16 / 10; }
 }
 
 @media (max-width: 768px) {
