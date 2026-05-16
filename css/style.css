@@ -744,12 +744,18 @@ p { color: var(--text-light); line-height: 1.8; }
   align-items: start;
 }
 .curriculum-photo {
+  position: sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.curriculum-photo picture {
+  display: block;
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   background: linear-gradient(135deg, #f0faf7, #d9f5f0);
-  position: sticky;
-  top: 100px;
 }
 .curriculum-photo img {
   width: 100%;
