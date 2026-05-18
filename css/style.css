@@ -513,15 +513,13 @@ html[lang="ta"] .nav-links { gap: 2px; }
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
-  background: linear-gradient(135deg, #fde8f0, #e8ecff);
-  max-height: 520px;
+  line-height: 0;
 }
 .about-photo img {
   width: 100%;
   height: auto;
-  max-height: 520px;
-  object-fit: contain;
   display: block;
+  border-radius: var(--radius-lg);
   transition: transform 0.4s ease;
 }
 .about-photo:hover img { transform: scale(1.03); }
@@ -611,18 +609,15 @@ html[lang="ta"] .nav-links { gap: 2px; }
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
-  background: linear-gradient(135deg, #fff5f7 0%, #fdf3ff 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  align-self: center;
+  width: 100%;
+  line-height: 0;
 }
 .difference-media img {
   width: 100%;
   height: auto;
-  max-height: 520px;
   display: block;
-  object-fit: contain;
-  object-position: center;
+  border-radius: var(--radius-lg);
 }
 .difference-content { padding: 8px 0; }
 .difference-eyebrow {
@@ -919,24 +914,21 @@ html[lang="ta"] .nav-links { gap: 2px; }
   gap: 24px;
   margin: 0 auto 40px;
   max-width: 1080px;
-  align-items: stretch;
+  align-items: center;
 }
 .curriculum-hero-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  align-self: center;
+  width: 100%;
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
-  background: linear-gradient(135deg, #f0faf7, #d9f5f0);
+  line-height: 0;
 }
 .curriculum-hero-img img {
   width: 100%;
   height: auto;
-  max-height: 420px;
   display: block;
-  object-fit: contain;
-  object-position: center;
+  border-radius: var(--radius-lg);
 }
 .curriculum-body { display: block; }
 .curriculum-tabs-content { width: 100%; }
@@ -1133,7 +1125,7 @@ html[lang="ta"] .nav-links { gap: 2px; }
   gap: 24px;
   position: relative;
   z-index: 1;
-  align-items: stretch;
+  align-items: start;
 }
 .uniform-photo-card {
   background: rgba(255,255,255,0.75);
@@ -1143,27 +1135,24 @@ html[lang="ta"] .nav-links { gap: 2px; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px 24px 16px;
+  padding: 18px 18px 14px;
   border: 1.5px solid rgba(255,143,171,0.18);
 }
 .uniform-photo-card picture {
   width: 100%;
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  line-height: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
 }
 .uniform-photo-card img {
   width: 100%;
-  max-height: 480px;
   height: auto;
   display: block;
-  object-fit: contain;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-md);
 }
 @media (max-width: 768px) {
   .uniform-photos { grid-template-columns: 1fr; }
-  .uniform-photo-card img { max-height: none; }
 }
 .photo-caption {
   display: block;
