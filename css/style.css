@@ -1572,6 +1572,12 @@ html[lang="ta"] .nav-links { gap: 2px; }
   z-index: 1;
 }
 .footer-brand .footer-logo { margin-bottom: 14px; }
+.footer-brand .footer-logo img {
+  width: auto;
+  height: 120px;
+  max-width: 100%;
+  display: block;
+}
 .footer-brand .logo-text { color: var(--white); }
 .footer-brand p { font-size: 0.88rem; line-height: 1.8; margin-bottom: 22px; }
 .footer-socials { display: flex; gap: 10px; }
