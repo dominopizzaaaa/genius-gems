@@ -60,7 +60,7 @@
   <link rel="preload" as="image" href="images/4_kids_photo.webp" type="image/webp" />
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/style.css?v=20260518c" />
+  <link rel="stylesheet" href="css/style.css?v=20260518d" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
@@ -264,15 +264,15 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#difference">What Makes Us Shine</a></li>
-        <li><a href="#values">Values</a></li>
-        <li><a href="#curriculum">Curriculum</a></li>
-        <li><a href="#team">Our Team</a></li>
-        <li><a href="#fees">Fees</a></li>
-        <li><a href="#location">Location</a></li>
-        <li><a href="#contact" class="nav-cta">Enrol Now</a></li>
+        <li><a href="#home" data-i18n="nav.home">Home</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#difference" data-i18n="nav.difference">What Makes Us Shine</a></li>
+        <li><a href="#values" data-i18n="nav.values">Values</a></li>
+        <li><a href="#curriculum" data-i18n="nav.curriculum">Curriculum</a></li>
+        <li><a href="#team" data-i18n="nav.team">Our Team</a></li>
+        <li><a href="#fees" data-i18n="nav.fees">Fees</a></li>
+        <li><a href="#location" data-i18n="nav.location">Location</a></li>
+        <li><a href="#contact" class="nav-cta" data-i18n="nav.enrol">Enrol Now</a></li>
       </ul>
     </div>
   </nav>
@@ -289,12 +289,12 @@
       </div>
     </div>
     <div class="hero-content">
-      <div class="hero-badge">✨ Nurturing Little Minds</div>
+      <div class="hero-badge">✨ <span data-i18n="hero.badge">Nurturing Little Minds</span></div>
       <h1 class="hero-title">
-        Where Every Child is a
-        <span class="highlight">Genius Gem</span>
+        <span data-i18n="hero.title_pre">Where Every Child is a</span>
+        <span class="highlight" data-i18n="hero.title_highlight">Genius Gem</span>
       </h1>
-      <p class="hero-subtitle">
+      <p class="hero-subtitle" data-i18n="hero.subtitle">
         A warm, enriching childcare environment where curiosity thrives, friendships blossom, and every child discovers the brilliance within.
       </p>
       <!-- Inline image shown only on mobile, hidden on desktop -->
@@ -305,23 +305,23 @@
         </picture>
       </div>
       <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Enrol Your Child</a>
-        <a href="#about" class="btn btn-outline">Discover More</a>
+        <a href="#contact" class="btn btn-primary" data-i18n="hero.btn_enrol">Enrol Your Child</a>
+        <a href="#about" class="btn btn-outline" data-i18n="hero.btn_discover">Discover More</a>
       </div>
       <div class="hero-stats">
         <div class="stat">
           <span class="stat-num">15+</span>
-          <span class="stat-label">Years of Excellence</span>
+          <span class="stat-label" data-i18n="hero.stat_1">Years of Excellence</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
           <span class="stat-num">100%</span>
-          <span class="stat-label">Bilingual Programme</span>
+          <span class="stat-label" data-i18n="hero.stat_2">Bilingual Programme</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
           <span class="stat-num">4</span>
-          <span class="stat-label">Enrichment Programmes</span>
+          <span class="stat-label" data-i18n="hero.stat_3">Enrichment Programmes</span>
         </div>
       </div>
     </div>
@@ -354,30 +354,30 @@
           </div>
           <div class="floating-badge">
             <i class="fas fa-heart"></i>
-            <span>Trusted by Families</span>
+            <span data-i18n="about.badge">Trusted by Families</span>
           </div>
         </div>
         <div class="about-content">
-          <div class="section-label">About Us</div>
-          <h2 class="section-title">A Place Where Children Flourish</h2>
-          <p>At Genius Gems Childcare Centre, we believe every child carries a unique brilliance — and our role is to help it shine. Nestled in Changi, our centre offers a warm, structured, and joyful environment for children to grow holistically.</p>
-          <p>Our approach blends Singapore's ECDA framework with globally inspired early childhood methodologies, delivered by a passionate, highly qualified team who genuinely love what they do.</p>
+          <div class="section-label" data-i18n="about.label">About Us</div>
+          <h2 class="section-title" data-i18n="about.title">A Place Where Children Flourish</h2>
+          <p data-i18n="about.para1">At Genius Gems Childcare Centre, we believe every child carries a unique brilliance — and our role is to help it shine. Nestled in Changi, our centre offers a warm, structured, and joyful environment for children to grow holistically.</p>
+          <p data-i18n="about.para2">Our approach blends Singapore's ECDA framework with globally inspired early childhood methodologies, delivered by a passionate, highly qualified team who genuinely love what they do.</p>
           <div class="about-features">
             <div class="feature-item">
               <i class="fas fa-leaf"></i>
-              <span>Holistic Development</span>
+              <span data-i18n="about.f1">Holistic Development</span>
             </div>
             <div class="feature-item">
               <i class="fas fa-language"></i>
-              <span>Bilingual English & Chinese</span>
+              <span data-i18n="about.f2">Bilingual English & Chinese</span>
             </div>
             <div class="feature-item">
               <i class="fas fa-shield-heart"></i>
-              <span>Safe & Nurturing Environment</span>
+              <span data-i18n="about.f3">Safe & Nurturing Environment</span>
             </div>
             <div class="feature-item">
               <i class="fas fa-graduation-cap"></i>
-              <span>Qualified Educators</span>
+              <span data-i18n="about.f4">Qualified Educators</span>
             </div>
           </div>
         </div>
@@ -389,9 +389,9 @@
   <section class="difference section" id="difference">
     <div class="container">
       <div class="section-header centered">
-        <div class="section-label">Our Difference</div>
-        <h2 class="section-title">What Makes Us Shine</h2>
-        <p class="section-desc">What sets Genius Gems apart — the heart, care, and dedication behind every day at our centre.</p>
+        <div class="section-label" data-i18n="diff.label">Our Difference</div>
+        <h2 class="section-title" data-i18n="diff.title">What Makes Us Shine</h2>
+        <p class="section-desc" data-i18n="diff.desc">What sets Genius Gems apart — the heart, care, and dedication behind every day at our centre.</p>
       </div>
 
       <div class="difference-row">
@@ -402,10 +402,10 @@
           </picture>
         </div>
         <div class="difference-content">
-          <div class="difference-eyebrow">Hands-On Leadership</div>
-          <h3>Privately Run Centre</h3>
-          <p>Genius Gems is a proudly independent, privately run childcare centre — not a franchise, not investor-led, and not managed from a distant corporate office. Our director and principal are personally involved in the day-to-day running of the school, ensuring every child receives the consistent, attentive care that families deserve.</p>
-          <p>This hands-on approach means real accountability behind every decision, every classroom, and every moment of your child's day with us.</p>
+          <div class="difference-eyebrow" data-i18n="diff.p_eyebrow">Hands-On Leadership</div>
+          <h3 data-i18n="diff.p_title">Privately Run Centre</h3>
+          <p data-i18n="diff.p_para1">Genius Gems is a proudly independent, privately run childcare centre — not a franchise, not investor-led, and not managed from a distant corporate office. Our director and principal are personally involved in the day-to-day running of the school, ensuring every child receives the consistent, attentive care that families deserve.</p>
+          <p data-i18n="diff.p_para2">This hands-on approach means real accountability behind every decision, every classroom, and every moment of your child's day with us.</p>
         </div>
       </div>
 
@@ -417,10 +417,10 @@
           </picture>
         </div>
         <div class="difference-content">
-          <div class="difference-eyebrow">Close-Knit Community</div>
-          <h3>Small Classes, Personal Attention</h3>
-          <p>We intentionally keep our class sizes small so that every child is truly seen, known, and supported. Our educators take the time to understand each child's personality, interests, and pace of learning — tailoring their approach to bring out the very best in them.</p>
-          <p>Unlike large mega-centres, no child gets overlooked here. Children at Genius Gems enjoy genuine, warm relationships with their teachers, and the confidence that comes from being part of a tight-knit, caring community.</p>
+          <div class="difference-eyebrow" data-i18n="diff.s_eyebrow">Close-Knit Community</div>
+          <h3 data-i18n="diff.s_title">Small Classes, Personal Attention</h3>
+          <p data-i18n="diff.s_para1">We intentionally keep our class sizes small so that every child is truly seen, known, and supported. Our educators take the time to understand each child's personality, interests, and pace of learning — tailoring their approach to bring out the very best in them.</p>
+          <p data-i18n="diff.s_para2">Unlike large mega-centres, no child gets overlooked here. Children at Genius Gems enjoy genuine, warm relationships with their teachers, and the confidence that comes from being part of a tight-knit, caring community.</p>
         </div>
       </div>
     </div>
@@ -430,43 +430,43 @@
   <section class="values section" id="values">
     <div class="container">
       <div class="section-header centered">
-        <div class="section-label">Our Identity</div>
-        <h2 class="section-title">The
+        <div class="section-label" data-i18n="values.label">Our Identity</div>
+        <h2 class="section-title"><span data-i18n="values.title_pre">The</span>
           <span class="title-acronym" aria-label="GENIUS"><span data-letter="G">G</span><span data-letter="E">E</span><span data-letter="N">N</span><span data-letter="I">I</span><span data-letter="U">U</span><span data-letter="S">S</span></span>
-          in Every Child
+          <span data-i18n="values.title_post">in Every Child</span>
         </h2>
-        <p class="section-desc">Discovering the genius in every child.</p>
+        <p class="section-desc" data-i18n="values.desc">Discovering the genius in every child.</p>
       </div>
       <div class="values-grid">
         <div class="value-card" data-letter="G">
           <div class="value-mark">G</div>
-          <h3>Growth-Minded Explorers</h3>
-          <p>We encourage children to embrace challenges, persist through difficulties, and celebrate learning as an exciting, lifelong adventure.</p>
+          <h3 data-i18n="values.g_title">Growth-Minded Explorers</h3>
+          <p data-i18n="values.g_desc">We encourage children to embrace challenges, persist through difficulties, and celebrate learning as an exciting, lifelong adventure.</p>
         </div>
         <div class="value-card" data-letter="E">
           <div class="value-mark">E</div>
-          <h3>Experiential Learners</h3>
-          <p>Children are active learners who learn best through hands-on experiences. A variety of learning experiences are curated to support meaningful learning and spark genuine curiosity.</p>
+          <h3 data-i18n="values.e_title">Experiential Learners</h3>
+          <p data-i18n="values.e_desc">Children are active learners who learn best through hands-on experiences. A variety of learning experiences are curated to support meaningful learning and spark genuine curiosity.</p>
         </div>
         <div class="value-card" data-letter="N">
           <div class="value-mark">N</div>
-          <h3>Nurturing Collaborators</h3>
-          <p>We are dedicated to collaborating with families to nurture each child, helping every gem to grow and shine.</p>
+          <h3 data-i18n="values.n_title">Nurturing Collaborators</h3>
+          <p data-i18n="values.n_desc">We are dedicated to collaborating with families to nurture each child, helping every gem to grow and shine.</p>
         </div>
         <div class="value-card" data-letter="I">
           <div class="value-mark">I</div>
-          <h3>Innovative Imaginators</h3>
-          <p>Creativity is at the heart of everything we do. We give children the freedom and tools to dream big, think differently, and create boldly.</p>
+          <h3 data-i18n="values.i_title">Innovative Imaginators</h3>
+          <p data-i18n="values.i_desc">Creativity is at the heart of everything we do. We give children the freedom and tools to dream big, think differently, and create boldly.</p>
         </div>
         <div class="value-card" data-letter="U">
           <div class="value-mark">U</div>
-          <h3>Unique Individuals</h3>
-          <p>Every child has their own strengths, interests, and pace. We honour each child's individuality and tailor our approach to help them thrive.</p>
+          <h3 data-i18n="values.u_title">Unique Individuals</h3>
+          <p data-i18n="values.u_desc">Every child has their own strengths, interests, and pace. We honour each child's individuality and tailor our approach to help them thrive.</p>
         </div>
         <div class="value-card" data-letter="S">
           <div class="value-mark">S</div>
-          <h3>Secure &amp; Confident Communicators</h3>
-          <p>We build children's confidence to express themselves clearly, listen actively, and communicate with warmth and self-assurance.</p>
+          <h3 data-i18n="values.s_title">Secure &amp; Confident Communicators</h3>
+          <p data-i18n="values.s_desc">We build children's confidence to express themselves clearly, listen actively, and communicate with warmth and self-assurance.</p>
         </div>
       </div>
     </div>
@@ -476,9 +476,9 @@
   <section class="curriculum section" id="curriculum">
     <div class="container">
       <div class="section-header centered">
-        <div class="section-label">Our Curriculum</div>
-        <h2 class="section-title">A Framework Built for Bright Futures</h2>
-        <p class="section-desc">We adopt the Blossom curriculum framework — thoughtfully designed to nurture each of our gems to their fullest potential.</p>
+        <div class="section-label" data-i18n="curr.label">Our Curriculum</div>
+        <h2 class="section-title" data-i18n="curr.title">A Framework Built for Bright Futures</h2>
+        <p class="section-desc" data-i18n="curr.desc">We adopt the Blossom curriculum framework — thoughtfully designed to nurture each of our gems to their fullest potential.</p>
       </div>
 
       <div class="curriculum-blossom">
@@ -499,10 +499,10 @@
       </div>
 
       <div class="curriculum-tabs">
-        <button class="tab-btn active" data-tab="character">Character Development</button>
-        <button class="tab-btn" data-tab="core">Core Learning</button>
-        <button class="tab-btn" data-tab="supporting">Supporting Learning</button>
-        <button class="tab-btn" data-tab="enrichment">Enrichment</button>
+        <button class="tab-btn active" data-tab="character" data-i18n="curr.tab_char">Character Development</button>
+        <button class="tab-btn" data-tab="core" data-i18n="curr.tab_core">Core Learning</button>
+        <button class="tab-btn" data-tab="supporting" data-i18n="curr.tab_sup">Supporting Learning</button>
+        <button class="tab-btn" data-tab="enrichment" data-i18n="curr.tab_enr">Enrichment</button>
       </div>
 
       <div class="curriculum-body">
@@ -512,23 +512,23 @@
         <div class="curriculum-grid">
           <div class="curriculum-card">
             <div class="curric-icon"><i class="fas fa-people-group"></i></div>
-            <h3>Social</h3>
-            <p>Building meaningful relationships, cooperation skills, and effective communication from an early age.</p>
+            <h3 data-i18n="curr.social">Social</h3>
+            <p data-i18n="curr.social_d">Building meaningful relationships, cooperation skills, and effective communication from an early age.</p>
           </div>
           <div class="curriculum-card">
             <div class="curric-icon"><i class="fas fa-heart-pulse"></i></div>
-            <h3>Emotional</h3>
-            <p>Understanding feelings, developing self-regulation, and nurturing empathy toward others.</p>
+            <h3 data-i18n="curr.emo">Emotional</h3>
+            <p data-i18n="curr.emo_d">Understanding feelings, developing self-regulation, and nurturing empathy toward others.</p>
           </div>
           <div class="curriculum-card">
             <div class="curric-icon"><i class="fas fa-scale-balanced"></i></div>
-            <h3>Moral</h3>
-            <p>Instilling core values — respect, responsibility, integrity — that guide children throughout their lives.</p>
+            <h3 data-i18n="curr.moral">Moral</h3>
+            <p data-i18n="curr.moral_d">Instilling core values — respect, responsibility, integrity — that guide children throughout their lives.</p>
           </div>
           <div class="curriculum-card">
             <div class="curric-icon"><i class="fas fa-lightbulb"></i></div>
-            <h3>Learning Disposition</h3>
-            <p>Fostering curiosity, resilience, and a genuinely positive attitude toward lifelong learning.</p>
+            <h3 data-i18n="curr.ld">Learning Disposition</h3>
+            <p data-i18n="curr.ld_d">Fostering curiosity, resilience, and a genuinely positive attitude toward lifelong learning.</p>
           </div>
         </div>
       </div>
@@ -537,18 +537,18 @@
         <div class="curriculum-grid">
           <div class="curriculum-card">
             <div class="curric-icon"><i class="fas fa-book-open"></i></div>
-            <h3>English</h3>
-            <p>Language and literacy development — reading, writing, phonics, and expressive communication in English.</p>
+            <h3 data-i18n="curr.eng">English</h3>
+            <p data-i18n="curr.eng_d">Language and literacy development — reading, writing, phonics, and expressive communication in English.</p>
           </div>
           <div class="curriculum-card">
             <div class="curric-icon"><i class="fas fa-yin-yang"></i></div>
-            <h3>Chinese</h3>
-            <p>Bilingual foundation building with cultural appreciation, spoken Mandarin, and early literacy in Chinese.</p>
+            <h3 data-i18n="curr.chi">Chinese</h3>
+            <p data-i18n="curr.chi_d">Bilingual foundation building with cultural appreciation, spoken Mandarin, and early literacy in Chinese.</p>
           </div>
           <div class="curriculum-card">
             <div class="curric-icon"><i class="fas fa-calculator"></i></div>
-            <h3>Mathematics</h3>
-            <p>Early numeracy, problem-solving through play, and logical thinking that sets the stage for future STEM learning.</p>
+            <h3 data-i18n="curr.math">Mathematics</h3>
+            <p data-i18n="curr.math_d">Early numeracy, problem-solving through play, and logical thinking that sets the stage for future STEM learning.</p>
           </div>
         </div>
       </div>
@@ -557,23 +557,23 @@
         <div class="curriculum-grid">
           <div class="curriculum-card">
             <div class="curric-icon"><i class="fas fa-layer-group"></i></div>
-            <h3>Thematic Learning</h3>
-            <p>Integrated projects that weave together multiple subjects, making learning contextual, cohesive, and memorable.</p>
+            <h3 data-i18n="curr.thm">Thematic Learning</h3>
+            <p data-i18n="curr.thm_d">Integrated projects that weave together multiple subjects, making learning contextual, cohesive, and memorable.</p>
           </div>
           <div class="curriculum-card">
             <div class="curric-icon"><i class="fas fa-palette"></i></div>
-            <h3>Creative Expression</h3>
-            <p>Art, drama, and imaginative play — giving children safe outlets to explore, express, and experiment.</p>
+            <h3 data-i18n="curr.cre">Creative Expression</h3>
+            <p data-i18n="curr.cre_d">Art, drama, and imaginative play — giving children safe outlets to explore, express, and experiment.</p>
           </div>
           <div class="curriculum-card">
             <div class="curric-icon"><i class="fas fa-house-chimney-user"></i></div>
-            <h3>Life Skills</h3>
-            <p>Practical daily routines, independence, and self-care habits that prepare children for school and life.</p>
+            <h3 data-i18n="curr.life">Life Skills</h3>
+            <p data-i18n="curr.life_d">Practical daily routines, independence, and self-care habits that prepare children for school and life.</p>
           </div>
           <div class="curriculum-card">
             <div class="curric-icon"><i class="fas fa-person-running"></i></div>
-            <h3>Physical Education</h3>
-            <p>Motor skills, coordination exercises, and healthy habits through structured play and movement activities.</p>
+            <h3 data-i18n="curr.pe">Physical Education</h3>
+            <p data-i18n="curr.pe_d">Motor skills, coordination exercises, and healthy habits through structured play and movement activities.</p>
           </div>
         </div>
       </div>
@@ -582,23 +582,23 @@
         <div class="curriculum-grid">
           <div class="curriculum-card">
             <div class="curric-icon"><i class="fas fa-globe"></i></div>
-            <h3>Language Appreciation</h3>
-            <p>Exposure to diverse languages and cultures, broadening children's worldview and communication horizons.</p>
+            <h3 data-i18n="curr.lang">Language Appreciation</h3>
+            <p data-i18n="curr.lang_d">Exposure to diverse languages and cultures, broadening children's worldview and communication horizons.</p>
           </div>
           <div class="curriculum-card">
             <div class="curric-icon"><i class="fas fa-masks-theater"></i></div>
-            <h3>Chinese Performing Arts</h3>
-            <p>Dance, drama, and cultural traditions that connect children to their heritage in joyful, expressive ways.</p>
+            <h3 data-i18n="curr.cpa">Chinese Performing Arts</h3>
+            <p data-i18n="curr.cpa_d">Dance, drama, and cultural traditions that connect children to their heritage in joyful, expressive ways.</p>
           </div>
           <div class="curriculum-card">
             <div class="curric-icon"><i class="fas fa-computer"></i></div>
-            <h3>Computer Literacy</h3>
-            <p>Early digital awareness and essential computer skills, preparing children for a technology-enabled world.</p>
+            <h3 data-i18n="curr.comp">Computer Literacy</h3>
+            <p data-i18n="curr.comp_d">Early digital awareness and essential computer skills, preparing children for a technology-enabled world.</p>
           </div>
           <div class="curriculum-card">
             <div class="curric-icon"><i class="fas fa-music"></i></div>
-            <h3>Music Appreciation</h3>
-            <p>Listening, rhythm, and creative music-making experiences that develop a lifelong love for the arts.</p>
+            <h3 data-i18n="curr.mus">Music Appreciation</h3>
+            <p data-i18n="curr.mus_d">Listening, rhythm, and creative music-making experiences that develop a lifelong love for the arts.</p>
           </div>
         </div>
       </div><!-- end curriculum-tabs-content -->
@@ -610,14 +610,14 @@
   <section class="team section" id="team">
     <div class="container">
       <div class="section-header centered">
-        <div class="section-label">Our Team</div>
-        <h2 class="section-title">Meet the Gem Keepers</h2>
-        <p class="section-desc">Our dedicated educators bring passion, warmth, and expertise to every single day.</p>
+        <div class="section-label" data-i18n="team.label">Our Team</div>
+        <h2 class="section-title" data-i18n="team.title">Meet the Gem Keepers</h2>
+        <p class="section-desc" data-i18n="team.desc">Our dedicated educators bring passion, warmth, and expertise to every single day.</p>
       </div>
 
       <!-- Leadership -->
       <div class="team-tier">
-        <div class="tier-label">Leadership</div>
+        <div class="tier-label" data-i18n="team.lead">Leadership</div>
         <div class="team-row leadership-row">
           <div class="team-card featured">
             <div class="team-photo">
@@ -629,7 +629,7 @@
             </div>
             <div class="team-info">
               <h3>Ms Nicole Ang</h3>
-              <span class="team-role director">Director</span>
+              <span class="team-role director" data-i18n="team.director">Director</span>
               <a href="mailto:nicole@geniusgems.com.sg" class="team-email"><i class="fas fa-envelope"></i> nicole@geniusgems.com.sg</a>
             </div>
           </div>
@@ -643,7 +643,7 @@
             </div>
             <div class="team-info">
               <h3>Ms Elisabeth Lew</h3>
-              <span class="team-role asst-director">Assistant Director</span>
+              <span class="team-role asst-director" data-i18n="team.asst_dir">Assistant Director</span>
               <a href="mailto:elis@geniusgems.com.sg" class="team-email"><i class="fas fa-envelope"></i> elis@geniusgems.com.sg</a>
             </div>
           </div>
@@ -657,7 +657,7 @@
             </div>
             <div class="team-info">
               <h3>Ms Sharifah</h3>
-              <span class="team-role principal">Principal</span>
+              <span class="team-role principal" data-i18n="team.principal">Principal</span>
               <a href="mailto:sharifah@geniusgems.com.sg" class="team-email"><i class="fas fa-envelope"></i> sharifah@geniusgems.com.sg</a>
             </div>
           </div>
@@ -666,7 +666,7 @@
 
       <!-- Teachers -->
       <div class="team-tier">
-        <div class="tier-label">Teachers</div>
+        <div class="tier-label" data-i18n="team.tch">Teachers</div>
         <div class="team-row teachers-row">
           <div class="team-card">
             <div class="team-photo">
@@ -678,7 +678,7 @@
             </div>
             <div class="team-info">
               <h3>Teacher Rhej</h3>
-              <span class="team-role teacher">Teacher</span>
+              <span class="team-role teacher" data-i18n="team.teacher">Teacher</span>
               <a href="mailto:regina@geniusgems.com.sg" class="team-email"><i class="fas fa-envelope"></i> regina@geniusgems.com.sg</a>
             </div>
           </div>
@@ -692,7 +692,7 @@
             </div>
             <div class="team-info">
               <h3>Du Laoshi</h3>
-              <span class="team-role teacher">Chinese Educator</span>
+              <span class="team-role teacher" data-i18n="team.ch_edu">Chinese Educator</span>
               <a href="mailto:duhq@geniusgems.com.sg" class="team-email"><i class="fas fa-envelope"></i> duhq@geniusgems.com.sg</a>
             </div>
           </div>
@@ -706,7 +706,7 @@
             </div>
             <div class="team-info">
               <h3>Mei Xin Laoshi</h3>
-              <span class="team-role teacher">Chinese Educator</span>
+              <span class="team-role teacher" data-i18n="team.ch_edu">Chinese Educator</span>
               <a href="mailto:meixin@geniusgems.com.sg" class="team-email"><i class="fas fa-envelope"></i> meixin@geniusgems.com.sg</a>
             </div>
           </div>
@@ -720,7 +720,7 @@
             </div>
             <div class="team-info">
               <h3>Teacher Natasha</h3>
-              <span class="team-role teacher">Teacher</span>
+              <span class="team-role teacher" data-i18n="team.teacher">Teacher</span>
               <a href="mailto:natasha@geniusgems.com.sg" class="team-email"><i class="fas fa-envelope"></i> natasha@geniusgems.com.sg</a>
             </div>
           </div>
@@ -729,7 +729,7 @@
 
       <!-- Support Staff -->
       <div class="team-tier">
-        <div class="tier-label">Support Staff</div>
+        <div class="tier-label" data-i18n="team.sup">Support Staff</div>
         <div class="team-row support-row">
           <div class="team-card">
             <div class="team-photo">
@@ -741,7 +741,7 @@
             </div>
             <div class="team-info">
               <h3>Aunty Lina</h3>
-              <span class="team-role support">Support Staff</span>
+              <span class="team-role support" data-i18n="team.sup_staff">Support Staff</span>
             </div>
           </div>
           <div class="team-card">
@@ -754,7 +754,7 @@
             </div>
             <div class="team-info">
               <h3>Hani</h3>
-              <span class="team-role support">Support Staff</span>
+              <span class="team-role support" data-i18n="team.sup_staff">Support Staff</span>
             </div>
           </div>
         </div>
@@ -766,15 +766,15 @@
   <section class="uniform section" id="uniform">
     <div class="container">
       <div class="section-header centered">
-        <div class="section-label">School Uniform</div>
-        <h2 class="section-title">Dressed to Shine</h2>
-        <h3 class="section-subtitle">Genius Gems Uniforms for Bright Young Minds!</h3>
-        <p class="section-desc">Our uniforms are designed for comfort, safety, and a cheerful look that lets every child shine while they learn, play, and grow.</p>
+        <div class="section-label" data-i18n="uni.label">School Uniform</div>
+        <h2 class="section-title" data-i18n="uni.title">Dressed to Shine</h2>
+        <h3 class="section-subtitle" data-i18n="uni.sub">Genius Gems Uniforms for Bright Young Minds!</h3>
+        <p class="section-desc" data-i18n="uni.desc">Our uniforms are designed for comfort, safety, and a cheerful look that lets every child shine while they learn, play, and grow.</p>
       </div>
       <div class="uniform-perks">
-        <div class="uniform-perk"><i class="fas fa-check-circle"></i> Full Day — <strong>2 sets</strong> free</div>
-        <div class="uniform-perk"><i class="fas fa-check-circle"></i> Half Day — <strong>1 set</strong> free</div>
-        <div class="uniform-perk"><i class="fas fa-check-circle"></i> Included with new enrolment</div>
+        <div class="uniform-perk"><i class="fas fa-check-circle"></i> <span data-i18n="uni.p1_a">Full Day —</span> <strong data-i18n="uni.p1_b">2 sets</strong> <span data-i18n="uni.p1_c">free</span></div>
+        <div class="uniform-perk"><i class="fas fa-check-circle"></i> <span data-i18n="uni.p2_a">Half Day —</span> <strong data-i18n="uni.p2_b">1 set</strong> <span data-i18n="uni.p2_c">free</span></div>
+        <div class="uniform-perk"><i class="fas fa-check-circle"></i> <span data-i18n="uni.p3">Included with new enrolment</span></div>
       </div>
       <div class="uniform-photos">
         <div class="uniform-photo-card">
@@ -782,14 +782,14 @@
             <source srcset="images/Uniform.webp" type="image/webp" />
             <img src="images/Uniform.png" alt="Genius Gems Childcare Centre school uniform" loading="lazy" />
           </picture>
-          <span class="photo-caption">School Uniform</span>
+          <span class="photo-caption" data-i18n="uni.cap1">School Uniform</span>
         </div>
         <div class="uniform-photo-card">
           <picture>
             <source srcset="images/Uniform_2.webp" type="image/webp" />
             <img src="images/Uniform 2.jpeg" alt="Children wearing the Genius Gems Childcare Centre uniform" loading="lazy" />
           </picture>
-          <span class="photo-caption">Comfort &amp; Cheer</span>
+          <span class="photo-caption" data-i18n="uni.cap2">Comfort &amp; Cheer</span>
         </div>
       </div>
     </div>
@@ -800,80 +800,80 @@
   <section class="fees section" id="fees">
     <div class="container">
       <div class="section-header centered">
-        <div class="section-label">School Fees</div>
-        <h2 class="section-title">Transparent, Affordable Pricing</h2>
-        <p class="section-desc">Quality early childhood education that is accessible for every family.</p>
+        <div class="section-label" data-i18n="fees.label">School Fees</div>
+        <h2 class="section-title" data-i18n="fees.title">Transparent, Affordable Pricing</h2>
+        <p class="section-desc" data-i18n="fees.desc">Quality early childhood education that is accessible for every family.</p>
       </div>
 
       <!-- Main Fees -->
       <div class="fees-cards">
         <div class="fee-card">
-          <div class="fee-tag">Most Popular</div>
+          <div class="fee-tag" data-i18n="fees.popular">Most Popular</div>
           <div class="fee-icon"><i class="fas fa-sun"></i></div>
-          <h3>Full Day</h3>
-          <div class="fee-price">$1,488<span>/month</span></div>
+          <h3 data-i18n="fees.full">Full Day</h3>
+          <div class="fee-price">$1,488<span data-i18n="fees.month">/month</span></div>
           <ul class="fee-perks">
-            <li><i class="fas fa-check"></i> Full curriculum coverage</li>
-            <li><i class="fas fa-check"></i> Meals included</li>
-            <li><i class="fas fa-check"></i> 2 sets of uniform (new students)</li>
-            <li><i class="fas fa-check"></i> All enrichment programmes</li>
+            <li><i class="fas fa-check"></i> <span data-i18n="fees.fp1">Full curriculum coverage</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="fees.fp2">Meals included</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="fees.fp3">2 sets of uniform (new students)</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="fees.fp4">All enrichment programmes</span></li>
           </ul>
-          <a href="#contact" class="btn btn-primary">Enrol Now</a>
+          <a href="#contact" class="btn btn-primary" data-i18n="fees.enrol">Enrol Now</a>
         </div>
         <div class="fee-card">
           <div class="fee-icon"><i class="fas fa-cloud-sun"></i></div>
-          <h3>Half Day</h3>
-          <div class="fee-price">$1,088<span>/month</span></div>
+          <h3 data-i18n="fees.half">Half Day</h3>
+          <div class="fee-price">$1,088<span data-i18n="fees.month">/month</span></div>
           <ul class="fee-perks">
-            <li><i class="fas fa-check"></i> Core curriculum</li>
-            <li><i class="fas fa-check"></i> Morning session</li>
-            <li><i class="fas fa-check"></i> 1 set of uniform (new students)</li>
-            <li><i class="fas fa-check"></i> Selected enrichment programmes</li>
+            <li><i class="fas fa-check"></i> <span data-i18n="fees.hp1">Core curriculum</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="fees.hp2">Morning session</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="fees.hp3">1 set of uniform (new students)</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="fees.hp4">Selected enrichment programmes</span></li>
           </ul>
-          <a href="#contact" class="btn btn-outline">Enrol Now</a>
+          <a href="#contact" class="btn btn-outline" data-i18n="fees.enrol">Enrol Now</a>
         </div>
       </div>
 
       <!-- Discounts -->
       <div class="discounts-section">
-        <h3 class="discounts-title"><i class="fas fa-gift"></i> Special Promotions & Discounts</h3>
+        <h3 class="discounts-title"><i class="fas fa-gift"></i> <span data-i18n="fees.promo_title">Special Promotions & Discounts</span></h3>
         <div class="discounts-grid">
           <div class="discount-card promo">
             <div class="discount-icon"><i class="fas fa-user-friends"></i></div>
-            <h4>Sign Up With a Friend</h4>
-            <p>Refer a friend and both families enjoy exclusive first-month discounts!</p>
+            <h4 data-i18n="fees.friend_t">Sign Up With a Friend</h4>
+            <p data-i18n="fees.friend_d">Refer a friend and both families enjoy exclusive first-month discounts!</p>
             <div class="discount-details">
               <div class="discount-item">
-                <span class="discount-label">Full Day</span>
+                <span class="discount-label" data-i18n="fees.full">Full Day</span>
                 <span class="discount-value">$300 off</span>
-                <span class="discount-sub">first month</span>
+                <span class="discount-sub" data-i18n="fees.first_m">first month</span>
               </div>
               <div class="discount-item">
-                <span class="discount-label">Half Day</span>
+                <span class="discount-label" data-i18n="fees.half">Half Day</span>
                 <span class="discount-value">$288 off</span>
-                <span class="discount-sub">first month</span>
+                <span class="discount-sub" data-i18n="fees.first_m">first month</span>
               </div>
             </div>
           </div>
           <div class="discount-card sibling">
             <div class="discount-icon"><i class="fas fa-children"></i></div>
-            <h4>Sibling / Cousin Discount</h4>
-            <p>Enrol siblings or cousins and enjoy an ongoing monthly discount for the older child.</p>
+            <h4 data-i18n="fees.sib_t">Sibling / Cousin Discount</h4>
+            <p data-i18n="fees.sib_d">Enrol siblings or cousins and enjoy an ongoing monthly discount for the older child.</p>
             <div class="discount-details">
               <div class="discount-item">
-                <span class="discount-label">Full Day</span>
+                <span class="discount-label" data-i18n="fees.full">Full Day</span>
                 <span class="discount-value">$75 off</span>
-                <span class="discount-sub">per month</span>
+                <span class="discount-sub" data-i18n="fees.per_m">per month</span>
               </div>
               <div class="discount-item">
-                <span class="discount-label">Half Day</span>
+                <span class="discount-label" data-i18n="fees.half">Half Day</span>
                 <span class="discount-value">$50 off</span>
-                <span class="discount-sub">per month</span>
+                <span class="discount-sub" data-i18n="fees.per_m">per month</span>
               </div>
             </div>
           </div>
         </div>
-        <p class="discount-note"><i class="fas fa-info-circle"></i> Sibling/Cousin discount applies to the oldest enrolled child. Promotions cannot be combined unless stated otherwise. Contact us for details.</p>
+        <p class="discount-note"><i class="fas fa-info-circle"></i> <span data-i18n="fees.note">Sibling/Cousin discount applies to the oldest enrolled child. Promotions cannot be combined unless stated otherwise. Contact us for details.</span></p>
       </div>
     </div>
   </section>
@@ -882,36 +882,36 @@
   <section class="location section" id="location">
     <div class="container">
       <div class="section-header centered">
-        <div class="section-label">Find Us</div>
-        <h2 class="section-title">Visit Genius Gems</h2>
+        <div class="section-label" data-i18n="loc.label">Find Us</div>
+        <h2 class="section-title" data-i18n="loc.title">Visit Genius Gems</h2>
       </div>
       <div class="location-grid">
         <div class="location-info">
           <div class="location-block">
             <i class="fas fa-location-dot"></i>
             <div>
-              <h4>Address</h4>
+              <h4 data-i18n="loc.addr">Address</h4>
               <p>26 Mariam Close, Singapore 508668</p>
             </div>
           </div>
           <div class="location-block">
             <i class="fas fa-phone"></i>
             <div>
-              <h4>Telephone</h4>
+              <h4 data-i18n="loc.tel">Telephone</h4>
               <p>+65 6542 3898</p>
             </div>
           </div>
           <div class="location-block">
             <i class="fas fa-train-subway"></i>
             <div>
-              <h4>Nearest MRT</h4>
-              <p>Pasir Ris (EW1) – approx. 3.5 km</p>
+              <h4 data-i18n="loc.mrt">Nearest MRT</h4>
+              <p data-i18n="loc.mrt_v">Pasir Ris (EW1) – approx. 3.5 km</p>
             </div>
           </div>
           <div class="location-block">
             <i class="fas fa-bus"></i>
             <div>
-              <h4>Bus Services</h4>
+              <h4 data-i18n="loc.bus">Bus Services</h4>
               <div class="bus-stops">
                 <div class="bus-stop">
                   <span class="stop-name">Aft Jln Mariam (97109)</span>
@@ -939,13 +939,13 @@
           <div class="location-block">
             <i class="fas fa-car"></i>
             <div>
-              <h4>Driving Directions</h4>
-              <p>From Loyang Avenue (heading from Changi towards Tampines):</p>
+              <h4 data-i18n="loc.drive">Driving Directions</h4>
+              <p data-i18n="loc.drive_intro">From Loyang Avenue (heading from Changi towards Tampines):</p>
               <ol class="driving-steps">
-                <li>Turn left into Old Tampines Road</li>
-                <li>Turn right into Mariam Way (near Mariam Way Playground)</li>
-                <li>Turn left into Mariam Close</li>
-                <li>Location is about 50m on the left</li>
+                <li data-i18n="loc.d1">Turn left into Old Tampines Road</li>
+                <li data-i18n="loc.d2">Turn right into Mariam Way (near Mariam Way Playground)</li>
+                <li data-i18n="loc.d3">Turn left into Mariam Close</li>
+                <li data-i18n="loc.d4">Location is about 50m on the left</li>
               </ol>
             </div>
           </div>
@@ -971,29 +971,29 @@
     <div class="container">
       <div class="contact-grid">
         <div class="contact-info">
-          <div class="section-label">Get In Touch</div>
-          <h2 class="section-title">Ready to Enrol?</h2>
-          <p>We'd love to welcome your child to the Genius Gems family. Reach out to us today and we'll guide you through the enrolment process.</p>
+          <div class="section-label" data-i18n="contact.label">Get In Touch</div>
+          <h2 class="section-title" data-i18n="contact.title">Ready to Enrol?</h2>
+          <p data-i18n="contact.intro">We'd love to welcome your child to the Genius Gems family. Reach out to us today and we'll guide you through the enrolment process.</p>
           <div class="contact-methods">
             <a href="mailto:nicole@geniusgems.com.sg" class="contact-method">
               <i class="fas fa-envelope"></i>
               <div>
-                <span class="method-label">Email</span>
+                <span class="method-label" data-i18n="contact.email_l">Email</span>
                 <span class="method-value">nicole@geniusgems.com.sg</span>
               </div>
             </a>
             <a href="tel:+6596553213" class="contact-method">
               <i class="fas fa-phone"></i>
               <div>
-                <span class="method-label">Phone</span>
+                <span class="method-label" data-i18n="contact.phone_l">Phone</span>
                 <span class="method-value">+65 9655 3213</span>
               </div>
             </a>
             <a href="https://wa.me/6596553213" target="_blank" class="contact-method whatsapp-method">
               <i class="fab fa-whatsapp"></i>
               <div>
-                <span class="method-label">WhatsApp</span>
-                <span class="method-value">Chat with us now</span>
+                <span class="method-label" data-i18n="contact.wa_l">WhatsApp</span>
+                <span class="method-value" data-i18n="contact.wa_v">Chat with us now</span>
               </div>
             </a>
           </div>
@@ -1004,10 +1004,10 @@
             <!-- Type toggle -->
             <div class="form-type-toggle">
               <button type="button" class="type-btn active" data-type="enquiry">
-                <i class="fas fa-circle-question"></i> Make an Enquiry
+                <i class="fas fa-circle-question"></i> <span data-i18n="contact.tab_enq">Make an Enquiry</span>
               </button>
               <button type="button" class="type-btn" data-type="interest">
-                <i class="fas fa-hand-sparkles"></i> Register Interest
+                <i class="fas fa-hand-sparkles"></i> <span data-i18n="contact.tab_int">Register Interest</span>
               </button>
             </div>
 
@@ -1015,59 +1015,59 @@
 
             <!-- ENQUIRY fields -->
             <div id="enquiryFields">
-              <p class="form-hint">Have a question? Leave your contact details and we'll get back to you.</p>
+              <p class="form-hint" data-i18n="contact.enq_hint">Have a question? Leave your contact details and we'll get back to you.</p>
               <div class="form-group">
-                <label for="enquiryContact">Phone Number <span class="or-divider">or</span> Email Address <span class="required-note">*</span></label>
-                <input type="text" id="enquiryContact" name="contact" placeholder="+65 XXXX XXXX  or  you@email.com" />
+                <label for="enquiryContact"><span data-i18n="contact.enq_contact">Phone Number or Email Address</span> <span class="required-note">*</span></label>
+                <input type="text" id="enquiryContact" name="contact" placeholder="+65 XXXX XXXX  or  you@email.com" data-i18n-placeholder="contact.enq_contact_ph" />
               </div>
               <div class="form-group">
-                <label for="enquiryMessage">Your Message <span class="required-note">*</span></label>
-                <textarea id="enquiryMessage" name="message" rows="4" placeholder="What would you like to know?"></textarea>
+                <label for="enquiryMessage"><span data-i18n="contact.enq_msg">Your Message</span> <span class="required-note">*</span></label>
+                <textarea id="enquiryMessage" name="message" rows="4" placeholder="What would you like to know?" data-i18n-placeholder="contact.enq_msg_ph"></textarea>
               </div>
             </div>
 
             <!-- INTEREST fields -->
             <div id="interestFields" style="display:none">
-              <p class="form-hint">Tell us about your child and we'll be in touch about enrolment.</p>
+              <p class="form-hint" data-i18n="contact.int_hint">Tell us about your child and we'll be in touch about enrolment.</p>
               <div class="form-row">
                 <div class="form-group">
-                  <label for="parentName">Parent's Name <span class="required-note">*</span></label>
-                  <input type="text" id="parentName" name="parentName" placeholder="Your full name" />
+                  <label for="parentName"><span data-i18n="contact.parent">Parent's Name</span> <span class="required-note">*</span></label>
+                  <input type="text" id="parentName" name="parentName" placeholder="Your full name" data-i18n-placeholder="contact.parent_ph" />
                 </div>
                 <div class="form-group">
-                  <label for="childName">Child's Name <span class="required-note">*</span></label>
-                  <input type="text" id="childName" name="childName" placeholder="Child's name" />
+                  <label for="childName"><span data-i18n="contact.child">Child's Name</span> <span class="required-note">*</span></label>
+                  <input type="text" id="childName" name="childName" placeholder="Child's name" data-i18n-placeholder="contact.child_ph" />
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group">
-                  <label for="interestEmail">Email Address</label>
-                  <input type="email" id="interestEmail" name="email" placeholder="your@email.com" />
+                  <label for="interestEmail" data-i18n="contact.email">Email Address</label>
+                  <input type="email" id="interestEmail" name="email" placeholder="your@email.com" data-i18n-placeholder="contact.email_ph" />
                 </div>
                 <div class="form-group">
-                  <label for="interestPhone">Phone Number</label>
-                  <input type="tel" id="interestPhone" name="phone" placeholder="+65 XXXX XXXX" />
+                  <label for="interestPhone" data-i18n="contact.phone">Phone Number</label>
+                  <input type="tel" id="interestPhone" name="phone" placeholder="+65 XXXX XXXX" data-i18n-placeholder="contact.phone_ph" />
                 </div>
               </div>
               <div class="form-group">
-                <label for="programme">Interested Programme</label>
+                <label for="programme" data-i18n="contact.prog">Interested Programme</label>
                 <select id="programme" name="programme">
-                  <option value="">Select a programme</option>
+                  <option value="" data-i18n="contact.prog_select">Select a programme</option>
                   <option value="Full Day ($1,488/month)">Full Day ($1,488/month)</option>
                   <option value="Half Day ($1,088/month)">Half Day ($1,088/month)</option>
                 </select>
               </div>
               <div class="form-group">
-                <label for="interestMessage">Additional Notes</label>
-                <textarea id="interestMessage" name="interestNotes" rows="3" placeholder="Child's age, preferred start date, anything else we should know…"></textarea>
+                <label for="interestMessage" data-i18n="contact.notes">Additional Notes</label>
+                <textarea id="interestMessage" name="interestNotes" rows="3" placeholder="Child's age, preferred start date, anything else we should know…" data-i18n-placeholder="contact.notes_ph"></textarea>
               </div>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Send Enquiry</button>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn" data-i18n="contact.submit_enq">Send Enquiry</button>
             <div class="form-success" id="formSuccess">
               <i class="fas fa-check-circle"></i>
-              <h3>Message Sent!</h3>
-              <p>Thank you! We'll be in touch within 1–2 business days.</p>
+              <h3 data-i18n="contact.success_t">Message Sent!</h3>
+              <p data-i18n="contact.success_d">Thank you! We'll be in touch within 1–2 business days.</p>
             </div>
           </form>
         </div>
@@ -1090,7 +1090,7 @@
               <span class="logo-text">Genius<span>Gems</span></span>
             </div>
           </div>
-          <p>Where every child's unique brilliance is discovered, nurtured, and celebrated every single day.</p>
+          <p data-i18n="footer.tagline">Where every child's unique brilliance is discovered, nurtured, and celebrated every single day.</p>
           <div class="footer-socials">
             <a href="https://wa.me/6596553213" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
             <a href="mailto:nicole@geniusgems.com.sg" aria-label="Email"><i class="fas fa-envelope"></i></a>
@@ -1098,34 +1098,34 @@
           </div>
         </div>
         <div class="footer-links">
-          <h4>Quick Links</h4>
+          <h4 data-i18n="footer.links">Quick Links</h4>
           <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#difference">What Makes Us Shine</a></li>
-            <li><a href="#values">Our Values</a></li>
-            <li><a href="#curriculum">Curriculum</a></li>
-            <li><a href="#team">Our Team</a></li>
-            <li><a href="#fees">School Fees</a></li>
-            <li><a href="#location">Location</a></li>
+            <li><a href="#about" data-i18n="footer.about">About Us</a></li>
+            <li><a href="#difference" data-i18n="footer.diff">What Makes Us Shine</a></li>
+            <li><a href="#values" data-i18n="footer.values">Our Values</a></li>
+            <li><a href="#curriculum" data-i18n="footer.curr">Curriculum</a></li>
+            <li><a href="#team" data-i18n="footer.team">Our Team</a></li>
+            <li><a href="#fees" data-i18n="footer.fees">School Fees</a></li>
+            <li><a href="#location" data-i18n="footer.loc">Location</a></li>
           </ul>
         </div>
         <div class="footer-contact">
-          <h4>Contact Us</h4>
+          <h4 data-i18n="footer.contact_h">Contact Us</h4>
           <p><i class="fas fa-location-dot"></i> 26 Mariam Close, Singapore 508668</p>
           <p><i class="fas fa-phone"></i> +65 6542 3898</p>
           <p><i class="fas fa-mobile"></i> +65 9655 3213</p>
           <p><i class="fas fa-envelope"></i> nicole@geniusgems.com.sg</p>
         </div>
         <div class="footer-hours">
-          <h4>Operating Hours</h4>
-          <div class="hours-row"><span>Monday – Friday</span><span>7:00am – 7:00pm</span></div>
-          <div class="hours-row"><span>Saturday</span><span>7:00am – 1:00pm</span></div>
-          <div class="hours-row closed"><span>Sunday & PH</span><span>Closed</span></div>
-          <p class="hours-note">Hours subject to change. Please call ahead.</p>
+          <h4 data-i18n="footer.hours_h">Operating Hours</h4>
+          <div class="hours-row"><span data-i18n="footer.mf">Monday – Friday</span><span>7:00am – 7:00pm</span></div>
+          <div class="hours-row"><span data-i18n="footer.sat">Saturday</span><span>7:00am – 1:00pm</span></div>
+          <div class="hours-row closed"><span data-i18n="footer.sph">Sunday & PH</span><span data-i18n="footer.closed">Closed</span></div>
+          <p class="hours-note" data-i18n="footer.hnote">Hours subject to change. Please call ahead.</p>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2024 Genius Gems Childcare Centre. All rights reserved.</p>
+        <p data-i18n="footer.copy">© 2024 Genius Gems Childcare Centre. All rights reserved.</p>
         <p>26 Mariam Close, Singapore 508668</p>
       </div>
     </div>
@@ -1144,7 +1144,7 @@
 
   <!-- Hidden iframe for Google Forms submission -->
   <iframe id="formIframe" name="formIframe" style="display:none" aria-hidden="true"></iframe>
-  <script src="js/language-switcher.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/language-switcher.js?v=20260518d"></script>
+  <script src="js/main.js?v=20260518d"></script>
 </body>
 </html>

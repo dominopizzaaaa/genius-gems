@@ -82,11 +82,13 @@ typeBtns.forEach(btn => {
     if (type === 'enquiry') {
       enquiryFields.style.display = 'block';
       interestFields.style.display = 'none';
-      submitBtn.textContent = 'Send Enquiry';
+      submitBtn.setAttribute('data-i18n', 'contact.submit_enq');
+      submitBtn.textContent = (window.geniusGemsT && window.geniusGemsT('contact.submit_enq')) || 'Send Enquiry';
     } else {
       enquiryFields.style.display = 'none';
       interestFields.style.display = 'block';
-      submitBtn.textContent = 'Register My Interest';
+      submitBtn.setAttribute('data-i18n', 'contact.submit_int');
+      submitBtn.textContent = (window.geniusGemsT && window.geniusGemsT('contact.submit_int')) || 'Register My Interest';
     }
   });
 });

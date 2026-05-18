@@ -1,181 +1,128 @@
+/* ============================================================
+   GENIUS GEMS — Language Switcher
+   ============================================================ */
+
 let translations = {};
 let currentLang = localStorage.getItem('geniusGems_language') || 'en';
 
-// Cache commonly used translations
-const textElements = {
-  // Nav
-  navHome: 'nav.home',
-  navAbout: 'nav.about',
-  navDifference: 'nav.difference',
-  navValues: 'nav.values',
-  navCurriculum: 'nav.curriculum',
-  navTeam: 'nav.team',
-  navFees: 'nav.fees',
-  navLocation: 'nav.location',
-  navEnrol: 'nav.enrol',
-
-  // Form buttons
-  formEnquiry: 'contact.submit',
-  formRegister: 'contact.submit'
-};
-
 async function loadTranslations() {
   try {
-    const response = await fetch('js/translations.json');
+    const response = await fetch('js/translations.json?v=20260518d');
     translations = await response.json();
-    translatePage(currentLang);
+    applyLanguage(currentLang);
   } catch (error) {
     console.error('Failed to load translations:', error);
   }
 }
 
-function getNestedTranslation(keyPath, lang) {
+function t(keyPath, lang) {
   const keys = keyPath.split('.');
   let value = translations[lang];
   for (const key of keys) {
-    value = value?.[key];
+    if (value == null) return null;
+    value = value[key];
   }
   return value;
 }
 
-function t(key, lang = currentLang) {
-  return getNestedTranslation(key, lang) || key;
-}
-
-function setLanguage(lang) {
+function applyLanguage(lang) {
   if (!translations[lang]) {
-    console.warn(`Language ${lang} not available`);
+    console.warn(`Language ${lang} not loaded`);
     return;
   }
 
   currentLang = lang;
   localStorage.setItem('geniusGems_language', lang);
-
-  // Update current language display
-  const currentLangSpan = document.getElementById('currentLang');
-  if (currentLangSpan) {
-    currentLangSpan.textContent = lang === 'en' ? 'EN' : lang.toUpperCase();
-  }
-
-  // Update document language attribute
   document.documentElement.lang = lang;
 
-  // Close dropdown after selection
-  const langDropdown = document.getElementById('langDropdown');
-  if (langDropdown) {
-    langDropdown.classList.remove('active');
+  // Update language button label
+  const currentLangSpan = document.getElementById('currentLang');
+  if (currentLangSpan) {
+    currentLangSpan.textContent = lang.toUpperCase();
   }
 
-  // Translate the page
-  translatePage(lang);
-}
-
-function translatePage(lang) {
-  // Translate all data-translate elements
-  const translatableElements = document.querySelectorAll('[data-translate]');
-  translatableElements.forEach(el => {
-    const key = el.getAttribute('data-translate');
-    const text = t(key, lang);
-    if (text && text !== key) {
-      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-        el.placeholder = text;
-      } else {
-        el.textContent = text;
-      }
-    }
+  // Mark active option
+  document.querySelectorAll('.lang-option').forEach(opt => {
+    opt.classList.toggle('active', opt.getAttribute('data-lang') === lang);
   });
 
-  // Translate all data-translate-html elements (for complex HTML content)
-  const translatableHTMLElements = document.querySelectorAll('[data-translate-html]');
-  translatableHTMLElements.forEach(el => {
-    const key = el.getAttribute('data-translate-html');
-    const text = t(key, lang);
-    if (text && text !== key) {
-      el.innerHTML = text;
-    }
+  // Translate text content
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    const value = t(key, lang);
+    if (value != null) el.textContent = value;
   });
 
-  // Translate nav links
-  translateNavLinks(lang);
-
-  // Translate form labels and buttons
-  translateFormElements(lang);
-}
-
-function translateNavLinks(lang) {
-  const navLinks = document.querySelectorAll('.nav-links a');
-  const navTexts = ['nav.home', 'nav.about', 'nav.difference', 'nav.values', 'nav.curriculum', 'nav.team', 'nav.fees', 'nav.location', 'nav.enrol'];
-
-  navLinks.forEach((link, idx) => {
-    if (navTexts[idx]) {
-      const text = t(navTexts[idx], lang);
-      if (text && text !== navTexts[idx]) {
-        link.textContent = text;
-      }
-    }
-  });
-}
-
-function translateFormElements(lang) {
-  // Translate form labels
-  const labels = document.querySelectorAll('label');
-  const labelMap = {
-    'Phone Number': 'contact.enquiry_contact',
-    'Your Message': 'contact.enquiry_message',
-    'Parent\'s Name': 'contact.parent_name',
-    'Child\'s Name': 'contact.child_name',
-    'Additional Notes': 'contact.notes',
-    'Interested Programme': 'contact.programme'
-  };
-
-  labels.forEach(label => {
-    const text = label.textContent.trim();
-    if (labelMap[text]) {
-      const translated = t(labelMap[text], lang);
-      if (translated && translated !== labelMap[text]) {
-        label.innerHTML = translated.replace('<span class="required-note">*</span>', '<span class="required-note">*</span>');
-      }
-    }
+  // Translate placeholders
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    const value = t(key, lang);
+    if (value != null) el.placeholder = value;
   });
 
-  // Translate submit button
+  // Translate aria-labels
+  document.querySelectorAll('[data-i18n-aria]').forEach(el => {
+    const key = el.getAttribute('data-i18n-aria');
+    const value = t(key, lang);
+    if (value != null) el.setAttribute('aria-label', value);
+  });
+
+  // Translate HTML content (rare — only when innerHTML is needed)
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    const key = el.getAttribute('data-i18n-html');
+    const value = t(key, lang);
+    if (value != null) el.innerHTML = value;
+  });
+
+  // Translate <option> elements via data-i18n-text
+  document.querySelectorAll('option[data-i18n]').forEach(opt => {
+    const key = opt.getAttribute('data-i18n');
+    const value = t(key, lang);
+    if (value != null) opt.textContent = value;
+  });
+
+  // Update form submit button based on current type
+  const formTypeInput = document.getElementById('formType');
   const submitBtn = document.getElementById('submitBtn');
-  if (submitBtn) {
-    const formType = document.getElementById('formType')?.value || 'enquiry';
-    submitBtn.textContent = t('contact.submit', lang);
+  if (formTypeInput && submitBtn) {
+    const type = formTypeInput.value;
+    const key = type === 'interest' ? 'contact.submit_int' : 'contact.submit_enq';
+    const value = t(key, lang);
+    if (value != null) submitBtn.textContent = value;
   }
 }
 
-// Language toggle dropdown
+// Expose for main.js to call when toggling enquiry/interest
+window.geniusGemsT = (key) => t(key, currentLang);
+window.geniusGemsLang = () => currentLang;
+
+// Initialize on DOM ready
 document.addEventListener('DOMContentLoaded', () => {
   const langBtn = document.getElementById('langBtn');
   const langDropdown = document.getElementById('langDropdown');
   const langOptions = document.querySelectorAll('.lang-option');
 
-  // Toggle dropdown
-  if (langBtn) {
+  if (langBtn && langDropdown) {
     langBtn.addEventListener('click', (e) => {
       e.stopPropagation();
-      langDropdown?.classList.toggle('active');
+      langDropdown.classList.toggle('active');
     });
   }
 
-  // Language option click
   langOptions.forEach(option => {
     option.addEventListener('click', (e) => {
       e.preventDefault();
       const lang = option.getAttribute('data-lang');
-      setLanguage(lang);
+      applyLanguage(lang);
+      langDropdown?.classList.remove('active');
     });
   });
 
-  // Close dropdown when clicking outside
   document.addEventListener('click', (e) => {
     if (!e.target.closest('.language-toggle')) {
       langDropdown?.classList.remove('active');
     }
   });
 
-  // Load translations on page load
   loadTranslations();
 });
