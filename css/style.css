@@ -358,7 +358,7 @@ html[lang="ta"] .nav-links { gap: 2px; }
 .hero-content {
   position: relative;
   z-index: 2;
-  padding: 130px 24px 90px;
+  padding: 180px 24px 90px;
   max-width: 720px;
   margin: 0 auto;
   text-align: center;
@@ -448,7 +448,7 @@ html[lang="ta"] .nav-links { gap: 2px; }
   display: block;
   width: 100%;
   max-width: 680px;
-  margin: 24px auto 0;
+  margin: 24px auto 32px;
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
@@ -1690,7 +1690,7 @@ html[lang="ta"] .nav-links { gap: 2px; }
    RESPONSIVE
    ============================================================ */
 @media (max-width: 1024px) {
-  .hero-content { max-width: 100%; padding: 130px 24px 90px; }
+  .hero-content { max-width: 100%; padding: 170px 24px 90px; }
   .values-grid { grid-template-columns: 1fr 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   /* Curriculum: stack the two hero photos on tablet/phone — let each photo show fully */
