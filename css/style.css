@@ -77,6 +77,7 @@ p { color: var(--text-light); line-height: 1.8; }
   margin-bottom: 14px;
 }
 .section-title { margin-bottom: 14px; }
+.section-subtitle { font-size: 1.25rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 12px; }
 .section-desc { max-width: 580px; margin: 0 auto; font-size: 1.02rem; }
 
 /* ---------- Buttons ---------- */
