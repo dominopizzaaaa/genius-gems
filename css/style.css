@@ -514,6 +514,8 @@ html[lang="ta"] .nav-links { gap: 2px; }
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   line-height: 0;
+  max-width: 80%;
+  margin: 0 auto;
 }
 .about-photo img {
   width: 100%;
@@ -610,7 +612,9 @@ html[lang="ta"] .nav-links { gap: 2px; }
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   align-self: center;
-  width: 100%;
+  width: 80%;
+  max-width: 80%;
+  margin: 0 auto;
   line-height: 0;
 }
 .difference-media img {
@@ -655,6 +659,10 @@ html[lang="ta"] .nav-links { gap: 2px; }
   }
   .difference-row.reverse .difference-media { order: 1; }
   .difference-row.reverse .difference-content { order: 2; }
+  .difference-media {
+    width: 100%;
+    max-width: 100%;
+  }
   .difference-media img { max-height: none; }
 }
 @media (max-width: 600px) {
@@ -909,24 +917,24 @@ html[lang="ta"] .nav-links { gap: 2px; }
 }
 /* Curriculum hero: two photos side-by-side above the tabs */
 .curriculum-hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
   margin: 0 auto 40px;
   max-width: 1080px;
-  align-items: center;
 }
 .curriculum-hero-img {
-  align-self: center;
-  width: 100%;
+  display: block;
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   line-height: 0;
 }
 .curriculum-hero-img img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 380px;
+  max-width: 100%;
   display: block;
   border-radius: var(--radius-lg);
 }
@@ -1120,39 +1128,41 @@ html[lang="ta"] .nav-links { gap: 2px; }
 }
 .uniform-perk i { color: #5acd8a; }
 .uniform-photos {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
   position: relative;
   z-index: 1;
-  align-items: start;
+  flex-wrap: wrap;
 }
 .uniform-photo-card {
   background: rgba(255,255,255,0.75);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
   overflow: hidden;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   align-items: center;
-  padding: 18px 18px 14px;
+  padding: 16px;
   border: 1.5px solid rgba(255,143,171,0.18);
 }
 .uniform-photo-card picture {
-  width: 100%;
   display: block;
   line-height: 0;
   border-radius: var(--radius-md);
   overflow: hidden;
 }
 .uniform-photo-card img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 380px;
+  max-width: 100%;
   display: block;
   border-radius: var(--radius-md);
 }
 @media (max-width: 768px) {
-  .uniform-photos { grid-template-columns: 1fr; }
+  .uniform-photos { flex-direction: column; }
+  .uniform-photo-card img { height: auto; width: 100%; }
 }
 .photo-caption {
   display: block;
@@ -1684,9 +1694,8 @@ html[lang="ta"] .nav-links { gap: 2px; }
   .values-grid { grid-template-columns: 1fr 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   /* Curriculum: stack the two hero photos on tablet/phone — let each photo show fully */
-  .curriculum-hero { grid-template-columns: 1fr; gap: 16px; max-width: 560px; }
-  .curriculum-hero-img { aspect-ratio: auto; }
-  .curriculum-hero-img img { height: auto; object-fit: contain; object-position: center; }
+  .curriculum-hero { flex-direction: column; gap: 16px; max-width: 560px; }
+  .curriculum-hero-img img { width: 100%; height: auto; }
 }
 
 @media (max-width: 768px) {
