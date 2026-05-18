@@ -455,15 +455,15 @@
   },
   "ms": {
     "nav": {
-      "home": "Laman Utama",
-      "about": "Tentang Kami",
-      "difference": "Apa yang Menyerlahkan Kami",
+      "home": "Utama",
+      "about": "Tentang",
+      "difference": "Keistimewaan",
       "values": "Nilai",
       "curriculum": "Kurikulum",
-      "team": "Pasukan Kami",
+      "team": "Pasukan",
       "fees": "Yuran",
       "location": "Lokasi",
-      "enrol": "Daftar Sekarang"
+      "enrol": "Daftar"
     },
     "hero": {
       "badge": "Memupuk Minda Kecil",
@@ -683,14 +683,14 @@
   "ta": {
     "nav": {
       "home": "முகப்பு",
-      "about": "எங்களைப் பற்றி",
-      "difference": "எங்கள் சிறப்பு",
+      "about": "பற்றி",
+      "difference": "சிறப்பு",
       "values": "மதிப்புகள்",
-      "curriculum": "பாடத்திட்டம்",
-      "team": "எங்கள் குழு",
+      "curriculum": "பாடம்",
+      "team": "குழு",
       "fees": "கட்டணம்",
       "location": "இடம்",
-      "enrol": "இப்போது பதிவு செய்க"
+      "enrol": "பதிவு"
     },
     "hero": {
       "badge": "சிறு உள்ளங்களைப் போற்றுதல்",
