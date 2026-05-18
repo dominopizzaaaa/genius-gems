@@ -880,15 +880,19 @@ html[lang="ta"] .nav-links { gap: 2px; }
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
   overflow: hidden;
-  margin-bottom: 44px;
+  margin: 0 auto 44px;
   padding: 24px;
   border: 1.5px solid var(--border);
+  max-width: 50%;
 }
 .curriculum-blossom img {
   width: 100%;
   height: auto;
   display: block;
   object-fit: contain;
+}
+@media (max-width: 768px) {
+  .curriculum-blossom { max-width: 100%; }
 }
 
 .curriculum-tabs {
