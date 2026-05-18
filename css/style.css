@@ -160,6 +160,79 @@ p { color: var(--text-light); line-height: 1.8; }
 }
 .navbar.scrolled .logo-text { color: var(--dark); }
 .logo-text span { color: var(--accent); }
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Language Toggle */
+.language-toggle {
+  position: relative;
+}
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 50px;
+  background: rgba(255,143,171,0.18);
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+.lang-btn:hover {
+  background: rgba(255,143,171,0.28);
+  transform: translateY(-1px);
+}
+.lang-btn i { font-size: 0.95rem; }
+.lang-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 4px;
+  background: var(--white);
+  border: 1.5px solid rgba(255,143,171,0.25);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  min-width: 160px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+.lang-dropdown.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.lang-option {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  background: none;
+  text-align: left;
+  color: var(--dark);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.lang-option:first-child { border-radius: var(--radius-md) var(--radius-md) 0 0; }
+.lang-option:last-child { border-radius: 0 0 var(--radius-md) var(--radius-md); }
+.lang-option:hover {
+  background: rgba(255,143,171,0.12);
+  color: var(--primary-dark);
+}
+
 .nav-links { display: flex; align-items: center; gap: 4px; }
 .nav-links a {
   padding: 8px 14px;
@@ -1533,6 +1606,16 @@ p { color: var(--text-light); line-height: 1.8; }
 
 @media (max-width: 768px) {
   .section { padding: 68px 0; }
+  .nav-right { margin-left: auto; }
+  .lang-btn {
+    padding: 6px 10px;
+    font-size: 0.75rem;
+  }
+  .lang-btn i { font-size: 0.85rem; }
+  .lang-dropdown {
+    min-width: 140px;
+    right: 0;
+  }
   .nav-links {
     display: none;
     flex-direction: column;
