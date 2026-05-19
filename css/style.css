@@ -986,18 +986,6 @@ html[lang="ta"] .nav-links { gap: 2px; }
 .curriculum-card h3 { margin-bottom: 8px; font-size: 1rem; }
 .curriculum-card p { font-size: 0.88rem; }
 
-.curriculum-classroom-strip {
-  margin-top: 52px;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-lg);
-  line-height: 0;
-}
-.curriculum-classroom-strip img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
 
 /* ============================================================
    TEAM
