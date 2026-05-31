@@ -7,6 +7,7 @@
       "values": "Values",
       "curriculum": "Curriculum",
       "team": "Our Team",
+      "test": "Reviews",
       "fees": "Fees",
       "faq": "FAQ",
       "location": "Location",
@@ -14,8 +15,8 @@
     },
     "hero": {
       "badge": "Nurturing Little Minds",
-      "title_pre": "Where Every Child is a",
-      "title_highlight": "Genius Gem",
+      "title_pre": "Shaping Tomorrow's",
+      "title_highlight": "Brightest Gems",
       "subtitle": "A warm, enriching childcare environment where curiosity thrives, friendships blossom, and every child discovers the brilliance within.",
       "btn_enrol": "Enrol Your Child",
       "btn_discover": "Discover More",
@@ -45,7 +46,11 @@
       "s_eyebrow": "Close-Knit Community",
       "s_title": "Small Classes, Personal Attention",
       "s_para1": "We intentionally keep our class sizes small so that every child is truly seen, known, and supported. Our educators take the time to understand each child's personality, interests, and pace of learning — tailoring their approach to bring out the very best in them.",
-      "s_para2": "Unlike large mega-centres, no child gets overlooked here. Children at Genius Gems enjoy genuine, warm relationships with their teachers, and the confidence that comes from being part of a tight-knit, caring community."
+      "s_para2": "Unlike large mega-centres, no child gets overlooked here. Children at Genius Gems enjoy genuine, warm relationships with their teachers, and the confidence that comes from being part of a tight-knit, caring community.",
+      "l_eyebrow": "Joyful Learning",
+      "l_title": "Learning Through Play, Every Day",
+      "l_para1": "At Genius Gems, every lesson is an adventure. Our educators weave play-based learning into structured activities — creating moments of discovery that children genuinely look forward to, day after day.",
+      "l_para2": "From letter puzzles on the classroom floor to creative group activities, we believe the best learning happens when children are happy, engaged, and feeling safe."
     },
     "values": {
       "label": "Our Identity",
@@ -102,7 +107,9 @@
       "comp": "Computer Literacy",
       "comp_d": "Early digital awareness and essential computer skills, preparing children for a technology-enabled world.",
       "mus": "Music Appreciation",
-      "mus_d": "Listening, rhythm, and creative music-making experiences that develop a lifelong love for the arts."
+      "mus_d": "Listening, rhythm, and creative music-making experiences that develop a lifelong love for the arts.",
+      "cta_p": "Want to see our curriculum in action?",
+      "cta_btn": "Book a Centre Tour"
     },
     "faq": {
       "label": "FAQ",
@@ -113,7 +120,7 @@
       "q2": "What are your operating hours?",
       "a2": "We are open Monday to Friday from 7:00am to 7:00pm, and Saturday from 7:00am to 1:00pm. We are closed on Sundays and public holidays.",
       "q3": "How much does childcare cost?",
-      "a3": "Our Full Day Programme is $1,488 per month and our Half Day Programme is $1,088 per month. Government subsidies may apply for eligible families — we'll help you check during enrolment.",
+      "a3": "Our Full Day Programme is $1,420 per month and our Half Day Programme is $1,088 per month. Government subsidies may apply for eligible families — we'll help you check during enrolment.",
       "q4": "Is Genius Gems bilingual?",
       "a4": "Yes — we run a 100% bilingual programme in English and Mandarin Chinese, taught by qualified educators throughout the day.",
       "q5": "What age groups do you accept?",
@@ -178,7 +185,13 @@
       "sib_d": "Enrol siblings or cousins and enjoy an ongoing monthly discount for the older child.",
       "first_m": "first month",
       "per_m": "per month",
-      "note": "Sibling/Cousin discount applies to the oldest enrolled child. Promotions cannot be combined unless stated otherwise. Contact us for details."
+      "note": "Sibling/Cousin discount applies to the oldest enrolled child. Promotions cannot be combined unless stated otherwise. Contact us for details.",
+      "sub_t": "Government Subsidies — We Help You Apply",
+      "sub_d": "Eligible Singaporean families can receive Basic Subsidy ($300/month for Full Day) and additional Additional Subsidy of up to $467/month based on household income. Our team helps every family check eligibility and complete the paperwork during enrolment.",
+      "sub_b1": "Basic Subsidy for working mothers (Singaporean child)",
+      "sub_b2": "Additional Subsidy for lower-income families",
+      "sub_b3": "Start-up Grant and KiFAS for kindergarten",
+      "sub_cta": "Ask About Subsidies"
     },
     "loc": {
       "label": "Find Us",
@@ -193,7 +206,11 @@
       "d1": "Turn left into Old Tampines Road",
       "d2": "Turn right into Mariam Way (near Mariam Way Playground)",
       "d3": "Turn left into Mariam Close",
-      "d4": "Location is about 50m on the left"
+      "d4": "Location is about 50m on the left",
+      "tour_t": "Come See Genius Gems for Yourself",
+      "tour_d": "The best way to know if Genius Gems is right for your child is to visit. Walk our classrooms, meet our team, and feel the warmth of our centre in person.",
+      "tour_btn": "Schedule a Tour",
+      "tour_wa": "WhatsApp Us"
     },
     "contact": {
       "label": "Get In Touch",
@@ -226,7 +243,9 @@
       "submit_enq": "Send Enquiry",
       "submit_int": "Register My Interest",
       "success_t": "Message Sent!",
-      "success_d": "Thank you! We'll be in touch within 1–2 business days."
+      "success_d": "Thank you! We'll be in touch within 1–2 business days. Meanwhile, you can also reach us instantly on WhatsApp.",
+      "success_wa": "Message us on WhatsApp",
+      "success_again": "Send another message"
     },
     "footer": {
       "tagline": "Where every child's unique brilliance is discovered, nurtured, and celebrated every single day.",
@@ -236,6 +255,7 @@
       "values": "Our Values",
       "curr": "Curriculum",
       "team": "Our Team",
+      "test": "Parent Reviews",
       "fees": "School Fees",
       "faq": "FAQ",
       "loc": "Location",
@@ -246,7 +266,22 @@
       "sph": "Sunday & PH",
       "closed": "Closed",
       "hnote": "Hours subject to change. Please call ahead.",
-      "copy": "© 2024 Genius Gems Childcare Centre. All rights reserved."
+      "copy": "Genius Gems Childcare Centre. All rights reserved."
+    },
+    "test": {
+      "label": "Parent Voices",
+      "title": "What Families Say About Us",
+      "desc": "Real words from the parents who trust us with their little ones every day.",
+      "q1": "\"My daughter started at Genius Gems shy and quiet. Within months, she was confidently speaking Mandarin and excited to go to school every morning. The teachers genuinely care.\"",
+      "r1": "Parent of N2 student",
+      "q2": "\"What sets Genius Gems apart is the small class size — my son is genuinely known by his teachers, not just one of forty. The bilingual programme has been a huge bonus.\"",
+      "r2": "Parent of K1 student",
+      "q3": "\"We tried two other childcare centres before finding Genius Gems. The difference in warmth and attention is immediate. Ms Nicole and her team feel like family.\"",
+      "r3": "Parent of Playgroup student",
+      "cta": "Book a Tour to See for Yourself"
+    },
+    "a11y": {
+      "skip": "Skip to main content"
     }
   },
   "zh": {
@@ -257,6 +292,7 @@
       "values": "价值观",
       "curriculum": "课程",
       "team": "我们的团队",
+      "test": "家长评价",
       "fees": "学费",
       "faq": "常见问题",
       "location": "地点",
@@ -264,8 +300,8 @@
     },
     "hero": {
       "badge": "培育幼小心灵",
-      "title_pre": "每个孩子都是一颗",
-      "title_highlight": "天才宝石",
+      "title_pre": "塑造明日",
+      "title_highlight": "最闪亮的宝石",
       "subtitle": "一个温暖且充满启发的托儿环境，让好奇心蓬勃发展、友谊绽放，每个孩子都能发现内在的光芒。",
       "btn_enrol": "为您的孩子报名",
       "btn_discover": "了解更多",
@@ -295,7 +331,11 @@
       "s_eyebrow": "紧密的小社区",
       "s_title": "小班教学，个性化关注",
       "s_para1": "我们刻意保持小班制，让每个孩子都能被真正看见、了解和支持。我们的教师花时间去了解每个孩子的性格、兴趣和学习节奏——量身定制方法，让孩子展现最好的一面。",
-      "s_para2": "与大型中心不同，在这里没有孩子会被忽视。天才宝石的孩子们与老师建立真挚温暖的关系，并从这个紧密关怀的社区中获得自信。"
+      "s_para2": "与大型中心不同，在这里没有孩子会被忽视。天才宝石的孩子们与老师建立真挚温暖的关系，并从这个紧密关怀的社区中获得自信。",
+      "l_eyebrow": "快乐学习",
+      "l_title": "每天通过游戏学习",
+      "l_para1": "在天才宝石，每一堂课都是一场冒险。我们的教师将游戏式学习融入有结构的活动中——创造让孩子们日复一日真心期待的发现时刻。",
+      "l_para2": "从教室地板上的字母拼图到富有创意的小组活动，我们相信当孩子们快乐、投入、感到安全时，学习效果最好。"
     },
     "values": {
       "label": "我们的身份",
@@ -352,7 +392,9 @@
       "comp": "电脑素养",
       "comp_d": "早期数字意识和基础电脑技能，为孩子迎接科技时代做好准备。",
       "mus": "音乐欣赏",
-      "mus_d": "聆听、节奏和创意音乐体验，培养对艺术的终身热爱。"
+      "mus_d": "聆听、节奏和创意音乐体验，培养对艺术的终身热爱。",
+      "cta_p": "想看看我们的课程实际进行的样子吗？",
+      "cta_btn": "预约参观"
     },
     "faq": {
       "label": "常见问题",
@@ -363,7 +405,7 @@
       "q2": "营业时间是？",
       "a2": "我们的营业时间为星期一至星期五早上 7 点至晚上 7 点，星期六早上 7 点至下午 1 点。星期日及公共假日休息。",
       "q3": "学费多少？",
-      "a3": "全天班每月 $1,488，半天班每月 $1,088。符合条件的家庭可申请政府津贴 — 报名时我们会协助您查询。",
+      "a3": "全天班每月 $1,420，半天班每月 $1,088。符合条件的家庭可申请政府津贴 — 报名时我们会协助您查询。",
       "q4": "是否为双语托儿中心？",
       "a4": "是的 — 我们提供 100% 英语与华语的双语课程，由合格的教师全日授课。",
       "q5": "接受哪些年龄层的孩子？",
@@ -428,7 +470,13 @@
       "sib_d": "为兄弟姐妹或表亲一同报名，年龄较大的孩子可享每月持续折扣。",
       "first_m": "首月",
       "per_m": "每月",
-      "note": "兄弟姐妹／表亲折扣适用于年龄最大的已报名孩子。优惠不可叠加，除非另有说明。详情请联系我们。"
+      "note": "兄弟姐妹／表亲折扣适用于年龄最大的已报名孩子。优惠不可叠加，除非另有说明。详情请联系我们。",
+      "sub_t": "政府津贴 — 我们协助您申请",
+      "sub_d": "符合条件的新加坡家庭可获得基本津贴（全天班每月 $300）以及视家庭收入而定最高 $467/月的附加津贴。我们的团队会在报名时协助每个家庭检查资格并完成申请手续。",
+      "sub_b1": "在职母亲基本津贴（新加坡籍儿童）",
+      "sub_b2": "低收入家庭附加津贴",
+      "sub_b3": "启动津贴及幼儿园 KiFAS 援助",
+      "sub_cta": "咨询津贴详情"
     },
     "loc": {
       "label": "找到我们",
@@ -443,7 +491,11 @@
       "d1": "左转进入旧淡滨尼路",
       "d2": "右转进入 Mariam Way（靠近 Mariam Way 游乐场）",
       "d3": "左转进入 Mariam Close",
-      "d4": "目的地在左侧约 50 米处"
+      "d4": "目的地在左侧约 50 米处",
+      "tour_t": "亲自来看看天才宝石",
+      "tour_d": "了解天才宝石是否适合您孩子的最好方式就是亲自参观。走进我们的教室、认识我们的团队，亲身感受我们中心的温暖。",
+      "tour_btn": "预约参观",
+      "tour_wa": "WhatsApp 联系我们"
     },
     "contact": {
       "label": "联系我们",
@@ -476,7 +528,9 @@
       "submit_enq": "发送咨询",
       "submit_int": "登记我的意向",
       "success_t": "信息已发送！",
-      "success_d": "谢谢！我们会在 1–2 个工作日内联系您。"
+      "success_d": "谢谢！我们会在 1–2 个工作日内联系您。同时，您也可以通过 WhatsApp 即时联系我们。",
+      "success_wa": "通过 WhatsApp 联系我们",
+      "success_again": "再发送一条信息"
     },
     "footer": {
       "tagline": "每个孩子独特的光芒，在这里被发现、被培育、被每天庆祝。",
@@ -486,6 +540,7 @@
       "values": "我们的价值观",
       "curr": "课程",
       "team": "我们的团队",
+      "test": "家长评价",
       "fees": "学费",
       "faq": "常见问题",
       "loc": "地点",
@@ -496,7 +551,22 @@
       "sph": "星期日及公共假日",
       "closed": "休息",
       "hnote": "营业时间可能变动，请提前来电。",
-      "copy": "© 2024 天才宝石托儿中心。保留所有权利。"
+      "copy": "天才宝石托儿中心。保留所有权利。"
+    },
+    "test": {
+      "label": "家长心声",
+      "title": "家长怎么说",
+      "desc": "信任我们照顾他们小宝贝的家长们的真实分享。",
+      "q1": "「我女儿刚进入天才宝石时害羞安静。短短几个月，她就能自信地说华语，每天早上都期待上学。老师们真心关爱孩子。」",
+      "r1": "N2 学生家长",
+      "q2": "「天才宝石的独特之处在于小班教学 — 我儿子真正被老师认识，而不是四十人中的一个。双语课程更是一大优势。」",
+      "r2": "K1 学生家长",
+      "q3": "「在找到天才宝石之前我们尝试过两家其他托儿中心。这里的温暖与关注立刻不同。Nicole 女士和她的团队就像家人一样。」",
+      "r3": "幼儿班学生家长",
+      "cta": "亲自参观了解更多"
+    },
+    "a11y": {
+      "skip": "跳到主要内容"
     }
   },
   "ms": {
@@ -507,6 +577,7 @@
       "values": "Nilai",
       "curriculum": "Kurikulum",
       "team": "Pasukan",
+      "test": "Ulasan",
       "fees": "Yuran",
       "faq": "Soalan",
       "location": "Lokasi",
@@ -514,8 +585,8 @@
     },
     "hero": {
       "badge": "Memupuk Minda Kecil",
-      "title_pre": "Di Mana Setiap Anak Adalah Sebutir",
-      "title_highlight": "Permata Genius",
+      "title_pre": "Membentuk Permata",
+      "title_highlight": "Paling Cemerlang Esok",
       "subtitle": "Sebuah persekitaran penjagaan anak yang mesra dan menyuburkan, di mana sifat ingin tahu berkembang, persahabatan mekar, dan setiap anak menemui sinar kecemerlangan dalam diri mereka.",
       "btn_enrol": "Daftarkan Anak Anda",
       "btn_discover": "Ketahui Lebih Lanjut",
@@ -545,7 +616,11 @@
       "s_eyebrow": "Komuniti Rapat",
       "s_title": "Kelas Kecil, Perhatian Peribadi",
       "s_para1": "Kami sengaja mengekalkan saiz kelas yang kecil supaya setiap anak benar-benar dilihat, dikenali dan disokong. Pendidik kami meluangkan masa untuk memahami personaliti, minat dan kepantasan pembelajaran setiap anak — menyesuaikan pendekatan mereka untuk menyerlahkan yang terbaik dalam diri anak-anak.",
-      "s_para2": "Tidak seperti pusat-pusat mega yang besar, tiada anak yang terabai di sini. Anak-anak di Genius Gems menikmati hubungan yang tulus dan mesra dengan guru-guru mereka, serta keyakinan yang datang daripada menjadi sebahagian daripada komuniti yang rapat dan penuh kasih sayang."
+      "s_para2": "Tidak seperti pusat-pusat mega yang besar, tiada anak yang terabai di sini. Anak-anak di Genius Gems menikmati hubungan yang tulus dan mesra dengan guru-guru mereka, serta keyakinan yang datang daripada menjadi sebahagian daripada komuniti yang rapat dan penuh kasih sayang.",
+      "l_eyebrow": "Pembelajaran Gembira",
+      "l_title": "Belajar Melalui Permainan, Setiap Hari",
+      "l_para1": "Di Genius Gems, setiap pelajaran adalah satu pengembaraan. Pendidik kami menjalinkan pembelajaran berasaskan permainan ke dalam aktiviti berstruktur — mencipta detik penemuan yang dinantikan anak-anak hari demi hari.",
+      "l_para2": "Daripada teka-teki huruf di lantai bilik darjah hinggalah aktiviti kumpulan kreatif, kami percaya pembelajaran terbaik berlaku apabila anak-anak gembira, terlibat dan berasa selamat."
     },
     "values": {
       "label": "Identiti Kami",
@@ -602,7 +677,9 @@
       "comp": "Celik Komputer",
       "comp_d": "Kesedaran digital awal dan kemahiran komputer asas, menyediakan anak-anak untuk dunia yang dipacu teknologi.",
       "mus": "Apresiasi Muzik",
-      "mus_d": "Pengalaman mendengar, irama, dan penciptaan muzik kreatif yang membentuk kasih sayang sepanjang hayat terhadap seni."
+      "mus_d": "Pengalaman mendengar, irama, dan penciptaan muzik kreatif yang membentuk kasih sayang sepanjang hayat terhadap seni.",
+      "cta_p": "Ingin lihat kurikulum kami beraksi?",
+      "cta_btn": "Tempah Lawatan ke Pusat"
     },
     "faq": {
       "label": "Soalan Lazim",
@@ -613,7 +690,7 @@
       "q2": "Apakah waktu operasi anda?",
       "a2": "Kami beroperasi pada hari Isnin hingga Jumaat dari pukul 7:00 pagi hingga 7:00 malam, dan Sabtu dari pukul 7:00 pagi hingga 1:00 petang. Kami ditutup pada hari Ahad dan cuti umum.",
       "q3": "Berapakah kos penjagaan kanak-kanak?",
-      "a3": "Program Sehari Penuh kami berharga $1,488 sebulan dan Program Separuh Hari $1,088 sebulan. Subsidi kerajaan mungkin terpakai untuk keluarga yang layak — kami akan membantu anda memeriksa semasa pendaftaran.",
+      "a3": "Program Sehari Penuh kami berharga $1,420 sebulan dan Program Separuh Hari $1,088 sebulan. Subsidi kerajaan mungkin terpakai untuk keluarga yang layak — kami akan membantu anda memeriksa semasa pendaftaran.",
       "q4": "Adakah Genius Gems dwibahasa?",
       "a4": "Ya — kami menjalankan program 100% dwibahasa dalam Bahasa Inggeris dan Mandarin, diajar oleh pendidik berkelayakan sepanjang hari.",
       "q5": "Apakah kumpulan umur yang anda terima?",
@@ -678,7 +755,13 @@
       "sib_d": "Daftarkan adik-beradik atau sepupu dan nikmati diskaun bulanan berterusan untuk anak yang lebih tua.",
       "first_m": "bulan pertama",
       "per_m": "sebulan",
-      "note": "Diskaun adik-beradik/sepupu dikenakan kepada anak tertua yang didaftarkan. Promosi tidak boleh digabungkan kecuali dinyatakan sebaliknya. Hubungi kami untuk maklumat lanjut."
+      "note": "Diskaun adik-beradik/sepupu dikenakan kepada anak tertua yang didaftarkan. Promosi tidak boleh digabungkan kecuali dinyatakan sebaliknya. Hubungi kami untuk maklumat lanjut.",
+      "sub_t": "Subsidi Kerajaan — Kami Bantu Anda Memohon",
+      "sub_d": "Keluarga Singapura yang layak boleh menerima Subsidi Asas ($300/bulan untuk Sehari Penuh) serta Subsidi Tambahan sehingga $467/bulan berdasarkan pendapatan isi rumah. Pasukan kami membantu setiap keluarga menyemak kelayakan dan melengkapkan dokumen semasa pendaftaran.",
+      "sub_b1": "Subsidi Asas untuk ibu yang bekerja (anak Singapura)",
+      "sub_b2": "Subsidi Tambahan untuk keluarga berpendapatan rendah",
+      "sub_b3": "Geran Permulaan dan KiFAS untuk tadika",
+      "sub_cta": "Tanya Tentang Subsidi"
     },
     "loc": {
       "label": "Cari Kami",
@@ -693,7 +776,11 @@
       "d1": "Belok kiri ke Old Tampines Road",
       "d2": "Belok kanan ke Mariam Way (berhampiran Mariam Way Playground)",
       "d3": "Belok kiri ke Mariam Close",
-      "d4": "Lokasi terletak kira-kira 50m di sebelah kiri"
+      "d4": "Lokasi terletak kira-kira 50m di sebelah kiri",
+      "tour_t": "Datang Lihat Genius Gems Sendiri",
+      "tour_d": "Cara terbaik untuk mengetahui sama ada Genius Gems sesuai untuk anak anda ialah dengan melawat. Lihat bilik darjah kami, temui pasukan kami dan rasakan kemesraan pusat kami secara peribadi.",
+      "tour_btn": "Tempah Lawatan",
+      "tour_wa": "WhatsApp Kami"
     },
     "contact": {
       "label": "Hubungi Kami",
@@ -726,7 +813,9 @@
       "submit_enq": "Hantar Pertanyaan",
       "submit_int": "Daftar Minat Saya",
       "success_t": "Mesej Dihantar!",
-      "success_d": "Terima kasih! Kami akan menghubungi anda dalam masa 1–2 hari bekerja."
+      "success_d": "Terima kasih! Kami akan menghubungi anda dalam masa 1–2 hari bekerja. Sementara itu, anda juga boleh menghubungi kami serta-merta melalui WhatsApp.",
+      "success_wa": "Hubungi kami di WhatsApp",
+      "success_again": "Hantar mesej lain"
     },
     "footer": {
       "tagline": "Tempat keistimewaan unik setiap anak ditemui, dipupuk dan diraikan setiap hari.",
@@ -736,6 +825,7 @@
       "values": "Nilai Kami",
       "curr": "Kurikulum",
       "team": "Pasukan Kami",
+      "test": "Ulasan Ibu Bapa",
       "fees": "Yuran Sekolah",
       "faq": "Soalan Lazim",
       "loc": "Lokasi",
@@ -746,7 +836,22 @@
       "sph": "Ahad & Cuti Umum",
       "closed": "Tutup",
       "hnote": "Waktu operasi tertakluk kepada perubahan. Sila hubungi terlebih dahulu.",
-      "copy": "© 2024 Pusat Jagaan Kanak-Kanak Genius Gems. Hak cipta terpelihara."
+      "copy": "Pusat Jagaan Kanak-Kanak Genius Gems. Hak cipta terpelihara."
+    },
+    "test": {
+      "label": "Suara Ibu Bapa",
+      "title": "Apa Kata Keluarga Tentang Kami",
+      "desc": "Kata-kata sebenar daripada ibu bapa yang mempercayai kami untuk menjaga si manja mereka setiap hari.",
+      "q1": "\"Anak perempuan saya mula di Genius Gems dalam keadaan malu dan pendiam. Dalam beberapa bulan, dia dengan yakin bertutur dalam Mandarin dan teruja untuk ke sekolah setiap pagi. Guru-guru benar-benar mengambil berat.\"",
+      "r1": "Ibu bapa pelajar N2",
+      "q2": "\"Apa yang membezakan Genius Gems ialah saiz kelas yang kecil — anak saya benar-benar dikenali oleh guru-gurunya, bukan sekadar seorang dari empat puluh. Program dwibahasa pula merupakan bonus yang besar.\"",
+      "r2": "Ibu bapa pelajar K1",
+      "q3": "\"Kami mencuba dua pusat jagaan kanak-kanak lain sebelum menemui Genius Gems. Perbezaan dari segi kemesraan dan perhatian dapat dirasakan dengan segera. Cik Nicole dan pasukannya terasa seperti keluarga.\"",
+      "r3": "Ibu bapa pelajar Playgroup",
+      "cta": "Tempah Lawatan untuk Lihat Sendiri"
+    },
+    "a11y": {
+      "skip": "Langkau ke kandungan utama"
     }
   },
   "ta": {
@@ -757,6 +862,7 @@
       "values": "மதிப்புகள்",
       "curriculum": "பாடம்",
       "team": "குழு",
+      "test": "மதிப்புரைகள்",
       "fees": "கட்டணம்",
       "faq": "கேள்விகள்",
       "location": "இடம்",
@@ -764,8 +870,8 @@
     },
     "hero": {
       "badge": "சிறு உள்ளங்களைப் போற்றுதல்",
-      "title_pre": "ஒவ்வொரு குழந்தையும் ஒரு",
-      "title_highlight": "மேதைச் சிறப்பு",
+      "title_pre": "நாளைய பிரகாசமான",
+      "title_highlight": "மணிகளை வடிவமைக்கிறோம்",
       "subtitle": "ஆர்வம் வளரும், நட்பு மலரும், ஒவ்வொரு குழந்தையும் தனக்குள்ளே உள்ள ஒளியை கண்டறியும் இதமான, செழுமையான குழந்தைப் பராமரிப்பு சூழல்.",
       "btn_enrol": "உங்கள் குழந்தையைச் சேர்க்கவும்",
       "btn_discover": "மேலும் அறிக",
@@ -795,7 +901,11 @@
       "s_eyebrow": "நெருக்கமான சமூகம்",
       "s_title": "சிறிய வகுப்புகள், தனிப்பட்ட கவனம்",
       "s_para1": "ஒவ்வொரு குழந்தையும் உண்மையாக கண்டறியப்பட்டு, அறியப்பட்டு, ஆதரிக்கப்படுவதற்காக நாங்கள் வேண்டுமென்றே எங்கள் வகுப்பு அளவை சிறிதாக வைக்கிறோம். எங்கள் ஆசிரியர்கள் ஒவ்வொரு குழந்தையின் ஆளுமை, ஆர்வங்கள் மற்றும் கற்றல் வேகத்தை புரிந்துகொள்ள நேரம் எடுத்துக்கொள்கிறார்கள் — அவர்களின் சிறந்ததை வெளிக்கொணர தங்கள் அணுகுமுறையை சீர்செய்கிறார்கள்.",
-      "s_para2": "பெரிய மெகா மையங்களைப் போலன்றி, இங்கு எந்தக் குழந்தையும் அலட்சியப்படுத்தப்படவில்லை. ஜீனியஸ் ஜெம்ஸில் குழந்தைகள் தங்கள் ஆசிரியர்களுடன் உண்மையான, இதமான உறவுகளை அனுபவிக்கின்றனர், மற்றும் நெருக்கமான, கவனிப்புள்ள சமூகத்தின் ஒரு பகுதியாக இருப்பதிலிருந்து வரும் தன்னம்பிக்கையை பெறுகின்றனர்."
+      "s_para2": "பெரிய மெகா மையங்களைப் போலன்றி, இங்கு எந்தக் குழந்தையும் அலட்சியப்படுத்தப்படவில்லை. ஜீனியஸ் ஜெம்ஸில் குழந்தைகள் தங்கள் ஆசிரியர்களுடன் உண்மையான, இதமான உறவுகளை அனுபவிக்கின்றனர், மற்றும் நெருக்கமான, கவனிப்புள்ள சமூகத்தின் ஒரு பகுதியாக இருப்பதிலிருந்து வரும் தன்னம்பிக்கையை பெறுகின்றனர்.",
+      "l_eyebrow": "மகிழ்ச்சியான கற்றல்",
+      "l_title": "ஒவ்வொரு நாளும் விளையாட்டின் மூலம் கற்றல்",
+      "l_para1": "ஜீனியஸ் ஜெம்ஸில், ஒவ்வொரு பாடமும் ஒரு சாகசம். எங்கள் ஆசிரியர்கள் கட்டமைக்கப்பட்ட செயல்பாடுகளில் விளையாட்டு அடிப்படையிலான கற்றலை இணைக்கிறார்கள் — குழந்தைகள் நாள்தோறும் ஆவலுடன் எதிர்நோக்கும் கண்டுபிடிப்பு தருணங்களை உருவாக்குகிறார்கள்.",
+      "l_para2": "வகுப்பறை தரையில் எழுத்து புதிர்களிலிருந்து படைப்பு குழு செயல்பாடுகள் வரை, குழந்தைகள் மகிழ்ச்சியாகவும், ஈடுபாட்டுடனும், பாதுகாப்பாக உணரும்போது சிறந்த கற்றல் நிகழ்கிறது என்று நாங்கள் நம்புகிறோம்."
     },
     "values": {
       "label": "எங்கள் அடையாளம்",
@@ -852,7 +962,9 @@
       "comp": "கணினி கல்வியறிவு",
       "comp_d": "ஆரம்ப எண்ணிமம் விழிப்புணர்வு மற்றும் அத்தியாவசிய கணினித் திறன்கள் — தொழில்நுட்பம் இயக்கும் உலகுக்கு குழந்தைகளைத் தயார்படுத்துகின்றன.",
       "mus": "இசை மதிப்பீடு",
-      "mus_d": "கேட்டல், தாளம், மற்றும் ஆக்கப்பூர்வ இசை அனுபவங்கள் — கலைகளின் மீது வாழ்நாள் காதலை வளர்க்கின்றன."
+      "mus_d": "கேட்டல், தாளம், மற்றும் ஆக்கப்பூர்வ இசை அனுபவங்கள் — கலைகளின் மீது வாழ்நாள் காதலை வளர்க்கின்றன.",
+      "cta_p": "எங்கள் பாடத்திட்டத்தை செயலில் காண விரும்புகிறீர்களா?",
+      "cta_btn": "மையச் சுற்றுப்பயணத்தை முன்பதிவு செய்க"
     },
     "faq": {
       "label": "கேள்விகள்",
@@ -863,7 +975,7 @@
       "q2": "உங்கள் செயல்பாட்டு நேரம் என்ன?",
       "a2": "நாங்கள் திங்கள் முதல் வெள்ளி வரை காலை 7:00 மணி முதல் இரவு 7:00 மணி வரையிலும், சனிக்கிழமை காலை 7:00 முதல் மதியம் 1:00 வரையிலும் திறந்திருக்கும். ஞாயிறு மற்றும் பொது விடுமுறை நாட்களில் மூடப்பட்டிருக்கும்.",
       "q3": "குழந்தைப் பராமரிப்பு கட்டணம் எவ்வளவு?",
-      "a3": "எங்கள் முழு நாள் திட்டம் மாதம் $1,488, அரை நாள் திட்டம் மாதம் $1,088. தகுதியான குடும்பங்களுக்கு அரசாங்க மானியங்கள் பொருந்தலாம் — பதிவுசெய்யும் போது இதைச் சரிபார்க்க உதவுவோம்.",
+      "a3": "எங்கள் முழு நாள் திட்டம் மாதம் $1,420, அரை நாள் திட்டம் மாதம் $1,088. தகுதியான குடும்பங்களுக்கு அரசாங்க மானியங்கள் பொருந்தலாம் — பதிவுசெய்யும் போது இதைச் சரிபார்க்க உதவுவோம்.",
       "q4": "ஜீனியஸ் ஜெம்ஸ் இருமொழி அமைப்பா?",
       "a4": "ஆம் — நாங்கள் தகுதி வாய்ந்த ஆசிரியர்களால் நாள் முழுவதும் கற்பிக்கப்படும் ஆங்கிலம் மற்றும் சீனத்தில் 100% இருமொழித் திட்டத்தை வழங்குகிறோம்.",
       "q5": "நீங்கள் எந்த வயதினரை ஏற்றுக்கொள்கிறீர்கள்?",
@@ -928,7 +1040,13 @@
       "sib_d": "உடன்பிறந்தோர் அல்லது உறவினர்களை பதிவு செய்து, மூத்த குழந்தைக்கு தொடர் மாதாந்திர தள்ளுபடியை அனுபவிக்கவும்.",
       "first_m": "முதல் மாதம்",
       "per_m": "ஒரு மாதம்",
-      "note": "உடன்பிறந்தோர்/உறவினர் தள்ளுபடி பதிவு செய்த மூத்த குழந்தைக்கு பொருந்தும். குறிப்பிடப்படாவிட்டால் சலுகைகளை இணைக்க முடியாது. விவரங்களுக்கு எங்களை தொடர்பு கொள்ளவும்."
+      "note": "உடன்பிறந்தோர்/உறவினர் தள்ளுபடி பதிவு செய்த மூத்த குழந்தைக்கு பொருந்தும். குறிப்பிடப்படாவிட்டால் சலுகைகளை இணைக்க முடியாது. விவரங்களுக்கு எங்களை தொடர்பு கொள்ளவும்.",
+      "sub_t": "அரசாங்க மானியங்கள் — விண்ணப்பிக்க உதவுகிறோம்",
+      "sub_d": "தகுதியான சிங்கப்பூர் குடும்பங்கள் அடிப்படை மானியம் (முழு நாள் திட்டத்திற்கு மாதம் $300) மற்றும் வீட்டு வருமானத்தைப் பொறுத்து மாதம் $467 வரையிலான கூடுதல் மானியத்தைப் பெறலாம். பதிவு செய்யும் போது தகுதியைச் சரிபார்க்கவும் ஆவணங்களை நிறைவு செய்யவும் எங்கள் குழு ஒவ்வொரு குடும்பத்திற்கும் உதவுகிறது.",
+      "sub_b1": "வேலை செய்யும் தாய்மார்களுக்கான அடிப்படை மானியம் (சிங்கப்பூர் குழந்தை)",
+      "sub_b2": "குறைந்த வருமானம் கொண்ட குடும்பங்களுக்கான கூடுதல் மானியம்",
+      "sub_b3": "மழலையர் பள்ளிக்கான தொடக்க மானியம் மற்றும் KiFAS",
+      "sub_cta": "மானியங்கள் பற்றி கேளுங்கள்"
     },
     "loc": {
       "label": "எங்களைக் கண்டறிக",
@@ -943,7 +1061,11 @@
       "d1": "பழைய தம்பினெஸ் சாலையில் இடதுபுறம் திரும்பவும்",
       "d2": "மரியம் வே-க்குள் வலதுபுறம் திரும்பவும் (மரியம் வே விளையாட்டுத் திடல் அருகே)",
       "d3": "மரியம் க்ளோசில் இடதுபுறம் திரும்பவும்",
-      "d4": "இடம் இடதுபுறம் சுமார் 50 மீட்டர் தூரத்தில் உள்ளது"
+      "d4": "இடம் இடதுபுறம் சுமார் 50 மீட்டர் தூரத்தில் உள்ளது",
+      "tour_t": "ஜீனியஸ் ஜெம்ஸை நீங்களே வந்து பாருங்கள்",
+      "tour_d": "உங்கள் குழந்தைக்கு ஜீனியஸ் ஜெம்ஸ் சரியானதா என்பதை அறிய சிறந்த வழி நேரில் வருவதே. எங்கள் வகுப்பறைகளில் நடந்து, எங்கள் குழுவைச் சந்தித்து, எங்கள் மையத்தின் இதம் தாயக நேரில் உணருங்கள்.",
+      "tour_btn": "சுற்றுப்பயண முன்பதிவு",
+      "tour_wa": "WhatsApp மூலம் தொடர்பு கொள்ளுங்கள்"
     },
     "contact": {
       "label": "எங்களைத் தொடர்பு கொள்ளுங்கள்",
@@ -976,7 +1098,9 @@
       "submit_enq": "கேள்வியை அனுப்பவும்",
       "submit_int": "என் ஆர்வத்தைப் பதிவு செய்க",
       "success_t": "செய்தி அனுப்பப்பட்டது!",
-      "success_d": "நன்றி! 1–2 வேலை நாட்களில் நாங்கள் உங்களைத் தொடர்புகொள்வோம்."
+      "success_d": "நன்றி! 1–2 வேலை நாட்களில் நாங்கள் உங்களைத் தொடர்புகொள்வோம். அதேசமயம், WhatsApp மூலமாக உடனடியாகவும் எங்களைத் தொடர்பு கொள்ளலாம்.",
+      "success_wa": "WhatsApp மூலம் எங்களுக்கு செய்தி அனுப்புங்கள்",
+      "success_again": "மற்றொரு செய்தி அனுப்பு"
     },
     "footer": {
       "tagline": "ஒவ்வொரு குழந்தையின் தனித்துவமான ஒளி, இங்கே ஒவ்வொரு நாளும் கண்டறியப்பட்டு, வளர்க்கப்பட்டு, கொண்டாடப்படுகிறது.",
@@ -986,6 +1110,7 @@
       "values": "எங்கள் மதிப்புகள்",
       "curr": "பாடத்திட்டம்",
       "team": "எங்கள் குழு",
+      "test": "பெற்றோர் மதிப்புரைகள்",
       "fees": "பள்ளி கட்டணம்",
       "faq": "கேள்விகள்",
       "loc": "இடம்",
@@ -996,7 +1121,22 @@
       "sph": "ஞாயிறு & பொது விடுமுறை",
       "closed": "மூடப்பட்டது",
       "hnote": "செயல்பாட்டு நேரம் மாறக்கூடும். முன்பே அழைக்கவும்.",
-      "copy": "© 2024 ஜீனியஸ் ஜெம்ஸ் குழந்தைப் பராமரிப்பு மையம். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை."
+      "copy": "ஜீனியஸ் ஜெம்ஸ் குழந்தைப் பராமரிப்பு மையம். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை."
+    },
+    "test": {
+      "label": "பெற்றோர் குரல்கள்",
+      "title": "எங்களைப் பற்றி குடும்பங்கள் என்ன சொல்கின்றன",
+      "desc": "தங்கள் கொஞ்சு குழந்தைகளை ஒவ்வொரு நாளும் எங்களை நம்பி ஒப்படைக்கும் பெற்றோரின் உண்மையான வார்த்தைகள்.",
+      "q1": "\"என் மகள் ஜீனியஸ் ஜெம்ஸில் வெட்கம் மற்றும் அமைதியாக ஆரம்பித்தாள். சில மாதங்களில், அவள் தைரியமாக மாண்டரின் பேசத் தொடங்கினாள், ஒவ்வொரு காலையும் பள்ளிக்குச் செல்ல ஆவலுடன் காத்திருந்தாள். ஆசிரியர்கள் உண்மையாக அக்கறை கொள்கிறார்கள்.\"",
+      "r1": "N2 மாணவியின் பெற்றோர்",
+      "q2": "\"ஜீனியஸ் ஜெம்ஸை வேறுபடுத்துவது சிறிய வகுப்பு அளவே — என் மகன் தனது ஆசிரியர்களால் உண்மையாக அறியப்படுகிறான், நாற்பது பேரில் ஒருவராக அல்ல. இருமொழி திட்டம் ஒரு பெரிய பயனாக இருக்கிறது.\"",
+      "r2": "K1 மாணவனின் பெற்றோர்",
+      "q3": "\"ஜீனியஸ் ஜெம்ஸைக் கண்டுபிடிக்கும் முன் நாங்கள் இரண்டு வேறு குழந்தைப் பராமரிப்பு மையங்களை முயற்சித்தோம். இதம் மற்றும் கவனத்தில் வேறுபாடு உடனடியாகவே தெரிந்தது. நிக்கோல் அம்மா மற்றும் அவரது குழு குடும்பத்தினராகவே உணரப்படுகின்றனர்.\"",
+      "r3": "Playgroup மாணவனின் பெற்றோர்",
+      "cta": "நீங்களே பார்க்க சுற்றுப்பயணம் முன்பதிவு செய்யுங்கள்"
+    },
+    "a11y": {
+      "skip": "முக்கிய உள்ளடக்கத்திற்குச் செல்லவும்"
     }
   }
 }

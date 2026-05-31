@@ -109,29 +109,49 @@ contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const type = formTypeInput.value;
 
-  // Validate: enquiry needs contact + message
+  // Format validators
+  const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  const PHONE_RE = /^[\d\s\+\-\(\)]{7,}$/;
+  const markInvalid = (el, isBad) => {
+    el.style.borderColor = isBad ? '#ff8fab' : '';
+    el.setAttribute('aria-invalid', isBad ? 'true' : 'false');
+  };
+
+  // Validate: enquiry needs contact + message; contact must look like email OR phone
   if (type === 'enquiry') {
-    const contact = document.getElementById('enquiryContact').value.trim();
-    const message = document.getElementById('enquiryMessage').value.trim();
-    if (!contact || !message) {
-      document.getElementById('enquiryContact').style.borderColor = contact ? '' : '#ff8fab';
-      document.getElementById('enquiryMessage').style.borderColor = message ? '' : '#ff8fab';
-      return;
-    }
+    const contactEl = document.getElementById('enquiryContact');
+    const messageEl = document.getElementById('enquiryMessage');
+    const contact = contactEl.value.trim();
+    const message = messageEl.value.trim();
+    const looksValid = contact && (EMAIL_RE.test(contact) || PHONE_RE.test(contact));
+    markInvalid(contactEl, !looksValid);
+    markInvalid(messageEl, !message);
+    if (!looksValid || !message) return;
   }
 
-  // Validate: interest needs at least one contact method + parent + child name
+  // Validate: interest needs at least one valid contact method + parent + child name
   if (type === 'interest') {
-    const email = document.getElementById('interestEmail').value.trim();
-    const phone = document.getElementById('interestPhone').value.trim();
-    const parent = document.getElementById('parentName').value.trim();
-    const child = document.getElementById('childName').value.trim();
+    const emailEl = document.getElementById('interestEmail');
+    const phoneEl = document.getElementById('interestPhone');
+    const parentEl = document.getElementById('parentName');
+    const childEl = document.getElementById('childName');
+    const email = emailEl.value.trim();
+    const phone = phoneEl.value.trim();
+    const parent = parentEl.value.trim();
+    const child = childEl.value.trim();
+
+    const emailOk = !email || EMAIL_RE.test(email);
+    const phoneOk = !phone || PHONE_RE.test(phone);
+    const hasContact = (email && emailOk) || (phone && phoneOk);
+
     let valid = true;
-    if (!parent) { document.getElementById('parentName').style.borderColor = '#ff8fab'; valid = false; }
-    if (!child)  { document.getElementById('childName').style.borderColor = '#ff8fab';  valid = false; }
-    if (!email && !phone) {
-      document.getElementById('interestEmail').style.borderColor = '#ff8fab';
-      document.getElementById('interestPhone').style.borderColor = '#ff8fab';
+    if (!parent) { markInvalid(parentEl, true); valid = false; } else markInvalid(parentEl, false);
+    if (!child)  { markInvalid(childEl, true); valid = false; } else markInvalid(childEl, false);
+    markInvalid(emailEl, !emailOk);
+    markInvalid(phoneEl, !phoneOk);
+    if (!hasContact) {
+      markInvalid(emailEl, true);
+      markInvalid(phoneEl, true);
       valid = false;
     }
     if (!valid) return;
@@ -174,6 +194,20 @@ contactForm.addEventListener('submit', (e) => {
     });
   }
 
+  // Backup submission to localStorage so the parent never loses what they typed
+  // even if Google Forms is down or the request fails silently.
+  try {
+    const backup = {
+      type,
+      timestamp: new Date().toISOString(),
+      data: Object.fromEntries(params.entries()),
+    };
+    const history = JSON.parse(localStorage.getItem('geniusGems_form_backups') || '[]');
+    history.push(backup);
+    // Keep last 10 submissions only
+    localStorage.setItem('geniusGems_form_backups', JSON.stringify(history.slice(-10)));
+  } catch (e) { /* localStorage unavailable; non-fatal */ }
+
   const submitUrl = BASE + params.toString();
   fetch(submitUrl, { method: 'POST', mode: 'no-cors' })
     .then(() => {
@@ -187,7 +221,43 @@ contactForm.addEventListener('submit', (e) => {
   // Show success state
   contactForm.querySelectorAll('.form-type-toggle, #enquiryFields, #interestFields, #submitBtn').forEach(el => el.style.display = 'none');
   document.getElementById('formSuccess').style.display = 'block';
+  // Scroll the success message into view
+  document.getElementById('formSuccess').scrollIntoView({ behavior: 'smooth', block: 'center' });
 });
+
+// ---------- Contact form — Send Another reset ----------
+const sendAnotherBtn = document.getElementById('sendAnotherBtn');
+if (sendAnotherBtn) {
+  sendAnotherBtn.addEventListener('click', () => {
+    // Reset all form fields
+    contactForm.reset();
+    // Clear any validation borders
+    contactForm.querySelectorAll('input, textarea, select').forEach(el => {
+      el.style.borderColor = '';
+      el.removeAttribute('aria-invalid');
+    });
+    // Hide success, show form
+    document.getElementById('formSuccess').style.display = 'none';
+    contactForm.querySelectorAll('.form-type-toggle, #submitBtn').forEach(el => el.style.display = '');
+    // Restore the active tab's field group
+    const activeType = document.querySelector('.type-btn.active')?.dataset.type || 'enquiry';
+    document.getElementById('enquiryFields').style.display = activeType === 'enquiry' ? 'block' : 'none';
+    document.getElementById('interestFields').style.display = activeType === 'interest' ? 'block' : 'none';
+    document.getElementById('formType').value = activeType;
+    // Focus first field
+    const firstField = activeType === 'enquiry'
+      ? document.getElementById('enquiryContact')
+      : document.getElementById('parentName');
+    firstField?.focus();
+  });
+}
+
+// ---------- Dynamic copyright year ----------
+const yearEl = document.getElementById('copyrightYear');
+if (yearEl) {
+  const now = new Date().getFullYear();
+  yearEl.textContent = now > 2024 ? `2024–${now}` : '2024';
+}
 
 // ---------- Active nav link on scroll ----------
 const sections = document.querySelectorAll('section[id]');

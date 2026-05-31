@@ -61,7 +61,7 @@
   <link rel="preload" as="image" href="images/4_kids_photo.webp" type="image/webp" />
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/style.css?v=20260527a" />
+  <link rel="stylesheet" href="css/style.css?v=20260528a" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
@@ -127,6 +127,26 @@
       "bestRating": "5",
       "worstRating": "1"
     },
+    "review": [
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Mrs Lim" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "reviewBody": "My daughter started at Genius Gems shy and quiet. Within months, she was confidently speaking Mandarin and excited to go to school every morning. The teachers genuinely care."
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Mr Tan" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "reviewBody": "What sets Genius Gems apart is the small class size — my son is genuinely known by his teachers, not just one of forty. The bilingual programme has been a huge bonus."
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Mrs Wong" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "reviewBody": "We tried two other childcare centres before finding Genius Gems. The difference in warmth and attention is immediate. Ms Nicole and her team feel like family."
+      }
+    ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Childcare Programmes",
@@ -274,6 +294,9 @@
 </head>
 <body>
 
+  <!-- Skip to content (accessibility) -->
+  <a href="#main" class="skip-link" data-i18n="a11y.skip">Skip to main content</a>
+
   <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
@@ -311,6 +334,7 @@
         <li><a href="#values" data-i18n="nav.values">Values</a></li>
         <li><a href="#curriculum" data-i18n="nav.curriculum">Curriculum</a></li>
         <li><a href="#team" data-i18n="nav.team">Our Team</a></li>
+        <li><a href="#testimonials" data-i18n="nav.test">Reviews</a></li>
         <li><a href="#fees" data-i18n="nav.fees">Fees</a></li>
         <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
         <li><a href="#location" data-i18n="nav.location">Location</a></li>
@@ -320,6 +344,7 @@
   </nav>
 
   <!-- HERO -->
+  <main id="main">
   <section class="hero" id="home">
     <div class="hero-bg">
       <div class="hero-shapes">
@@ -668,6 +693,11 @@
       </div><!-- end curriculum-tabs-content -->
         </div><!-- end curriculum-body -->
 
+      <div class="section-cta">
+        <p data-i18n="curr.cta_p">Want to see our curriculum in action?</p>
+        <a href="#contact" class="btn btn-primary" data-i18n="curr.cta_btn">Book a Centre Tour</a>
+      </div>
+
     </div>
   </section>
 
@@ -827,6 +857,86 @@
     </div>
   </section>
 
+  <!-- TESTIMONIALS -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="section-label" data-i18n="test.label">Parent Voices</div>
+        <h2 class="section-title" data-i18n="test.title">What Families Say About Us</h2>
+        <p class="section-desc" data-i18n="test.desc">Real words from the parents who trust us with their little ones every day.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <article class="testimonial-card" itemscope itemtype="https://schema.org/Review">
+          <meta itemprop="itemReviewed" content="Genius Gems Childcare Centre" />
+          <div class="testimonial-stars" aria-label="5 out of 5 stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+            <meta itemprop="ratingValue" content="5" />
+            <meta itemprop="bestRating" content="5" />
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <blockquote class="testimonial-quote" itemprop="reviewBody" data-i18n="test.q1">
+            "My daughter started at Genius Gems shy and quiet. Within months, she was confidently speaking Mandarin and excited to go to school every morning. The teachers genuinely care."
+          </blockquote>
+          <footer class="testimonial-author">
+            <div class="author-avatar"><i class="fas fa-user"></i></div>
+            <div>
+              <div class="author-name" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                <span itemprop="name">Mrs Lim</span>
+              </div>
+              <div class="author-role" data-i18n="test.r1">Parent of N2 student</div>
+            </div>
+          </footer>
+        </article>
+
+        <article class="testimonial-card" itemscope itemtype="https://schema.org/Review">
+          <meta itemprop="itemReviewed" content="Genius Gems Childcare Centre" />
+          <div class="testimonial-stars" aria-label="5 out of 5 stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+            <meta itemprop="ratingValue" content="5" />
+            <meta itemprop="bestRating" content="5" />
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <blockquote class="testimonial-quote" itemprop="reviewBody" data-i18n="test.q2">
+            "What sets Genius Gems apart is the small class size — my son is genuinely known by his teachers, not just one of forty. The bilingual programme has been a huge bonus."
+          </blockquote>
+          <footer class="testimonial-author">
+            <div class="author-avatar"><i class="fas fa-user"></i></div>
+            <div>
+              <div class="author-name" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                <span itemprop="name">Mr Tan</span>
+              </div>
+              <div class="author-role" data-i18n="test.r2">Parent of K1 student</div>
+            </div>
+          </footer>
+        </article>
+
+        <article class="testimonial-card" itemscope itemtype="https://schema.org/Review">
+          <meta itemprop="itemReviewed" content="Genius Gems Childcare Centre" />
+          <div class="testimonial-stars" aria-label="5 out of 5 stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+            <meta itemprop="ratingValue" content="5" />
+            <meta itemprop="bestRating" content="5" />
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <blockquote class="testimonial-quote" itemprop="reviewBody" data-i18n="test.q3">
+            "We tried two other childcare centres before finding Genius Gems. The difference in warmth and attention is immediate. Ms Nicole and her team feel like family."
+          </blockquote>
+          <footer class="testimonial-author">
+            <div class="author-avatar"><i class="fas fa-user"></i></div>
+            <div>
+              <div class="author-name" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                <span itemprop="name">Mrs Wong</span>
+              </div>
+              <div class="author-role" data-i18n="test.r3">Parent of Playgroup student</div>
+            </div>
+          </footer>
+        </article>
+      </div>
+
+      <div class="testimonials-cta">
+        <a href="#contact" class="btn btn-primary" data-i18n="test.cta">Book a Tour to See for Yourself</a>
+      </div>
+    </div>
+  </section>
+
   <!-- UNIFORM -->
   <section class="uniform section" id="uniform">
     <div class="container">
@@ -939,6 +1049,21 @@
           </div>
         </div>
         <p class="discount-note"><i class="fas fa-info-circle"></i> <span data-i18n="fees.note">Sibling/Cousin discount applies to the oldest enrolled child. Promotions cannot be combined unless stated otherwise. Contact us for details.</span></p>
+      </div>
+
+      <!-- Subsidy callout -->
+      <div class="subsidy-callout">
+        <div class="subsidy-icon"><i class="fas fa-hand-holding-heart"></i></div>
+        <div class="subsidy-content">
+          <h3 data-i18n="fees.sub_t">Government Subsidies — We Help You Apply</h3>
+          <p data-i18n="fees.sub_d">Eligible Singaporean families can receive <strong>Basic Subsidy ($300/month for Full Day)</strong> and additional <strong>Additional Subsidy of up to $467/month</strong> based on household income. Our team helps every family check eligibility and complete the paperwork during enrolment.</p>
+          <ul class="subsidy-list">
+            <li><i class="fas fa-check"></i> <span data-i18n="fees.sub_b1">Basic Subsidy for working mothers (Singaporean child)</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="fees.sub_b2">Additional Subsidy for lower-income families</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="fees.sub_b3">Start-up Grant and KiFAS for kindergarten</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-sm" data-i18n="fees.sub_cta">Ask About Subsidies</a>
+        </div>
       </div>
     </div>
   </section>
@@ -1117,8 +1242,20 @@
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            title="Genius Gems Location">
+            title="Genius Gems Childcare Centre — 26 Mariam Close, Singapore 508668">
           </iframe>
+        </div>
+      </div>
+
+      <!-- Visit / Tour CTA -->
+      <div class="tour-cta">
+        <div class="tour-cta-content">
+          <h3 data-i18n="loc.tour_t">Come See Genius Gems for Yourself</h3>
+          <p data-i18n="loc.tour_d">The best way to know if Genius Gems is right for your child is to visit. Walk our classrooms, meet our team, and feel the warmth of our centre in person.</p>
+        </div>
+        <div class="tour-cta-actions">
+          <a href="#contact" class="btn btn-primary" data-i18n="loc.tour_btn">Schedule a Tour</a>
+          <a href="https://wa.me/6596553213?text=Hi%20Genius%20Gems%2C%20I%27d%20like%20to%20schedule%20a%20tour%20of%20your%20centre." target="_blank" rel="noopener" class="btn btn-outline" data-i18n="loc.tour_wa"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
         </div>
       </div>
     </div>
@@ -1225,13 +1362,19 @@
             <div class="form-success" id="formSuccess">
               <i class="fas fa-check-circle"></i>
               <h3 data-i18n="contact.success_t">Message Sent!</h3>
-              <p data-i18n="contact.success_d">Thank you! We'll be in touch within 1–2 business days.</p>
+              <p data-i18n="contact.success_d">Thank you! We'll be in touch within 1–2 business days. Meanwhile, you can also reach us instantly on WhatsApp.</p>
+              <div class="form-success-actions">
+                <a href="https://wa.me/6596553213?text=Hi%20Genius%20Gems%2C%20I%20just%20submitted%20an%20enquiry%20on%20your%20website." target="_blank" rel="noopener" class="btn btn-outline btn-sm"><i class="fab fa-whatsapp"></i> <span data-i18n="contact.success_wa">Message us on WhatsApp</span></a>
+                <button type="button" class="btn btn-text btn-sm" id="sendAnotherBtn" data-i18n="contact.success_again">Send another message</button>
+              </div>
             </div>
           </form>
         </div>
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -1263,6 +1406,7 @@
             <li><a href="#values" data-i18n="footer.values">Our Values</a></li>
             <li><a href="#curriculum" data-i18n="footer.curr">Curriculum</a></li>
             <li><a href="#team" data-i18n="footer.team">Our Team</a></li>
+            <li><a href="#testimonials" data-i18n="footer.test">Parent Reviews</a></li>
             <li><a href="#fees" data-i18n="footer.fees">School Fees</a></li>
             <li><a href="#faq" data-i18n="footer.faq">FAQ</a></li>
             <li><a href="#location" data-i18n="footer.loc">Location</a></li>
@@ -1284,7 +1428,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p data-i18n="footer.copy">© 2024 Genius Gems Childcare Centre. All rights reserved.</p>
+        <p>© <span id="copyrightYear">2026</span> <span data-i18n="footer.copy">Genius Gems Childcare Centre. All rights reserved.</span></p>
         <p>26 Mariam Close, Singapore 508668</p>
       </div>
     </div>
@@ -1303,7 +1447,7 @@
 
   <!-- Hidden iframe for Google Forms submission -->
   <iframe id="formIframe" name="formIframe" style="display:none" aria-hidden="true"></iframe>
-  <script src="js/language-switcher.js?v=20260518e"></script>
-  <script src="js/main.js?v=20260518n"></script>
+  <script src="js/language-switcher.js?v=20260528a"></script>
+  <script src="js/main.js?v=20260528a"></script>
 </body>
 </html>
