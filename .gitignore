@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Backup/source-only video assets (not served)
+videos/Excursion_original.mp4
+videos/*_original.*
+videos/*.mp3

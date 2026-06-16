@@ -259,6 +259,25 @@ if (yearEl) {
   yearEl.textContent = now > 2024 ? `2024–${now}` : '2024';
 }
 
+// ---------- Gallery video — custom play overlay ----------
+const galleryVideo = document.getElementById('galleryVideo');
+const videoPlayOverlay = document.getElementById('videoPlayOverlay');
+if (galleryVideo && videoPlayOverlay) {
+  const hideOverlay = () => { videoPlayOverlay.classList.add('hidden'); };
+  const showOverlay = () => { videoPlayOverlay.classList.remove('hidden'); };
+  videoPlayOverlay.addEventListener('click', () => {
+    galleryVideo.play().catch((err) => {
+      console.warn('[GeniusGems] Video play blocked:', err);
+    });
+  });
+  galleryVideo.addEventListener('play', hideOverlay);
+  galleryVideo.addEventListener('pause', () => {
+    // Only show overlay again if user paused before reaching the end
+    if (!galleryVideo.ended) showOverlay();
+  });
+  galleryVideo.addEventListener('ended', showOverlay);
+}
+
 // ---------- Active nav link on scroll ----------
 const sections = document.querySelectorAll('section[id]');
 const navLinkEls = document.querySelectorAll('.nav-links a');

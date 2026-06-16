@@ -7,6 +7,7 @@
       "values": "Values",
       "curriculum": "Curriculum",
       "team": "Our Team",
+      "gal": "Gallery",
       "test": "Reviews",
       "fees": "Fees",
       "faq": "FAQ",
@@ -255,6 +256,7 @@
       "values": "Our Values",
       "curr": "Curriculum",
       "team": "Our Team",
+      "gal": "Gallery",
       "test": "Parent Reviews",
       "fees": "School Fees",
       "faq": "FAQ",
@@ -280,6 +282,23 @@
       "r3": "Parent of Playgroup student",
       "cta": "Book a Tour to See for Yourself"
     },
+    "gal": {
+      "label": "Gallery",
+      "title": "Highlights from Our Centre",
+      "desc": "A glimpse into a day at Genius Gems — excursions, classroom moments, and the smiles that make every day special.",
+      "feat_t": "Adventure Beyond the Classroom",
+      "feat_d": "Watch our little explorers in action during a recent excursion — discovering, laughing, and learning together.",
+      "feat_dur": "1 min",
+      "feat_tag": "Excursion",
+      "video_fb": "Your browser doesn't support embedded video.",
+      "photos_t": "Photo Highlights",
+      "p1": "Circle time — small group, big connections",
+      "p2": "Treasures of curiosity in tiny hands",
+      "p3": "Joy in the simplest moments",
+      "p4": "Letters, laughter, learning",
+      "p5": "Sharing is the sweetest lesson",
+      "p6": "Hands-on discovery, every day"
+    },
     "a11y": {
       "skip": "Skip to main content"
     }
@@ -292,6 +311,7 @@
       "values": "价值观",
       "curriculum": "课程",
       "team": "我们的团队",
+      "gal": "影像集",
       "test": "家长评价",
       "fees": "学费",
       "faq": "常见问题",
@@ -540,6 +560,7 @@
       "values": "我们的价值观",
       "curr": "课程",
       "team": "我们的团队",
+      "gal": "影像集",
       "test": "家长评价",
       "fees": "学费",
       "faq": "常见问题",
@@ -565,6 +586,23 @@
       "r3": "幼儿班学生家长",
       "cta": "亲自参观了解更多"
     },
+    "gal": {
+      "label": "影像集",
+      "title": "中心精彩瞬间",
+      "desc": "走进天才宝石的一天 — 户外活动、课堂时光，以及让每一天都特别的笑容。",
+      "feat_t": "走出课堂的精彩冒险",
+      "feat_d": "看看我们的小探险家在最近的户外活动中 — 一起探索、欢笑、学习。",
+      "feat_dur": "1 分钟",
+      "feat_tag": "户外活动",
+      "video_fb": "您的浏览器不支持嵌入视频。",
+      "photos_t": "精选照片",
+      "p1": "围坐时光 — 小组学习，深厚情谊",
+      "p2": "好奇之心，珍宝在手",
+      "p3": "最简单时刻的欢乐",
+      "p4": "字母、欢笑、学习",
+      "p5": "分享是最美的功课",
+      "p6": "每天都是动手探索"
+    },
     "a11y": {
       "skip": "跳到主要内容"
     }
@@ -577,6 +615,7 @@
       "values": "Nilai",
       "curriculum": "Kurikulum",
       "team": "Pasukan",
+      "gal": "Galeri",
       "test": "Ulasan",
       "fees": "Yuran",
       "faq": "Soalan",
@@ -825,6 +864,7 @@
       "values": "Nilai Kami",
       "curr": "Kurikulum",
       "team": "Pasukan Kami",
+      "gal": "Galeri",
       "test": "Ulasan Ibu Bapa",
       "fees": "Yuran Sekolah",
       "faq": "Soalan Lazim",
@@ -850,6 +890,23 @@
       "r3": "Ibu bapa pelajar Playgroup",
       "cta": "Tempah Lawatan untuk Lihat Sendiri"
     },
+    "gal": {
+      "label": "Galeri",
+      "title": "Detik-Detik Istimewa Pusat Kami",
+      "desc": "Sekilas pandang ke dalam hari di Genius Gems — lawatan, detik bilik darjah, dan senyuman yang menjadikan setiap hari istimewa.",
+      "feat_t": "Pengembaraan di Luar Bilik Darjah",
+      "feat_d": "Saksikan penjelajah kecil kami beraksi semasa lawatan baru-baru ini — meneroka, ketawa dan belajar bersama.",
+      "feat_dur": "1 minit",
+      "feat_tag": "Lawatan",
+      "video_fb": "Pelayar anda tidak menyokong video terbenam.",
+      "photos_t": "Sorotan Foto",
+      "p1": "Masa berbulat — kumpulan kecil, hubungan besar",
+      "p2": "Harta karun rasa ingin tahu dalam tangan kecil",
+      "p3": "Kegembiraan dalam detik paling sederhana",
+      "p4": "Huruf, ketawa, pembelajaran",
+      "p5": "Berkongsi adalah pelajaran termanis",
+      "p6": "Penemuan langsung, setiap hari"
+    },
     "a11y": {
       "skip": "Langkau ke kandungan utama"
     }
@@ -862,6 +919,7 @@
       "values": "மதிப்புகள்",
       "curriculum": "பாடம்",
       "team": "குழு",
+      "gal": "காட்சியகம்",
       "test": "மதிப்புரைகள்",
       "fees": "கட்டணம்",
       "faq": "கேள்விகள்",
@@ -1110,6 +1168,7 @@
       "values": "எங்கள் மதிப்புகள்",
       "curr": "பாடத்திட்டம்",
       "team": "எங்கள் குழு",
+      "gal": "காட்சியகம்",
       "test": "பெற்றோர் மதிப்புரைகள்",
       "fees": "பள்ளி கட்டணம்",
       "faq": "கேள்விகள்",
@@ -1134,6 +1193,23 @@
       "q3": "\"ஜீனியஸ் ஜெம்ஸைக் கண்டுபிடிக்கும் முன் நாங்கள் இரண்டு வேறு குழந்தைப் பராமரிப்பு மையங்களை முயற்சித்தோம். இதம் மற்றும் கவனத்தில் வேறுபாடு உடனடியாகவே தெரிந்தது. நிக்கோல் அம்மா மற்றும் அவரது குழு குடும்பத்தினராகவே உணரப்படுகின்றனர்.\"",
       "r3": "Playgroup மாணவனின் பெற்றோர்",
       "cta": "நீங்களே பார்க்க சுற்றுப்பயணம் முன்பதிவு செய்யுங்கள்"
+    },
+    "gal": {
+      "label": "காட்சியகம்",
+      "title": "எங்கள் மையத்தின் சிறப்பான தருணங்கள்",
+      "desc": "ஜீனியஸ் ஜெம்ஸில் ஒரு நாள் — சுற்றுப்பயணங்கள், வகுப்பறை தருணங்கள், மற்றும் ஒவ்வொரு நாளையும் சிறப்பாக்கும் புன்னகைகள்.",
+      "feat_t": "வகுப்பறைக்கு அப்பால் ஒரு சாகசம்",
+      "feat_d": "சமீபத்திய சுற்றுப்பயணத்தில் எங்கள் சிறு ஆய்வாளர்களை செயலில் பாருங்கள் — ஒன்றாக கண்டுபிடிக்க, சிரிக்க, கற்க.",
+      "feat_dur": "1 நிமிடம்",
+      "feat_tag": "சுற்றுப்பயணம்",
+      "video_fb": "உங்கள் உலாவி உட்பொதிக்கப்பட்ட வீடியோவை ஆதரிக்கவில்லை.",
+      "photos_t": "புகைப்படத் தொகுப்பு",
+      "p1": "வட்டமாக அமர்தல் — சிறு குழு, பெரும் உறவுகள்",
+      "p2": "சிறிய கைகளில் ஆர்வத்தின் பொக்கிஷங்கள்",
+      "p3": "எளிய தருணங்களின் மகிழ்ச்சி",
+      "p4": "எழுத்துகள், சிரிப்பு, கற்றல்",
+      "p5": "பகிர்வது தான் இனிய பாடம்",
+      "p6": "ஒவ்வொரு நாளும் நேரடி கண்டுபிடிப்பு"
     },
     "a11y": {
       "skip": "முக்கிய உள்ளடக்கத்திற்குச் செல்லவும்"
