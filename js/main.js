@@ -105,7 +105,7 @@ typeBtns.forEach(btn => {
 
 // ---------- Contact form — submit ----------
 const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', (e) => {
+if (contactForm) contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const type = formTypeInput.value;
 
@@ -279,19 +279,28 @@ if (galleryVideo && videoPlayOverlay) {
 }
 
 // ---------- Active nav link on scroll ----------
+// Only runs scroll-spy on pages that have hash-based section links (e.g. index.html).
+// On standalone pages like gallery.html, links use "index.html#foo" which we leave alone
+// so the "active-link" class set in the markup persists.
 const sections = document.querySelectorAll('section[id]');
 const navLinkEls = document.querySelectorAll('.nav-links a');
-window.addEventListener('scroll', () => {
-  let current = '';
-  sections.forEach(section => {
-    if (window.scrollY >= section.offsetTop - 120) {
-      current = section.getAttribute('id');
-    }
+const hasHashOnlyNav = Array.from(navLinkEls).some(a => a.getAttribute('href')?.startsWith('#'));
+if (hasHashOnlyNav && sections.length) {
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      if (window.scrollY >= section.offsetTop - 120) {
+        current = section.getAttribute('id');
+      }
+    });
+    navLinkEls.forEach(link => {
+      const href = link.getAttribute('href') || '';
+      // Skip cross-page links (index.html#foo) — they're not scroll-tracked
+      if (!href.startsWith('#')) return;
+      link.classList.remove('active-link');
+      if (href === `#${current}`) {
+        link.classList.add('active-link');
+      }
+    });
   });
-  navLinkEls.forEach(link => {
-    link.classList.remove('active-link');
-    if (link.getAttribute('href') === `#${current}`) {
-      link.classList.add('active-link');
-    }
-  });
-});
+}

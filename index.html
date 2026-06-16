@@ -61,7 +61,7 @@
   <link rel="preload" as="image" href="images/4_kids_photo.webp" type="image/webp" />
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/style.css?v=20260616a" />
+  <link rel="stylesheet" href="css/style.css?v=20260616b" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
@@ -210,28 +210,6 @@
   }
   </script>
 
-  <!-- Structured Data: VideoObject (excursion highlights) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "VideoObject",
-    "name": "Genius Gems Excursion Highlights",
-    "description": "Highlights from a recent excursion with children from Genius Gems Childcare Centre, a bilingual preschool in Changi, Singapore.",
-    "thumbnailUrl": "https://geniusgems.com.sg/images/Excursion_poster.jpg",
-    "contentUrl": "https://geniusgems.com.sg/videos/Excursion.mp4",
-    "uploadDate": "2026-06-16",
-    "duration": "PT1M9S",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Genius Gems Childcare Centre",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://geniusgems.com.sg/images/Logo_1.png"
-      }
-    }
-  }
-  </script>
-
   <!-- Structured Data: FAQ (helps capture rich results) -->
   <script type="application/ld+json">
   {
@@ -356,7 +334,7 @@
         <li><a href="#values" data-i18n="nav.values">Values</a></li>
         <li><a href="#curriculum" data-i18n="nav.curriculum">Curriculum</a></li>
         <li><a href="#team" data-i18n="nav.team">Our Team</a></li>
-        <li><a href="#gallery" data-i18n="nav.gal">Gallery</a></li>
+        <li><a href="gallery.html" data-i18n="nav.gal">Gallery</a></li>
         <li><a href="#testimonials" data-i18n="nav.test">Reviews</a></li>
         <li><a href="#fees" data-i18n="nav.fees">Fees</a></li>
         <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
@@ -877,106 +855,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- GALLERY -->
-  <section class="gallery section" id="gallery">
-    <div class="container">
-      <div class="section-header centered">
-        <div class="section-label" data-i18n="gal.label">Gallery</div>
-        <h2 class="section-title" data-i18n="gal.title">Highlights from Our Centre</h2>
-        <p class="section-desc" data-i18n="gal.desc">A glimpse into a day at Genius Gems — excursions, classroom moments, and the smiles that make every day special.</p>
-      </div>
-
-      <!-- Featured Video -->
-      <figure class="gallery-feature">
-        <div class="video-wrapper">
-          <video
-            id="galleryVideo"
-            class="gallery-video"
-            controls
-            preload="metadata"
-            playsinline
-            poster="images/Excursion_poster.jpg"
-            aria-label="Excursion highlights from Genius Gems Childcare Centre"
-            itemprop="video"
-            itemscope
-            itemtype="https://schema.org/VideoObject">
-            <meta itemprop="name" content="Genius Gems Excursion Highlights" />
-            <meta itemprop="description" content="Highlights from a recent excursion with children from Genius Gems Childcare Centre in Changi, Singapore." />
-            <meta itemprop="thumbnailUrl" content="https://geniusgems.com.sg/images/Excursion_poster.jpg" />
-            <meta itemprop="contentUrl" content="https://geniusgems.com.sg/videos/Excursion.mp4" />
-            <meta itemprop="uploadDate" content="2026-06-16" />
-            <source src="videos/Excursion.mp4" type="video/mp4" />
-            <p data-i18n="gal.video_fb">Your browser doesn't support embedded video. <a href="videos/Excursion.mp4">Download the video</a> to watch.</p>
-          </video>
-          <button class="video-play-overlay" id="videoPlayOverlay" aria-label="Play video">
-            <span class="play-circle"><i class="fas fa-play"></i></span>
-          </button>
-        </div>
-        <figcaption class="gallery-feature-caption">
-          <div>
-            <h3 data-i18n="gal.feat_t">Adventure Beyond the Classroom</h3>
-            <p data-i18n="gal.feat_d">Watch our little explorers in action during a recent excursion — discovering, laughing, and learning together.</p>
-          </div>
-          <div class="gallery-feature-meta">
-            <span class="meta-pill"><i class="fas fa-clock"></i> <span data-i18n="gal.feat_dur">1 min</span></span>
-            <span class="meta-pill"><i class="fas fa-tag"></i> <span data-i18n="gal.feat_tag">Excursion</span></span>
-          </div>
-        </figcaption>
-      </figure>
-
-      <!-- Photo Highlights Grid -->
-      <h3 class="gallery-subhead" data-i18n="gal.photos_t">Photo Highlights</h3>
-      <div class="gallery-grid">
-        <figure class="gallery-item">
-          <picture>
-            <source srcset="images/Teacher_teaching_3.webp" type="image/webp" />
-            <img src="images/Teacher teaching 3.jpeg" alt="Teacher sitting in a circle with five children during a group learning activity at Genius Gems" loading="lazy" width="4000" height="2252" />
-          </picture>
-          <figcaption data-i18n="gal.p1">Circle time — small group, big connections</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <picture>
-            <source srcset="images/Children_holding_gems.webp" type="image/webp" />
-            <img src="images/Children holding gems.jpeg" alt="Children at Genius Gems Childcare Centre proudly holding colourful gems" loading="lazy" width="4000" height="2252" />
-          </picture>
-          <figcaption data-i18n="gal.p2">Treasures of curiosity in tiny hands</figcaption>
-        </figure>
-        <figure class="gallery-item gallery-item-tall">
-          <picture>
-            <source srcset="images/Boy_playing_with_bubbles.webp" type="image/webp" />
-            <img src="images/Boy playing with bubbles.jpeg" alt="Child joyfully playing with bubbles at Genius Gems Childcare Centre" loading="lazy" width="2252" height="4000" />
-          </picture>
-          <figcaption data-i18n="gal.p3">Joy in the simplest moments</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <picture>
-            <source srcset="images/Teacher_teaching_4.webp" type="image/webp" />
-            <img src="images/Teacher teaching 4.jpeg" alt="Teacher and children playing with colourful letter puzzles on the classroom floor at Genius Gems" loading="lazy" width="4000" height="2252" />
-          </picture>
-          <figcaption data-i18n="gal.p4">Letters, laughter, learning</figcaption>
-        </figure>
-        <figure class="gallery-item gallery-item-tall">
-          <picture>
-            <source srcset="images/Kids_playing_1.webp" type="image/webp" />
-            <img src="images/Kids playing 1.jpeg" alt="Two children sharing and playing with letter puzzle pieces at Genius Gems" loading="lazy" width="2252" height="4000" />
-          </picture>
-          <figcaption data-i18n="gal.p5">Sharing is the sweetest lesson</figcaption>
-        </figure>
-        <figure class="gallery-item gallery-item-tall">
-          <picture>
-            <source srcset="images/Boy_playing_with_rings.webp" type="image/webp" />
-            <img src="images/Boy playing with rings.jpeg" alt="Child playing with colourful rings during a hands-on learning activity at Genius Gems" loading="lazy" width="3024" height="4032" />
-          </picture>
-          <figcaption data-i18n="gal.p6">Hands-on discovery, every day</figcaption>
-        </figure>
-      </div>
-
-      <p class="gallery-credit" data-i18n="gal.credit">
-        Background music: <em>"Carefree"</em> by Kevin MacLeod (incompetech.com) — Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>.
-      </p>
     </div>
   </section>
 
@@ -1529,7 +1407,7 @@
             <li><a href="#values" data-i18n="footer.values">Our Values</a></li>
             <li><a href="#curriculum" data-i18n="footer.curr">Curriculum</a></li>
             <li><a href="#team" data-i18n="footer.team">Our Team</a></li>
-            <li><a href="#gallery" data-i18n="footer.gal">Gallery</a></li>
+            <li><a href="gallery.html" data-i18n="footer.gal">Gallery</a></li>
             <li><a href="#testimonials" data-i18n="footer.test">Parent Reviews</a></li>
             <li><a href="#fees" data-i18n="footer.fees">School Fees</a></li>
             <li><a href="#faq" data-i18n="footer.faq">FAQ</a></li>
@@ -1571,7 +1449,7 @@
 
   <!-- Hidden iframe for Google Forms submission -->
   <iframe id="formIframe" name="formIframe" style="display:none" aria-hidden="true"></iframe>
-  <script src="js/language-switcher.js?v=20260616a"></script>
-  <script src="js/main.js?v=20260616a"></script>
+  <script src="js/language-switcher.js?v=20260616b"></script>
+  <script src="js/main.js?v=20260616b"></script>
 </body>
 </html>
