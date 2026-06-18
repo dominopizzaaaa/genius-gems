@@ -434,26 +434,27 @@ html[lang="ta"] .nav-links { gap: 2px; }
 .stat-divider { width: 1px; height: 38px; background: rgba(201,184,240,0.45); }
 
 /* ============================================================
-   HERO VIDEO — portrait excursion video centred under hero text
+   HERO VIDEO — portrait excursion video centred under hero text.
+   Container hugs the video at its natural ratio so there is never
+   any black background bleeding out around the frame.
    ============================================================ */
 .hero-video {
   position: relative;
   display: block;
-  width: 100%;
+  width: fit-content;          /* shrink-wrap to the video */
   max-width: 340px;            /* slim on desktop because video is portrait */
   margin: 28px auto 36px;
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
-  background: linear-gradient(135deg, #0e0a1a, #1d1530);
-  aspect-ratio: 9 / 16;        /* match the portrait video ratio exactly */
+  background: transparent;     /* nothing behind the video */
+  line-height: 0;              /* kill the inline-baseline gap */
 }
 .hero-video-el {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;           /* fills the frame, video is its native ratio so no crop */
-  background: #0e0a1a;
+  height: auto;                /* let the video set its own height — no letterboxing */
+  background: transparent;
 }
 /* Mute toggle floating button */
 .hero-video-mute {
@@ -2198,10 +2199,12 @@ select[aria-invalid="true"] {
 }
 .gallery .container { position: relative; z-index: 1; }
 
-/* Featured video */
+/* Featured video — wrapper hugs the video at its natural ratio so
+   there is never any black background showing around the frame. */
 .gallery-feature {
   margin: 48px auto 64px;
-  max-width: 980px;
+  width: fit-content;          /* shrink to the video's actual size */
+  max-width: 100%;
   background: var(--white);
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -2210,19 +2213,21 @@ select[aria-invalid="true"] {
 }
 .video-wrapper {
   position: relative;
-  background: #0e0a1a;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  aspect-ratio: 16 / 9;
+  display: block;
+  width: fit-content;          /* shrink-wrap to the video */
+  max-width: 100%;
+  margin: 0 auto;
+  background: transparent;     /* nothing behind the video */
   overflow: hidden;
+  line-height: 0;              /* kill the inline-baseline gap */
 }
 .gallery-video {
-  width: 100%;
-  height: 100%;
   display: block;
-  background: #0e0a1a;
-  object-fit: contain;
+  width: auto;                 /* let the video set its own width */
+  height: auto;                /* let the video set its own height — no letterboxing */
+  max-width: 100%;
+  max-height: 70vh;            /* prevent it dominating very tall screens */
+  background: transparent;
 }
 .video-play-overlay {
   position: absolute;
@@ -2404,19 +2409,22 @@ select[aria-invalid="true"] {
     max-width: 100%;
     border-radius: var(--radius);
   }
-  /* Video: use natural aspect ratio (portrait phone video).
-     contain + height auto means no cropping no matter the dimensions. */
+  /* Video on mobile: container hugs the video, no black background.
+     The video sets its own width/height at its natural ratio. */
   .video-wrapper {
-    aspect-ratio: auto;
-    background: #0e0a1a;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+    background: transparent;
     display: block;
     max-height: none;
   }
   .gallery-video {
-    width: 100%;
+    width: auto;
     height: auto;
+    max-width: 100%;
     max-height: 75vh;
-    object-fit: contain;
+    background: transparent;
   }
   .play-circle {
     width: 64px;
