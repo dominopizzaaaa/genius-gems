@@ -4,7 +4,7 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://geniusgems.com.sg/</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -77,7 +77,7 @@
   </url>
   <url>
     <loc>https://geniusgems.com.sg/gallery.html</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <video:video>
@@ -117,6 +117,16 @@
     <image:image>
       <image:loc>https://geniusgems.com.sg/images/Boy%20playing%20with%20rings.jpeg</image:loc>
       <image:title>Child playing with colourful rings at Genius Gems</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://geniusgems.com.sg/images/Playgroup.jpeg</image:loc>
+      <image:title>Playgroup children engaged in hands-on early learning at Genius Gems Childcare Centre</image:title>
+      <image:caption>Playgroup programme at Genius Gems in Changi, Singapore — early bilingual learning from age 18 months</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://geniusgems.com.sg/images/Dancing.jpeg</image:loc>
+      <image:title>Children dancing during a performing arts session at Genius Gems</image:title>
+      <image:caption>Performing arts and creative movement at Genius Gems Childcare Centre, Changi</image:caption>
     </image:image>
   </url>
 </urlset>

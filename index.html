@@ -23,6 +23,13 @@
   <meta name="googlebot" content="index, follow" />
   <link rel="canonical" href="https://geniusgems.com.sg/" />
 
+  <!-- Language alternates (same URL serves multilingual content via client-side switcher) -->
+  <link rel="alternate" hreflang="en-SG" href="https://geniusgems.com.sg/" />
+  <link rel="alternate" hreflang="zh-SG" href="https://geniusgems.com.sg/" />
+  <link rel="alternate" hreflang="ms-SG" href="https://geniusgems.com.sg/" />
+  <link rel="alternate" hreflang="ta-SG" href="https://geniusgems.com.sg/" />
+  <link rel="alternate" hreflang="x-default" href="https://geniusgems.com.sg/" />
+
   <!-- Geo / Local SEO -->
   <meta name="geo.region" content="SG-04" />
   <meta name="geo.placename" content="Changi, Singapore" />
@@ -61,7 +68,7 @@
   <link rel="preload" as="image" href="images/4_kids_photo.webp" type="image/webp" />
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/style.css?v=20260616b" />
+  <link rel="stylesheet" href="css/style.css?v=20260618a" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
@@ -69,12 +76,28 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": ["Preschool", "ChildCare", "LocalBusiness"],
+    "@type": ["Preschool", "ChildCare", "LocalBusiness", "EducationalOrganization"],
     "name": "Genius Gems Childcare Centre",
-    "alternateName": "Genius Gems",
+    "alternateName": ["Genius Gems", "Genius Gems Preschool", "天才宝石托儿中心"],
+    "slogan": "Shaping tomorrow's brightest gems",
     "description": "A bilingual (English & Mandarin) childcare centre and preschool in Changi, Singapore, offering ECDA-aligned curriculum, qualified educators, and a nurturing environment for children's holistic development.",
     "url": "https://geniusgems.com.sg/",
     "logo": "https://geniusgems.com.sg/images/Logo_1.png",
+    "currenciesAccepted": "SGD",
+    "paymentAccepted": ["Cash", "Bank Transfer", "PayNow"],
+    "knowsLanguage": ["English", "Chinese", "Malay", "Tamil"],
+    "knowsAbout": [
+      "Early Childhood Education",
+      "Bilingual Education",
+      "Mandarin Chinese for Children",
+      "Play-Based Learning",
+      "Character Development",
+      "ECDA Framework"
+    ],
+    "audience": {
+      "@type": "EducationalAudience",
+      "audienceType": "Children aged 18 months to 6 years (Playgroup to Kindergarten)"
+    },
     "image": [
       "https://geniusgems.com.sg/images/4_kids_photo.png",
       "https://geniusgems.com.sg/images/children_activity_2.png",
@@ -1449,7 +1472,7 @@
 
   <!-- Hidden iframe for Google Forms submission -->
   <iframe id="formIframe" name="formIframe" style="display:none" aria-hidden="true"></iframe>
-  <script src="js/language-switcher.js?v=20260616b"></script>
-  <script src="js/main.js?v=20260616b"></script>
+  <script src="js/language-switcher.js?v=20260618a"></script>
+  <script src="js/main.js?v=20260618a"></script>
 </body>
 </html>

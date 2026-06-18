@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-SG">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Page Not Found | Genius Gems Childcare Centre</title>
+  <meta name="description" content="Sorry, we can't find that page. Head back to the Genius Gems homepage to explore our bilingual childcare centre in Changi, Singapore." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://geniusgems.com.sg/" />
+
+  <meta name="theme-color" content="#7a5a96" />
+  <link rel="icon" type="image/png" href="/images/Logo_1.png" />
+  <link rel="apple-touch-icon" href="/images/Logo_1.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+
+  <link rel="stylesheet" href="/css/style.css?v=20260618a" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    .err-wrap {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 24px 60px;
+      background: linear-gradient(135deg, #fef6fb 0%, #f0faf7 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .err-wrap::before,
+    .err-wrap::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .err-wrap::before {
+      width: 480px; height: 480px;
+      background: radial-gradient(circle, rgba(255,143,171,0.18), transparent 70%);
+      top: -160px; right: -120px;
+    }
+    .err-wrap::after {
+      width: 380px; height: 380px;
+      background: radial-gradient(circle, rgba(147,217,212,0.22), transparent 70%);
+      bottom: -140px; left: -100px;
+    }
+    .err-card {
+      background: #fff;
+      max-width: 560px;
+      width: 100%;
+      padding: 56px 40px;
+      border-radius: 32px;
+      box-shadow: 0 8px 40px rgba(180,140,200,0.18);
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .err-gem {
+      font-size: 4rem;
+      margin-bottom: 12px;
+      animation: bob 3s ease-in-out infinite;
+      display: inline-block;
+    }
+    @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    .err-code {
+      font-family: 'Poppins', sans-serif;
+      font-size: 5rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #FF8FAB, #C9B8F0);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1;
+      margin: 0 0 4px;
+    }
+    .err-title {
+      font-family: 'Poppins', sans-serif;
+      color: #4a3f5c;
+      font-size: 1.6rem;
+      margin: 0 0 16px;
+    }
+    .err-msg {
+      color: #6e6585;
+      line-height: 1.7;
+      margin: 0 0 32px;
+    }
+    .err-actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .err-actions .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 999px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+    }
+    .btn-pink {
+      background: linear-gradient(135deg, #FF8FAB, #e8729a);
+      color: #fff;
+      box-shadow: 0 8px 32px rgba(255,143,171,0.28);
+    }
+    .btn-pink:hover { transform: translateY(-2px); box-shadow: 0 12px 36px rgba(255,143,171,0.4); }
+    .btn-ghost {
+      background: transparent;
+      color: #e8729a;
+      border: 2px solid #FF8FAB;
+    }
+    .btn-ghost:hover { background: rgba(255,143,171,0.08); }
+    @media (max-width: 480px) {
+      .err-card { padding: 40px 24px; }
+      .err-code { font-size: 4rem; }
+      .err-title { font-size: 1.3rem; }
+      .err-actions { flex-direction: column; }
+      .err-actions .btn { width: 100%; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+  <main class="err-wrap">
+    <div class="err-card">
+      <div class="err-gem" aria-hidden="true">💎</div>
+      <p class="err-code">404</p>
+      <h1 class="err-title">This gem hasn't been found</h1>
+      <p class="err-msg">The page you're looking for has wandered off. Let's get you back to the brilliance at Genius Gems Childcare Centre.</p>
+      <div class="err-actions">
+        <a href="/" class="btn btn-pink"><i class="fas fa-home"></i> Back to Home</a>
+        <a href="/gallery.html" class="btn btn-ghost"><i class="fas fa-images"></i> See our Gallery</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
