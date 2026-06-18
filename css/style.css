@@ -433,32 +433,76 @@ html[lang="ta"] .nav-links { gap: 2px; }
 .stat-label { font-size: 0.72rem; color: var(--text-light); font-weight: 700; letter-spacing: 0.04em; }
 .stat-divider { width: 1px; height: 38px; background: rgba(201,184,240,0.45); }
 
-.hero-image {
-  display: none;
-}
-.hero-img-wrapper { width: 100%; height: 100%; position: relative; }
-.hero-img-wrapper img { width: 100%; height: 100%; object-fit: cover; }
-.hero-img-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to right, #fde8f0 0%, transparent 45%);
-}
-
-/* Inline hero image — always visible */
-.hero-img-mobile {
+/* ============================================================
+   HERO VIDEO — portrait excursion video centred under hero text
+   ============================================================ */
+.hero-video {
+  position: relative;
   display: block;
   width: 100%;
-  max-width: 680px;
-  margin: 24px auto 32px;
+  max-width: 340px;            /* slim on desktop because video is portrait */
+  margin: 28px auto 36px;
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
+  background: linear-gradient(135deg, #0e0a1a, #1d1530);
+  aspect-ratio: 9 / 16;        /* match the portrait video ratio exactly */
 }
-.hero-img-mobile img {
-  width: 100%;
-  height: auto;
+.hero-video-el {
   display: block;
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;           /* fills the frame, video is its native ratio so no crop */
+  background: #0e0a1a;
+}
+/* Mute toggle floating button */
+.hero-video-mute {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(74,63,92,0.65);
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: background 0.25s ease, transform 0.25s ease;
+  z-index: 3;
+}
+.hero-video-mute:hover {
+  background: var(--primary);
+  transform: scale(1.05);
+}
+.hero-video-mute:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Phone: wider video, centered, plenty of room */
+@media (max-width: 768px) {
+  .hero-video {
+    max-width: 280px;
+    margin: 24px auto 28px;
+  }
+}
+@media (max-width: 480px) {
+  .hero-video {
+    max-width: 240px;
+    margin: 20px auto 24px;
+  }
+  .hero-video-mute {
+    width: 38px;
+    height: 38px;
+    bottom: 10px;
+    right: 10px;
+  }
 }
 
 .hero-scroll {

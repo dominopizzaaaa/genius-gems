@@ -65,10 +65,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
-  <link rel="preload" as="image" href="images/4_kids_photo.webp" type="image/webp" />
+  <link rel="preload" as="image" href="images/Excursion_poster.webp" type="image/webp" />
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/style.css?v=20260618a" />
+  <link rel="stylesheet" href="css/style.css?v=20260618b" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
@@ -388,12 +388,27 @@
       <p class="hero-subtitle" data-i18n="hero.subtitle">
         A warm, enriching childcare environment where curiosity thrives, friendships blossom, and every child discovers the brilliance within.
       </p>
-      <!-- Inline image shown only on mobile, hidden on desktop -->
-      <div class="hero-img-mobile">
-        <picture>
-          <source srcset="images/4_kids_photo.webp" type="image/webp" />
-          <img src="images/4_kids_photo.png" alt="Four happy children learning and playing together at Genius Gems Childcare Centre in Changi, Singapore" loading="eager" fetchpriority="high" width="800" height="800" />
-        </picture>
+      <!-- Hero video — featured excursion highlights -->
+      <div class="hero-video">
+        <video
+          id="heroVideo"
+          class="hero-video-el"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="images/Excursion_poster.jpg"
+          aria-label="Genius Gems Childcare Centre excursion highlights — children enjoying a day out in Changi, Singapore">
+          <source src="videos/Excursion.mp4" type="video/mp4" />
+          <picture>
+            <source srcset="images/Excursion_poster.webp" type="image/webp" />
+            <img src="images/Excursion_poster.jpg" alt="Children on an excursion with Genius Gems Childcare Centre in Changi, Singapore" />
+          </picture>
+        </video>
+        <button class="hero-video-mute" id="heroVideoMute" aria-label="Unmute video">
+          <i class="fas fa-volume-mute"></i>
+        </button>
       </div>
       <div class="hero-actions">
         <a href="#contact" class="btn btn-primary" data-i18n="hero.btn_enrol">Enrol Your Child</a>
@@ -414,15 +429,6 @@
           <span class="stat-num">4</span>
           <span class="stat-label" data-i18n="hero.stat_3">Enrichment Programmes</span>
         </div>
-      </div>
-    </div>
-    <div class="hero-image">
-      <div class="hero-img-wrapper">
-        <picture>
-          <source srcset="images/4_kids_photo.webp" type="image/webp" />
-          <img src="images/4_kids_photo.png" alt="Children learning together at Genius Gems Childcare Centre, a bilingual preschool in Changi, Singapore" loading="eager" fetchpriority="high" width="800" height="800" onerror="this.style.display='none'" />
-        </picture>
-        <div class="hero-img-overlay"></div>
       </div>
     </div>
     <div class="hero-scroll">
@@ -1472,7 +1478,7 @@
 
   <!-- Hidden iframe for Google Forms submission -->
   <iframe id="formIframe" name="formIframe" style="display:none" aria-hidden="true"></iframe>
-  <script src="js/language-switcher.js?v=20260618a"></script>
-  <script src="js/main.js?v=20260618a"></script>
+  <script src="js/language-switcher.js?v=20260618b"></script>
+  <script src="js/main.js?v=20260618b"></script>
 </body>
 </html>

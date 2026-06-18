@@ -259,6 +259,27 @@ if (yearEl) {
   yearEl.textContent = now > 2024 ? `2024–${now}` : '2024';
 }
 
+// ---------- Hero video — mute toggle ----------
+const heroVideo = document.getElementById('heroVideo');
+const heroVideoMute = document.getElementById('heroVideoMute');
+if (heroVideo && heroVideoMute) {
+  const muteIcon = heroVideoMute.querySelector('i');
+  const setMuteState = (muted) => {
+    heroVideo.muted = muted;
+    if (muteIcon) {
+      muteIcon.className = muted ? 'fas fa-volume-mute' : 'fas fa-volume-up';
+    }
+    heroVideoMute.setAttribute('aria-label', muted ? 'Unmute video' : 'Mute video');
+  };
+  heroVideoMute.addEventListener('click', () => {
+    setMuteState(!heroVideo.muted);
+    // Ensure playback continues after unmuting
+    if (!heroVideo.muted && heroVideo.paused) {
+      heroVideo.play().catch(() => {});
+    }
+  });
+}
+
 // ---------- Gallery video — custom play overlay ----------
 const galleryVideo = document.getElementById('galleryVideo');
 const videoPlayOverlay = document.getElementById('videoPlayOverlay');
