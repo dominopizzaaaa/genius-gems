@@ -68,7 +68,7 @@
   <link rel="preload" as="image" href="images/Excursion_poster.webp" type="image/webp" />
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/style.css?v=20260618c" />
+  <link rel="stylesheet" href="css/style.css?v=20260629a" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
@@ -103,12 +103,16 @@
     "description": "Photos and video highlights from Genius Gems Childcare Centre, a bilingual preschool in Changi, Singapore.",
     "url": "https://geniusgems.com.sg/gallery.html",
     "image": [
+      "https://geniusgems.com.sg/images/Playing-with-water-1.jpeg",
+      "https://geniusgems.com.sg/images/Playing-with-water-2.jpeg",
+      "https://geniusgems.com.sg/images/Playing-with-water-3.jpeg",
+      "https://geniusgems.com.sg/images/Playing-with-water-4.jpeg",
       "https://geniusgems.com.sg/images/Teacher%20teaching%203.jpeg",
-      "https://geniusgems.com.sg/images/Children%20holding%20gems.jpeg",
-      "https://geniusgems.com.sg/images/Boy%20playing%20with%20bubbles.jpeg",
       "https://geniusgems.com.sg/images/Teacher%20teaching%204.jpeg",
       "https://geniusgems.com.sg/images/Kids%20playing%201.jpeg",
+      "https://geniusgems.com.sg/images/Children%20holding%20gems.jpeg",
       "https://geniusgems.com.sg/images/Boy%20playing%20with%20rings.jpeg",
+      "https://geniusgems.com.sg/images/Boy%20playing%20with%20bubbles.jpeg",
       "https://geniusgems.com.sg/images/Playgroup.jpeg",
       "https://geniusgems.com.sg/images/Dancing.jpeg"
     ]
@@ -240,66 +244,144 @@
         </figcaption>
       </figure>
 
-      <!-- Photo Highlights Grid -->
+      <!-- Photo Highlights — organised into themed categories -->
       <h2 class="gallery-subhead" data-i18n="gal.photos_t">Photo Highlights</h2>
-      <div class="gallery-grid">
-        <figure class="gallery-item">
-          <picture>
-            <source srcset="images/Teacher_teaching_3.webp" type="image/webp" />
-            <img src="images/Teacher teaching 3.jpeg" alt="Teacher sitting in a circle with five children during a group learning activity at Genius Gems" loading="lazy" width="4000" height="2252" />
-          </picture>
-          <figcaption data-i18n="gal.p1">Circle time — small group, big connections</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <picture>
-            <source srcset="images/Children_holding_gems.webp" type="image/webp" />
-            <img src="images/Children holding gems.jpeg" alt="Children at Genius Gems Childcare Centre proudly holding colourful gems" loading="lazy" width="4000" height="2252" />
-          </picture>
-          <figcaption data-i18n="gal.p2">Treasures of curiosity in tiny hands</figcaption>
-        </figure>
-        <figure class="gallery-item gallery-item-portrait">
-          <picture>
-            <source srcset="images/Boy_playing_with_bubbles.webp" type="image/webp" />
-            <img src="images/Boy playing with bubbles.jpeg" alt="Child joyfully playing with bubbles at Genius Gems Childcare Centre" loading="lazy" width="2252" height="4000" />
-          </picture>
-          <figcaption data-i18n="gal.p3">Joy in the simplest moments</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <picture>
-            <source srcset="images/Teacher_teaching_4.webp" type="image/webp" />
-            <img src="images/Teacher teaching 4.jpeg" alt="Teacher and children playing with colourful letter puzzles on the classroom floor at Genius Gems" loading="lazy" width="4000" height="2252" />
-          </picture>
-          <figcaption data-i18n="gal.p4">Letters, laughter, learning</figcaption>
-        </figure>
-        <figure class="gallery-item gallery-item-portrait">
-          <picture>
-            <source srcset="images/Kids_playing_1.webp" type="image/webp" />
-            <img src="images/Kids playing 1.jpeg" alt="Two children sharing and playing with letter puzzle pieces at Genius Gems" loading="lazy" width="2252" height="4000" />
-          </picture>
-          <figcaption data-i18n="gal.p5">Sharing is the sweetest lesson</figcaption>
-        </figure>
-        <figure class="gallery-item gallery-item-portrait">
-          <picture>
-            <source srcset="images/Boy_playing_with_rings.webp" type="image/webp" />
-            <img src="images/Boy playing with rings.jpeg" alt="Child playing with colourful rings during a hands-on learning activity at Genius Gems" loading="lazy" width="3024" height="4032" />
-          </picture>
-          <figcaption data-i18n="gal.p6">Hands-on discovery, every day</figcaption>
-        </figure>
-        <figure class="gallery-item gallery-item-portrait">
-          <picture>
-            <source srcset="images/Playgroup.webp" type="image/webp" />
-            <img src="images/Playgroup.jpeg" alt="Playgroup children at Genius Gems Childcare Centre engaged in hands-on early learning" loading="lazy" width="2252" height="4000" />
-          </picture>
-          <figcaption data-i18n="gal.p7">Our playgroup — where every adventure begins</figcaption>
-        </figure>
-        <figure class="gallery-item gallery-item-portrait">
-          <picture>
-            <source srcset="images/Dancing.webp" type="image/webp" />
-            <img src="images/Dancing.jpeg" alt="Children dancing joyfully during a performing arts session at Genius Gems Childcare Centre in Changi" loading="lazy" width="1835" height="3824" />
-          </picture>
-          <figcaption data-i18n="gal.p8">Dancing, expressing, blooming</figcaption>
-        </figure>
-      </div>
+
+      <!-- ───── Water Play ───── -->
+      <section class="gallery-category">
+        <header class="category-header">
+          <span class="category-icon" aria-hidden="true"><i class="fas fa-water"></i></span>
+          <div>
+            <h3 class="category-title" data-i18n="gal.cat_water_t">Splash &amp; Discover — Water Play</h3>
+            <p class="category-desc" data-i18n="gal.cat_water_d">Sunny afternoons of sensory water play — pouring, scooping, laughing, learning.</p>
+          </div>
+        </header>
+        <div class="gallery-masonry">
+          <figure class="gallery-item">
+            <picture>
+              <source srcset="images/Playing_with_water_1.webp" type="image/webp" />
+              <img src="images/Playing-with-water-1.jpeg" alt="Children at Genius Gems Childcare Centre enjoying a water play session in Changi" loading="lazy" width="2048" height="1999" />
+            </picture>
+            <figcaption data-i18n="gal.water_1">Buckets of fun, drop by drop</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <picture>
+              <source srcset="images/Playing_with_water_2.webp" type="image/webp" />
+              <img src="images/Playing-with-water-2.jpeg" alt="Child concentrating during a water play activity at Genius Gems" loading="lazy" width="1126" height="2000" />
+            </picture>
+            <figcaption data-i18n="gal.water_2">Little hands, big discoveries</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <picture>
+              <source srcset="images/Playing_with_water_3.webp" type="image/webp" />
+              <img src="images/Playing-with-water-3.jpeg" alt="Children sharing a water play table at Genius Gems Childcare Centre" loading="lazy" width="2000" height="1126" />
+            </picture>
+            <figcaption data-i18n="gal.water_3">Sharing, splashing, smiling together</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <picture>
+              <source srcset="images/Playing_with_water_4.webp" type="image/webp" />
+              <img src="images/Playing-with-water-4.jpeg" alt="Sensory water play exploration at Genius Gems Childcare Centre" loading="lazy" width="1126" height="2000" />
+            </picture>
+            <figcaption data-i18n="gal.water_4">Curious minds love a cool splash</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ───── Classroom Learning ───── -->
+      <section class="gallery-category">
+        <header class="category-header">
+          <span class="category-icon" aria-hidden="true"><i class="fas fa-chalkboard-teacher"></i></span>
+          <div>
+            <h3 class="category-title" data-i18n="gal.cat_class_t">In the Classroom</h3>
+            <p class="category-desc" data-i18n="gal.cat_class_d">Small-group learning where every child is seen, heard, and guided.</p>
+          </div>
+        </header>
+        <div class="gallery-masonry">
+          <figure class="gallery-item">
+            <picture>
+              <source srcset="images/Teacher_teaching_3.webp" type="image/webp" />
+              <img src="images/Teacher teaching 3.jpeg" alt="Teacher sitting in a circle with five children during a group learning activity at Genius Gems" loading="lazy" width="4000" height="2252" />
+            </picture>
+            <figcaption data-i18n="gal.p1">Circle time — small group, big connections</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <picture>
+              <source srcset="images/Teacher_teaching_4.webp" type="image/webp" />
+              <img src="images/Teacher teaching 4.jpeg" alt="Teacher and children playing with colourful letter puzzles on the classroom floor at Genius Gems" loading="lazy" width="4000" height="2252" />
+            </picture>
+            <figcaption data-i18n="gal.p4">Letters, laughter, learning</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <picture>
+              <source srcset="images/Kids_playing_1.webp" type="image/webp" />
+              <img src="images/Kids playing 1.jpeg" alt="Two children sharing and playing with letter puzzle pieces at Genius Gems" loading="lazy" width="2252" height="4000" />
+            </picture>
+            <figcaption data-i18n="gal.p5">Sharing is the sweetest lesson</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ───── Hands-on Discovery ───── -->
+      <section class="gallery-category">
+        <header class="category-header">
+          <span class="category-icon" aria-hidden="true"><i class="fas fa-hand-sparkles"></i></span>
+          <div>
+            <h3 class="category-title" data-i18n="gal.cat_hands_t">Hands-on Discovery</h3>
+            <p class="category-desc" data-i18n="gal.cat_hands_d">Sensory, manipulative play that turns ordinary objects into extraordinary lessons.</p>
+          </div>
+        </header>
+        <div class="gallery-masonry">
+          <figure class="gallery-item">
+            <picture>
+              <source srcset="images/Children_holding_gems.webp" type="image/webp" />
+              <img src="images/Children holding gems.jpeg" alt="Children at Genius Gems Childcare Centre proudly holding colourful gems" loading="lazy" width="4000" height="2252" />
+            </picture>
+            <figcaption data-i18n="gal.p2">Treasures of curiosity in tiny hands</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <picture>
+              <source srcset="images/Boy_playing_with_rings.webp" type="image/webp" />
+              <img src="images/Boy playing with rings.jpeg" alt="Child playing with colourful rings during a hands-on learning activity at Genius Gems" loading="lazy" width="3024" height="4032" />
+            </picture>
+            <figcaption data-i18n="gal.p6">Hands-on discovery, every day</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ───── Joyful Moments ───── -->
+      <section class="gallery-category">
+        <header class="category-header">
+          <span class="category-icon" aria-hidden="true"><i class="fas fa-heart"></i></span>
+          <div>
+            <h3 class="category-title" data-i18n="gal.cat_joy_t">Joyful Moments</h3>
+            <p class="category-desc" data-i18n="gal.cat_joy_d">Bubbles, beats, and brand-new beginnings — the little moments that make every day special.</p>
+          </div>
+        </header>
+        <div class="gallery-masonry">
+          <figure class="gallery-item">
+            <picture>
+              <source srcset="images/Boy_playing_with_bubbles.webp" type="image/webp" />
+              <img src="images/Boy playing with bubbles.jpeg" alt="Child joyfully playing with bubbles at Genius Gems Childcare Centre" loading="lazy" width="2252" height="4000" />
+            </picture>
+            <figcaption data-i18n="gal.p3">Joy in the simplest moments</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <picture>
+              <source srcset="images/Playgroup.webp" type="image/webp" />
+              <img src="images/Playgroup.jpeg" alt="Playgroup children at Genius Gems Childcare Centre engaged in hands-on early learning" loading="lazy" width="2252" height="4000" />
+            </picture>
+            <figcaption data-i18n="gal.p7">Our playgroup — where every adventure begins</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <picture>
+              <source srcset="images/Dancing.webp" type="image/webp" />
+              <img src="images/Dancing.jpeg" alt="Children dancing joyfully during a performing arts session at Genius Gems Childcare Centre in Changi" loading="lazy" width="1835" height="3824" />
+            </picture>
+            <figcaption data-i18n="gal.p8">Dancing, expressing, blooming</figcaption>
+          </figure>
+        </div>
+      </section>
 
       <!-- Back / CTA -->
       <div class="gallery-back-cta">
@@ -385,7 +467,7 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <script src="js/language-switcher.js?v=20260618c"></script>
-  <script src="js/main.js?v=20260618c"></script>
+  <script src="js/language-switcher.js?v=20260629a"></script>
+  <script src="js/main.js?v=20260629a"></script>
 </body>
 </html>
