@@ -4,9 +4,23 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://geniusgems.com.sg/</loc>
-    <lastmod>2026-06-29</lastmod>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <video:video>
+      <video:thumbnail_loc>https://geniusgems.com.sg/images/Excursion_poster.jpg</video:thumbnail_loc>
+      <video:title>Genius Gems Excursion Highlights</video:title>
+      <video:description>Highlights from a recent excursion with children from Genius Gems Childcare Centre, a bilingual preschool in Changi, Singapore.</video:description>
+      <video:content_loc>https://geniusgems.com.sg/videos/Excursion.mp4</video:content_loc>
+      <video:duration>69</video:duration>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:publication_date>2026-06-16T00:00:00+08:00</video:publication_date>
+    </video:video>
+    <image:image>
+      <image:loc>https://geniusgems.com.sg/images/Excursion_poster.jpg</image:loc>
+      <image:title>Genius Gems excursion video thumbnail</image:title>
+      <image:caption>Children on an excursion with Genius Gems Childcare Centre, Changi</image:caption>
+    </image:image>
     <image:image>
       <image:loc>https://geniusgems.com.sg/images/4_kids_photo.png</image:loc>
       <image:title>Happy children learning and playing at Genius Gems Childcare Centre in Changi, Singapore</image:title>
@@ -77,26 +91,17 @@
   </url>
   <url>
     <loc>https://geniusgems.com.sg/gallery.html</loc>
-    <lastmod>2026-06-29</lastmod>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <video:video>
-      <video:thumbnail_loc>https://geniusgems.com.sg/images/Excursion_poster.jpg</video:thumbnail_loc>
-      <video:title>Genius Gems Excursion Highlights</video:title>
-      <video:description>Highlights from a recent excursion with children from Genius Gems Childcare Centre, a bilingual preschool in Changi, Singapore.</video:description>
-      <video:content_loc>https://geniusgems.com.sg/videos/Excursion.mp4</video:content_loc>
-      <video:duration>69</video:duration>
-      <video:family_friendly>yes</video:family_friendly>
-      <video:publication_date>2026-06-16T00:00:00+08:00</video:publication_date>
-    </video:video>
-    <image:image>
-      <image:loc>https://geniusgems.com.sg/images/Excursion_poster.jpg</image:loc>
-      <image:title>Genius Gems excursion video thumbnail</image:title>
-      <image:caption>Children on an excursion with Genius Gems Childcare Centre, Changi</image:caption>
-    </image:image>
     <image:image>
       <image:loc>https://geniusgems.com.sg/images/Teacher%20teaching%203.jpeg</image:loc>
       <image:title>Teacher in a circle with children during a group activity at Genius Gems</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://geniusgems.com.sg/images/K2s-photo.jpeg</image:loc>
+      <image:title>Teacher guiding Kindergarten 2 (K2) children during a classroom lesson at Genius Gems</image:title>
+      <image:caption>K2 classroom learning at Genius Gems Childcare Centre, Changi, Singapore</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://geniusgems.com.sg/images/Children%20holding%20gems.jpeg</image:loc>
