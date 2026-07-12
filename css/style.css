@@ -2848,8 +2848,9 @@ select[aria-invalid="true"] {
 
 /* ---- scroll cue ---- */
 .oh-scroll {
-  position: absolute; left: 50%; bottom: 118px; transform: translateX(-50%);
+  align-self: center;
   display: inline-flex; flex-direction: column; align-items: center; gap: 6px;
+  margin: 6px 0 18px;
   font-size: .74rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
   color: var(--text-light);
   animation: ohBob 2.4s ease-in-out infinite;
@@ -2868,14 +2869,10 @@ select[aria-invalid="true"] {
 /* ---- keyframes ---- */
 @keyframes ohFloat { 0%,100% { transform: translate(0,0) rotate(0); } 50% { transform: translate(18px,-22px) rotate(8deg); } }
 @keyframes ohBob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
-@keyframes ohScrollBob { 0%,100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(-8px); } }
 @keyframes ohTwinkle { 0%,100% { opacity: 0; transform: scale(.5); } 50% { opacity: 1; transform: scale(1.15); } }
 @keyframes ohShimmer { to { background-position: 200% center; } }
 @keyframes ohPulse { 0% { box-shadow: 0 0 0 0 rgba(255,143,171,0.55); } 70% { box-shadow: 0 0 0 16px rgba(255,143,171,0); } 100% { box-shadow: 0 0 0 0 rgba(255,143,171,0); } }
 @keyframes ohReveal { to { opacity: 1; transform: translateY(0); } }
-
-/* keep scroll cue centered (transform overridden by ohBob) */
-.oh-scroll { animation-name: ohScrollBob; }
 
 /* ---- responsive ---- */
 @media (max-width: 860px) {
@@ -2992,7 +2989,7 @@ select[aria-invalid="true"] {
   transition: transform .25s ease, box-shadow .25s ease;
 }
 .ohp-tl-card::before {
-  content: ""; position: absolute; left: -30px; top: 22px; width: 15px; height: 15px; border-radius: 50%;
+  content: ""; position: absolute; left: -19px; top: 22px; width: 15px; height: 15px; border-radius: 50%;
   background: var(--primary); border: 3px solid var(--white); box-shadow: 0 0 0 3px rgba(255,143,171,0.3);
 }
 .ohp-tl-card:hover { transform: translateX(4px); box-shadow: var(--shadow-lg); }
@@ -3087,9 +3084,10 @@ select[aria-invalid="true"] {
   .ohp-hero { padding: 108px 0 40px; }
   .ohp-hero .oh-cards { flex-direction: column; align-items: stretch; max-width: 360px; margin-inline: auto; }
   .ohp-hero-actions .btn { width: 100%; max-width: 340px; justify-content: center; }
-  .ohp-timeline::before { left: 66px; }
-  .ohp-tl-item { grid-template-columns: 58px 1fr; gap: 18px; }
-  .ohp-tl-time { font-size: 1rem; }
+  .ohp-timeline::before { left: 62px; }
+  .ohp-tl-item { grid-template-columns: 48px 1fr; gap: 26px; }
+  .ohp-tl-time { font-size: 0.95rem; }
+  .ohp-tl-card::before { left: -19px; }
   .ohp-rsvp-card { padding: 40px 20px; }
   .ohp-date-card { width: 100%; max-width: 320px; }
   .ohp-rsvp-alt-btns .btn { width: 100%; max-width: 320px; justify-content: center; }
