@@ -337,7 +337,11 @@ if (hasHashOnlyNav && sections.length) {
     minutes: el.querySelector('[data-cd="minutes"]'),
     seconds: el.querySelector('[data-cd="seconds"]'),
   };
+  // Bail out safely if the markup or a valid deadline is missing.
+  if (!Number.isFinite(deadline) || !fields.days || !fields.hours || !fields.minutes || !fields.seconds) return;
+
   const pad = (n) => String(Math.max(0, n)).padStart(2, '0');
+  let timer = null;
 
   function render() {
     const diff = deadline - Date.now();
@@ -348,7 +352,7 @@ if (hasHashOnlyNav && sections.length) {
       if (label) label.innerHTML =
         '<span class="oh-cd-dot"></span> The Open House is here — <b>see you there!</b> ' +
         '<span class="oh-cd-tag">Walk-ins welcome</span>';
-      clearInterval(timer);
+      if (timer) clearInterval(timer);
       return;
     }
     const s = Math.floor(diff / 1000);
@@ -359,5 +363,5 @@ if (hasHashOnlyNav && sections.length) {
   }
 
   render();
-  const timer = setInterval(render, 1000);
+  timer = setInterval(render, 1000);
 })();
