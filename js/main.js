@@ -325,3 +325,39 @@ if (hasHashOnlyNav && sections.length) {
     });
   });
 }
+
+// ---------- Open House countdown ----------
+(function () {
+  const el = document.getElementById('ohCountdown');
+  if (!el) return;
+  const deadline = new Date(el.dataset.deadline || '2026-08-08T09:00:00+08:00').getTime();
+  const fields = {
+    days: el.querySelector('[data-cd="days"]'),
+    hours: el.querySelector('[data-cd="hours"]'),
+    minutes: el.querySelector('[data-cd="minutes"]'),
+    seconds: el.querySelector('[data-cd="seconds"]'),
+  };
+  const pad = (n) => String(Math.max(0, n)).padStart(2, '0');
+
+  function render() {
+    const diff = deadline - Date.now();
+    if (diff <= 0) {
+      fields.days.textContent = fields.hours.textContent =
+        fields.minutes.textContent = fields.seconds.textContent = '00';
+      const label = el.querySelector('.oh-cd-label');
+      if (label) label.innerHTML =
+        '<span class="oh-cd-dot"></span> The Open House is here — <b>see you there!</b> ' +
+        '<span class="oh-cd-tag">Walk-ins welcome</span>';
+      clearInterval(timer);
+      return;
+    }
+    const s = Math.floor(diff / 1000);
+    fields.days.textContent = pad(Math.floor(s / 86400));
+    fields.hours.textContent = pad(Math.floor((s % 86400) / 3600));
+    fields.minutes.textContent = pad(Math.floor((s % 3600) / 60));
+    fields.seconds.textContent = pad(s % 60);
+  }
+
+  render();
+  const timer = setInterval(render, 1000);
+})();
