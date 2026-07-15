@@ -317,7 +317,13 @@
       "bc_gal": "Gallery",
       "cta_enrol": "Enrol Your Child",
       "cta_back": "← Back to Home",
-      "credit": "Background music: \"Carefree\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0."
+      "credit": "Background music: \"Carefree\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0.",
+      "cat_special_t": "What Makes Us Special",
+      "cat_special_d": "A closer look at the things families tell us they love most — play-based learning, our big outdoor playground, school-ready confidence, and families in the thick of it with us.",
+      "cap_play": "Learning through play — steady hands, big steps, and a teacher close by for every wobble.",
+      "cap_playground": "Our large outdoor playground — real grass, big slides, and room to run every single day.",
+      "cap_ready": "Small-group lessons that build the focus and curiosity our children carry into Primary School.",
+      "cap_family": "Family involvement at its best — proud hands, proud hearts, and artwork worth showing off."
     },
     "a11y": {
       "skip": "Skip to main content"
@@ -641,7 +647,13 @@
       "bc_gal": "影像集",
       "cta_enrol": "为您的孩子报名",
       "cta_back": "← 返回首页",
-      "credit": "背景音乐：「Carefree」由 Kevin MacLeod (incompetech.com) 创作 — 采用 CC BY 4.0 许可。"
+      "credit": "背景音乐：「Carefree」由 Kevin MacLeod (incompetech.com) 创作 — 采用 CC BY 4.0 许可。",
+      "cat_special_t": "我们的独特之处",
+      "cat_special_d": "家长最喜爱的一切 — 寓教于乐的学习、宽敞的户外游乐场、迎接小学的自信，以及家长的全程参与。",
+      "cap_play": "在游戏中学习 — 稳稳的小手、勇敢的步伐，老师始终在身旁守护。",
+      "cap_playground": "宽敞的户外游乐场 — 真草地、大滑梯，每天都有奔跑的空间。",
+      "cap_ready": "小组教学，培养孩子带入小学的专注力与好奇心。",
+      "cap_family": "最美的亲子参与 — 骄傲的双手、骄傲的心，还有值得炫耀的作品。"
     },
     "a11y": {
       "skip": "跳到主要内容"
@@ -965,7 +977,13 @@
       "bc_gal": "Galeri",
       "cta_enrol": "Daftarkan Anak Anda",
       "cta_back": "← Kembali ke Laman Utama",
-      "credit": "Muzik latar: \"Carefree\" oleh Kevin MacLeod (incompetech.com) — Dilesenkan di bawah CC BY 4.0."
+      "credit": "Muzik latar: \"Carefree\" oleh Kevin MacLeod (incompetech.com) — Dilesenkan di bawah CC BY 4.0.",
+      "cat_special_t": "Apa Yang Menjadikan Kami Istimewa",
+      "cat_special_d": "Lihat lebih dekat perkara yang paling disukai keluarga — pembelajaran melalui bermain, taman permainan luar yang luas, keyakinan untuk ke sekolah rendah, dan penglibatan keluarga bersama kami.",
+      "cap_play": "Belajar melalui bermain — tangan yang mantap, langkah yang berani, dan guru sentiasa di sisi.",
+      "cap_playground": "Taman permainan luar kami yang luas — rumput sebenar, gelongsor besar dan ruang untuk berlari setiap hari.",
+      "cap_ready": "Pelajaran kumpulan kecil yang membina fokus dan rasa ingin tahu untuk ke Sekolah Rendah.",
+      "cap_family": "Penglibatan keluarga yang terbaik — tangan yang bangga, hati yang bangga, dan karya seni yang membanggakan."
     },
     "a11y": {
       "skip": "Langkau ke kandungan utama"
@@ -1289,7 +1307,13 @@
       "bc_gal": "காட்சியகம்",
       "cta_enrol": "உங்கள் குழந்தையை பதிவு செய்யுங்கள்",
       "cta_back": "← முகப்புக்கு திரும்பு",
-      "credit": "பின்னணி இசை: \"Carefree\" - Kevin MacLeod (incompetech.com) - CC BY 4.0 உரிமம்."
+      "credit": "பின்னணி இசை: \"Carefree\" - Kevin MacLeod (incompetech.com) - CC BY 4.0 உரிமம்.",
+      "cat_special_t": "எங்களை சிறப்பாக்குவது எது",
+      "cat_special_d": "பெற்றோர்கள் மிகவும் விரும்பும் விஷயங்கள் — விளையாட்டு வழி கற்றல், பரந்த வெளிப்புற விளையாட்டு மைதானம், பள்ளிக்கான தன்னம்பிக்கை, மற்றும் குடும்பங்களின் பங்கேற்பு.",
+      "cap_play": "விளையாட்டின் வழியே கற்றல் — உறுதியான கைகள், தைரியமான அடிகள், அருகில் ஆசிரியர்.",
+      "cap_playground": "எங்கள் பரந்த வெளிப்புற விளையாட்டு மைதானம் — உண்மையான புல், பெரிய சறுக்கு, ஓட இடம்.",
+      "cap_ready": "தொடக்கப் பள்ளிக்கு தேவையான கவனத்தையும் ஆர்வத்தையும் வளர்க்கும் சிறு குழு பாடங்கள்.",
+      "cap_family": "குடும்பப் பங்கேற்பின் சிறப்பு — பெருமிதமான கைகள், பெருமிதமான இதயங்கள், காட்டத் தகுந்த கலைப் படைப்பு."
     },
     "a11y": {
       "skip": "முக்கிய உள்ளடக்கத்திற்குச் செல்லவும்"

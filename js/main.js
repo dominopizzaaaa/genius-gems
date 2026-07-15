@@ -330,7 +330,7 @@ if (hasHashOnlyNav && sections.length) {
 (function () {
   const el = document.getElementById('ohCountdown');
   if (!el) return;
-  const deadline = new Date(el.dataset.deadline || '2026-08-08T09:00:00+08:00').getTime();
+  const deadline = new Date(el.dataset.deadline || '2026-08-15T09:00:00+08:00').getTime();
   const fields = {
     days: el.querySelector('[data-cd="days"]'),
     hours: el.querySelector('[data-cd="hours"]'),
