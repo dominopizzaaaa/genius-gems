@@ -12,7 +12,8 @@
       "fees": "Fees",
       "faq": "FAQ",
       "location": "Location",
-      "enrol": "Enrol Now"
+      "enrol": "Enrol Now",
+      "openhouse": "Open House"
     },
     "hero": {
       "badge": "Nurturing Little Minds",
@@ -342,7 +343,8 @@
       "fees": "学费",
       "faq": "常见问题",
       "location": "地点",
-      "enrol": "立即报名"
+      "enrol": "立即报名",
+      "openhouse": "开放日"
     },
     "hero": {
       "badge": "培育幼小心灵",
@@ -672,7 +674,8 @@
       "fees": "Yuran",
       "faq": "Soalan",
       "location": "Lokasi",
-      "enrol": "Daftar"
+      "enrol": "Daftar",
+      "openhouse": "Hari Terbuka"
     },
     "hero": {
       "badge": "Memupuk Minda Kecil",
@@ -1002,7 +1005,8 @@
       "fees": "கட்டணம்",
       "faq": "கேள்விகள்",
       "location": "இடம்",
-      "enrol": "பதிவு"
+      "enrol": "பதிவு",
+      "openhouse": "திறந்த வீடு"
     },
     "hero": {
       "badge": "சிறு உள்ளங்களைப் போற்றுதல்",
