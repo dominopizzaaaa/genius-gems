@@ -2982,7 +2982,7 @@ select[aria-invalid="true"] {
   color: var(--gray); font-weight: 600;
 }
 .ohp-hero .oh-cards { margin-bottom: 32px; }
-.ohp-hero-actions { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+.ohp-hero-actions { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-bottom: 26px; }
 /* .btn-outline is white-on-transparent for dark heroes — make it legible
    wherever it sits on the light Open House sections. */
 .ohp-hero .btn-outline,
