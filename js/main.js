@@ -259,6 +259,34 @@ if (yearEl) {
   yearEl.textContent = now > 2024 ? `2024–${now}` : '2024';
 }
 
+// ---------- Hero video — deferred source loading ----------
+// The excursion video is ~12 MB and sits below the first viewport on mobile.
+// Attaching the source only when the video nears the viewport keeps it off
+// the critical path; the poster image displays identically in the meantime.
+(function () {
+  const video = document.getElementById('heroVideo');
+  if (!video) return;
+  const source = video.querySelector('source[data-src]');
+  if (!source) return;
+  const loadVideo = () => {
+    if (source.src) return;
+    source.src = source.dataset.src;
+    video.load();
+    video.play().catch(() => {});
+  };
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      if (entries.some((e) => e.isIntersecting)) {
+        loadVideo();
+        io.disconnect();
+      }
+    }, { rootMargin: '600px 0px' });
+    io.observe(video);
+  } else {
+    loadVideo();
+  }
+})();
+
 // ---------- Hero video — mute toggle ----------
 const heroVideo = document.getElementById('heroVideo');
 const heroVideoMute = document.getElementById('heroVideoMute');

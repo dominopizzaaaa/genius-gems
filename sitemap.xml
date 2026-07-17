@@ -4,7 +4,7 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://geniusgems.com.sg/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <video:video>
@@ -179,5 +179,51 @@
       <image:title>Sensory water play exploration at Genius Gems Childcare Centre</image:title>
       <image:caption>Children discovering through water play at Genius Gems, Singapore</image:caption>
     </image:image>
+  </url>
+  <url>
+    <loc>https://geniusgems.com.sg/location/changi/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://geniusgems.com.sg/images/large-outdoor-playground.jpeg</image:loc>
+      <image:title>The large outdoor playground at Genius Gems Childcare Centre in Changi</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://geniusgems.com.sg/blog/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://geniusgems.com.sg/blog/bilingual-childcare-centre-changi-guide.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://geniusgems.com.sg/blog/why-small-class-sizes-matter.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://geniusgems.com.sg/blog/inside-the-blossom-curriculum.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://geniusgems.com.sg/blog/preparing-your-child-for-preschool-checklist.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://geniusgems.com.sg/blog/questions-to-ask-when-visiting-a-preschool.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
   </url>
 </urlset>

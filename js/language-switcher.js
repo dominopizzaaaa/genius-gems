@@ -7,7 +7,8 @@ let currentLang = localStorage.getItem('geniusGems_language') || 'en';
 
 async function loadTranslations() {
   try {
-    const response = await fetch('js/translations.json?v=20260716a');
+    // Absolute path so pages in subdirectories (/blog/, /location/) resolve correctly
+    const response = await fetch('/js/translations.json?v=20260717a');
     translations = await response.json();
     applyLanguage(currentLang);
   } catch (error) {
@@ -35,10 +36,12 @@ function applyLanguage(lang) {
   localStorage.setItem('geniusGems_language', lang);
   document.documentElement.lang = lang;
 
-  // Update language button label
+  // Update language button label (aria-label kept in sync with visible text)
   const currentLangSpan = document.getElementById('currentLang');
   if (currentLangSpan) {
     currentLangSpan.textContent = lang.toUpperCase();
+    const langBtn = document.getElementById('langBtn');
+    if (langBtn) langBtn.setAttribute('aria-label', `Select language — ${lang.toUpperCase()}`);
   }
 
   // Mark active option

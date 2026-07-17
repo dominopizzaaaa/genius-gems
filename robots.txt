@@ -1,9 +1,8 @@
 # https://geniusgems.com.sg/robots.txt
 User-agent: *
 Allow: /
-Disallow:
 
-# Block AI training crawlers (optional — remove these lines if you want AI tools to cite you)
+# Block AI training crawlers (optional - remove these lines if you want AI tools to cite you)
 User-agent: GPTBot
 Disallow: /
 
