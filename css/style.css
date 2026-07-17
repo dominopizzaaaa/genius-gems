@@ -2831,6 +2831,25 @@ select[aria-invalid="true"] {
   transition: transform .25s ease;
 }
 .oh-btn-primary:hover .oh-btn-ic { transform: translateX(4px); }
+.oh-btn-secondary {
+  color: var(--primary);
+  background: #fff;
+  border: 2px solid var(--primary);
+  box-shadow: 0 8px 22px rgba(122,90,150,0.14);
+}
+.oh-btn-secondary:hover {
+  transform: translateY(-3px);
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 16px 34px rgba(122,90,150,0.28);
+}
+
+/* ---- "either way" helper under paired CTAs ---- */
+.oh-btn-or {
+  display: block; text-align: center;
+  font-size: .92rem; color: var(--text-light);
+  margin: -10px 0 22px;
+}
 
 /* ---- discount perk pill ---- */
 .oh-perk {
@@ -3254,8 +3273,7 @@ select[aria-invalid="true"] {
 .ohp-date-day { font-family: var(--font-accent); font-weight: 800; letter-spacing: 3px; color: var(--primary-dark); font-size: .9rem; }
 .ohp-date-num { font-family: var(--font-accent); font-weight: 800; font-size: 3.4rem; line-height: 1; color: var(--dark); }
 .ohp-date-mon { font-weight: 700; color: var(--text); }
-.ohp-date-time { font-size: .9rem; font-weight: 700; color: var(--text-light); margin-bottom: 14px; }
-.ohp-date-card .btn-full { margin-top: auto; }
+.ohp-date-time { font-size: .9rem; font-weight: 700; color: var(--text-light); }
 .btn-light { background: #fff; color: var(--primary-dark); box-shadow: 0 6px 18px rgba(0,0,0,0.12); }
 .btn-light:hover { transform: translateY(-3px); box-shadow: 0 12px 26px rgba(0,0,0,0.18); background: #fff; }
 
@@ -3284,7 +3302,9 @@ select[aria-invalid="true"] {
 @media (max-width: 640px) {
   .ohp-hero { padding: 108px 0 40px; }
   .ohp-hero .oh-cards { flex-direction: column; align-items: stretch; max-width: 360px; margin-inline: auto; }
-  .ohp-hero-actions .btn { width: 100%; max-width: 340px; justify-content: center; }
+  .ohp-hero-actions { flex-direction: column; align-items: center; }
+  .ohp-hero-actions .btn,
+  .ohp-hero-actions .oh-btn { width: 100%; max-width: 340px; justify-content: center; }
   .ohp-date-cards { grid-template-columns: 1fr; max-width: 320px; margin-inline: auto; }
 }
 
