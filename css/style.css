@@ -567,7 +567,9 @@ html[lang="ta"] .nav-links { gap: 2px; }
 .about-images { position: relative; }
 .about-photo-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* Left photo is portrait (2252:4000), right one is square — sizing the columns
+     to that ratio lets both show in full and still finish at the same height. */
+  grid-template-columns: 1fr 1.776fr;
   gap: 14px;
 }
 .about-photo {
@@ -575,6 +577,7 @@ html[lang="ta"] .nav-links { gap: 2px; }
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   line-height: 0;
+  min-width: 0;                 /* let the columns shrink below the photo's intrinsic width */
 }
 .about-photo img {
   width: 100%;
@@ -584,13 +587,6 @@ html[lang="ta"] .nav-links { gap: 2px; }
   transition: transform 0.4s ease;
 }
 .about-photo:hover img { transform: scale(1.03); }
-/* Secondary photo is square — crop it to the portrait ratio of its neighbour
-   so both columns of the grid stay the same height. */
-.about-photo-secondary img {
-  aspect-ratio: 2252 / 4000;
-  object-fit: cover;
-  object-position: 70% center;
-}
 
 .img-placeholder {
   background: linear-gradient(135deg, var(--purple), var(--accent-2));
