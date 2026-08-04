@@ -589,7 +589,7 @@ html[lang="ta"] .nav-links { gap: 2px; }
 .about-photo-secondary img {
   aspect-ratio: 2252 / 4000;
   object-fit: cover;
-  object-position: center;
+  object-position: 70% center;
 }
 
 .img-placeholder {
