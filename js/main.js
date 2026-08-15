@@ -355,41 +355,99 @@ if (hasHashOnlyNav && sections.length) {
 }
 
 // ---------- Open House countdown ----------
+// Counts down to the next Open House Saturday and rolls on to the following one
+// by itself: once a session's 2pm finish passes, the next date in data-schedule
+// takes over. After the last one, the timer is replaced by a book-a-tour prompt.
 (function () {
   const el = document.getElementById('ohCountdown');
   if (!el) return;
-  const deadline = new Date(el.dataset.deadline || '2026-08-15T09:00:00+08:00').getTime();
+
   const fields = {
     days: el.querySelector('[data-cd="days"]'),
     hours: el.querySelector('[data-cd="hours"]'),
     minutes: el.querySelector('[data-cd="minutes"]'),
     seconds: el.querySelector('[data-cd="seconds"]'),
   };
-  // Bail out safely if the markup or a valid deadline is missing.
-  if (!Number.isFinite(deadline) || !fields.days || !fields.hours || !fields.minutes || !fields.seconds) return;
+  if (!fields.days || !fields.hours || !fields.minutes || !fields.seconds) return;
+
+  // Parse the schedule; fall back to the old single-date attribute if present.
+  let sessions = [];
+  try {
+    sessions = JSON.parse(el.dataset.schedule || '[]');
+  } catch (e) {
+    console.warn('Open House: could not parse data-schedule', e);
+  }
+  if (!Array.isArray(sessions) || !sessions.length) {
+    if (!el.dataset.deadline) return;
+    sessions = [{ start: el.dataset.deadline, end: el.dataset.deadline, label: '' }];
+  }
+
+  sessions = sessions
+    .map((s) => ({
+      start: new Date(s.start).getTime(),
+      // A session with no explicit end is treated as finishing the moment it starts.
+      end: new Date(s.end || s.start).getTime(),
+      label: s.label || '',
+    }))
+    .filter((s) => Number.isFinite(s.start) && Number.isFinite(s.end))
+    .sort((a, b) => a.start - b.start);
+  if (!sessions.length) return;
+
+  const timerBox = el.querySelector('.oh-cd-timer');
+  const leadEl = el.querySelector('[data-cd="lead"]');
+  const sepEl = el.querySelector('[data-cd="sep"]');
+  const dateEl = el.querySelector('[data-cd="date"]');
+  const tagEl = el.querySelector('.oh-cd-tag');
+  // Each page words its own lead-in ("Counting down to Open House" vs "... to the
+  // Open House"), so keep the original rather than hard-coding one here.
+  const defaultLead = leadEl ? leadEl.textContent : '';
 
   const pad = (n) => String(Math.max(0, n)).padStart(2, '0');
-  let timer = null;
+  const setText = (node, text) => { if (node) node.textContent = text; };
+  const setShown = (node, shown) => { if (node) node.style.display = shown ? '' : 'none'; };
 
-  function render() {
-    const diff = deadline - Date.now();
-    if (diff <= 0) {
-      fields.days.textContent = fields.hours.textContent =
-        fields.minutes.textContent = fields.seconds.textContent = '00';
-      const label = el.querySelector('.oh-cd-label');
-      if (label) label.innerHTML =
-        '<span class="oh-cd-dot"></span> The Open House is here — <b>see you there!</b> ' +
-        '<span class="oh-cd-tag">Walk-ins welcome</span>';
-      if (timer) clearInterval(timer);
-      return;
-    }
-    const s = Math.floor(diff / 1000);
+  function showDigits(ms) {
+    const s = Math.floor(Math.max(0, ms) / 1000);
     fields.days.textContent = pad(Math.floor(s / 86400));
     fields.hours.textContent = pad(Math.floor((s % 86400) / 3600));
     fields.minutes.textContent = pad(Math.floor((s % 3600) / 60));
     fields.seconds.textContent = pad(s % 60);
   }
 
+  function render() {
+    const now = Date.now();
+    const next = sessions.find((s) => s.end > now);
+
+    if (!next) {
+      // Every Open House for the year has finished.
+      setShown(timerBox, false);
+      setShown(sepEl, false);
+      setShown(dateEl, false);
+      setText(leadEl, 'Our 2026 Open Houses have wrapped up');
+      setText(tagEl, 'Book a private tour any weekday');
+      return;
+    }
+
+    setShown(timerBox, true);
+
+    if (now >= next.start) {
+      // Doors are open right now.
+      showDigits(0);
+      setShown(sepEl, false);
+      setShown(dateEl, false);
+      setText(leadEl, 'The Open House is here — see you there!');
+      setText(tagEl, 'Walk-ins welcome');
+      return;
+    }
+
+    setShown(sepEl, true);
+    setShown(dateEl, true);
+    setText(leadEl, defaultLead);
+    setText(dateEl, next.label);
+    setText(tagEl, 'Spaces filling fast');
+    showDigits(next.start - now);
+  }
+
   render();
-  timer = setInterval(render, 1000);
+  setInterval(render, 1000);
 })();
