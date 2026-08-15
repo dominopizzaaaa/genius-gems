@@ -4,7 +4,7 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://geniusgems.com.sg/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <video:video>
@@ -181,8 +181,48 @@
     </image:image>
   </url>
   <url>
+    <loc>https://geniusgems.com.sg/location/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://geniusgems.com.sg/images/large-outdoor-playground.jpeg</image:loc>
+      <image:title>The large outdoor playground at Genius Gems Childcare Centre, serving Flora Drive, Loyang, Pasir Ris and Changi</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://geniusgems.com.sg/location/flora-drive/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://geniusgems.com.sg/images/large-outdoor-playground.jpeg</image:loc>
+      <image:title>Genius Gems Childcare Centre — bilingual preschool near Flora Drive, Singapore</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://geniusgems.com.sg/location/loyang/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://geniusgems.com.sg/images/large-outdoor-playground.jpeg</image:loc>
+      <image:title>Genius Gems Childcare Centre — bilingual preschool near Loyang, Singapore</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://geniusgems.com.sg/location/pasir-ris/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://geniusgems.com.sg/images/large-outdoor-playground.jpeg</image:loc>
+      <image:title>Genius Gems Childcare Centre — bilingual preschool near Pasir Ris, Singapore</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://geniusgems.com.sg/location/changi/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>

@@ -24,7 +24,8 @@
       "btn_discover": "Discover More",
       "stat_1": "Years of Excellence",
       "stat_2": "Bilingual Programme",
-      "stat_3": "Enrichment Programmes"
+      "stat_3": "Enrichment Programmes",
+      "title_kicker": "Bilingual Childcare Centre in Changi, Singapore — serving Flora Drive, Loyang & Pasir Ris"
     },
     "about": {
       "label": "About Us",
@@ -118,7 +119,7 @@
       "title": "Frequently Asked Questions",
       "desc": "Quick answers to the questions parents ask us most.",
       "q1": "Where is Genius Gems located?",
-      "a1": "Genius Gems is located at 26 Mariam Close, Singapore 508668, in the Changi area. We are easily accessible from Pasir Ris, Tampines, Bedok and Changi.",
+      "a1": "Genius Gems is located at 26 Mariam Close, Singapore 508668, in the Changi area — a short drive from Flora Drive, Loyang and Pasir Ris, and easily reached from Tampines, Bedok and Simei.",
       "q2": "What are your operating hours?",
       "a2": "We are open Monday to Friday from 7:00am to 7:00pm, and Saturday from 7:00am to 1:00pm. We are closed on Sundays and public holidays.",
       "q3": "How much does childcare cost?",
@@ -212,7 +213,18 @@
       "tour_t": "Come See Genius Gems for Yourself",
       "tour_d": "The best way to know if Genius Gems is right for your child is to visit. Walk our classrooms, meet our team, and feel the warmth of our centre in person.",
       "tour_btn": "Schedule a Tour",
-      "tour_wa": "WhatsApp Us"
+      "tour_wa": "WhatsApp Us",
+      "areas_t": "Areas We Serve",
+      "areas_d": "Genius Gems draws families from right across the East of Singapore. Pick your neighbourhood for directions, nearby bus stops and what to expect on arrival.",
+      "area_flora_t": "Childcare near Flora Drive",
+      "area_flora_d": "A few minutes by car",
+      "area_loyang_t": "Childcare near Loyang",
+      "area_loyang_d": "Just off Loyang Avenue",
+      "area_pasirris_t": "Childcare near Pasir Ris",
+      "area_pasirris_d": "Approx. 3.5 km from Pasir Ris MRT",
+      "area_changi_t": "Childcare near Changi",
+      "area_changi_d": "Our home neighbourhood",
+      "areas_more": "We also welcome families from Tampines, Bedok, Simei, Changi Village and the Changi Business Park area. <a href=\"/location/\">See all areas we serve</a>."
     },
     "contact": {
       "label": "Get In Touch",
@@ -355,7 +367,8 @@
       "btn_discover": "了解更多",
       "stat_1": "卓越年份",
       "stat_2": "双语课程",
-      "stat_3": "充实项目"
+      "stat_3": "充实项目",
+      "title_kicker": "新加坡樟宜双语幼儿保育中心 — 服务 Flora Drive、Loyang 与 Pasir Ris 一带家庭"
     },
     "about": {
       "label": "关于我们",
@@ -449,7 +462,7 @@
       "title": "家长常问的问题",
       "desc": "家长们最常询问问题的快速解答。",
       "q1": "天才宝石位于何处？",
-      "a1": "天才宝石位于樟宜区 26 Mariam Close, Singapore 508668。我们临近巴西立、淡滨尼、勿洛和樟宜，交通方便。",
+      "a1": "Genius Gems 位于 26 Mariam Close, Singapore 508668，坐落于樟宜一带 — 距 Flora Drive、Loyang 和 Pasir Ris 仅数分钟车程，从 Tampines、Bedok 和 Simei 前来也十分方便。",
       "q2": "营业时间是？",
       "a2": "我们的营业时间为星期一至星期五早上 7 点至晚上 7 点，星期六早上 7 点至下午 1 点。星期日及公共假日休息。",
       "q3": "学费多少？",
@@ -543,7 +556,18 @@
       "tour_t": "亲自来看看天才宝石",
       "tour_d": "了解天才宝石是否适合您孩子的最好方式就是亲自参观。走进我们的教室、认识我们的团队，亲身感受我们中心的温暖。",
       "tour_btn": "预约参观",
-      "tour_wa": "WhatsApp 联系我们"
+      "tour_wa": "WhatsApp 联系我们",
+      "areas_t": "我们服务的地区",
+      "areas_d": "Genius Gems 迎接来自新加坡东部各处的家庭。请选择您的社区，查看路线、附近巴士站以及到访须知。",
+      "area_flora_t": "Flora Drive 附近的幼儿保育",
+      "area_flora_d": "驾车仅几分钟",
+      "area_loyang_t": "Loyang 附近的幼儿保育",
+      "area_loyang_d": "就在 Loyang Avenue 旁",
+      "area_pasirris_t": "Pasir Ris 附近的幼儿保育",
+      "area_pasirris_d": "距 Pasir Ris 地铁站约 3.5 公里",
+      "area_changi_t": "Changi 附近的幼儿保育",
+      "area_changi_d": "我们所在的社区",
+      "areas_more": "我们同样欢迎来自 Tampines、Bedok、Simei、Changi Village 及 Changi Business Park 一带的家庭。<a href=\"/location/\">查看所有服务地区</a>。"
     },
     "contact": {
       "label": "联系我们",
@@ -686,7 +710,8 @@
       "btn_discover": "Ketahui Lebih Lanjut",
       "stat_1": "Tahun Kecemerlangan",
       "stat_2": "Program Dwibahasa",
-      "stat_3": "Program Pengayaan"
+      "stat_3": "Program Pengayaan",
+      "title_kicker": "Pusat Jagaan Kanak-Kanak Dwibahasa di Changi, Singapura — melayani Flora Drive, Loyang & Pasir Ris"
     },
     "about": {
       "label": "Tentang Kami",
@@ -780,7 +805,7 @@
       "title": "Soalan yang Sering Ditanya",
       "desc": "Jawapan ringkas kepada soalan yang paling kerap ditanya oleh ibu bapa.",
       "q1": "Di manakah Genius Gems terletak?",
-      "a1": "Genius Gems terletak di 26 Mariam Close, Singapura 508668, di kawasan Changi. Mudah diakses dari Pasir Ris, Tampines, Bedok dan Changi.",
+      "a1": "Genius Gems terletak di 26 Mariam Close, Singapura 508668, di kawasan Changi — beberapa minit memandu dari Flora Drive, Loyang dan Pasir Ris, serta mudah dihubungi dari Tampines, Bedok dan Simei.",
       "q2": "Apakah waktu operasi anda?",
       "a2": "Kami beroperasi pada hari Isnin hingga Jumaat dari pukul 7:00 pagi hingga 7:00 malam, dan Sabtu dari pukul 7:00 pagi hingga 1:00 petang. Kami ditutup pada hari Ahad dan cuti umum.",
       "q3": "Berapakah kos penjagaan kanak-kanak?",
@@ -874,7 +899,18 @@
       "tour_t": "Datang Lihat Genius Gems Sendiri",
       "tour_d": "Cara terbaik untuk mengetahui sama ada Genius Gems sesuai untuk anak anda ialah dengan melawat. Lihat bilik darjah kami, temui pasukan kami dan rasakan kemesraan pusat kami secara peribadi.",
       "tour_btn": "Tempah Lawatan",
-      "tour_wa": "WhatsApp Kami"
+      "tour_wa": "WhatsApp Kami",
+      "areas_t": "Kawasan Yang Kami Layani",
+      "areas_d": "Genius Gems menerima keluarga dari seluruh kawasan Timur Singapura. Pilih kawasan anda untuk arah perjalanan, perhentian bas berdekatan dan apa yang boleh dijangka apabila tiba.",
+      "area_flora_t": "Jagaan kanak-kanak berhampiran Flora Drive",
+      "area_flora_d": "Beberapa minit dengan kereta",
+      "area_loyang_t": "Jagaan kanak-kanak berhampiran Loyang",
+      "area_loyang_d": "Betul-betul di sisi Loyang Avenue",
+      "area_pasirris_t": "Jagaan kanak-kanak berhampiran Pasir Ris",
+      "area_pasirris_d": "Kira-kira 3.5 km dari MRT Pasir Ris",
+      "area_changi_t": "Jagaan kanak-kanak berhampiran Changi",
+      "area_changi_d": "Kawasan kami sendiri",
+      "areas_more": "Kami juga mengalu-alukan keluarga dari Tampines, Bedok, Simei, Changi Village dan kawasan Changi Business Park. <a href=\"/location/\">Lihat semua kawasan yang kami layani</a>."
     },
     "contact": {
       "label": "Hubungi Kami",
@@ -1017,7 +1053,8 @@
       "btn_discover": "மேலும் அறிக",
       "stat_1": "சிறப்பான ஆண்டுகள்",
       "stat_2": "இருமொழி திட்டம்",
-      "stat_3": "செழுமை திட்டங்கள்"
+      "stat_3": "செழுமை திட்டங்கள்",
+      "title_kicker": "சிங்கப்பூர், சாங்கியில் இருமொழி சிறுவர் பராமரிப்பு மையம் — Flora Drive, Loyang மற்றும் Pasir Ris பகுதிகளுக்கு சேவை"
     },
     "about": {
       "label": "எங்களைப் பற்றி",
@@ -1111,7 +1148,7 @@
       "title": "அடிக்கடி கேட்கப்படும் கேள்விகள்",
       "desc": "பெற்றோர்கள் எங்களிடம் அதிகம் கேட்கும் கேள்விகளுக்கு விரைவான பதில்கள்.",
       "q1": "ஜீனியஸ் ஜெம்ஸ் எங்கே அமைந்துள்ளது?",
-      "a1": "ஜீனியஸ் ஜெம்ஸ் சாங்கி பகுதியில் 26 Mariam Close, Singapore 508668 இல் அமைந்துள்ளது. பாசிர் ரிஸ், தம்பினெஸ், பெடாக் மற்றும் சாங்கியிலிருந்து எளிதாக அணுகலாம்.",
+      "a1": "Genius Gems, 26 Mariam Close, Singapore 508668 என்ற முகவரியில், சாங்கி பகுதியில் அமைந்துள்ளது — Flora Drive, Loyang மற்றும் Pasir Ris-லிருந்து சில நிமிட காரோட்டம்; Tampines, Bedok, Simei-லிருந்தும் எளிதாக வரலாம்.",
       "q2": "உங்கள் செயல்பாட்டு நேரம் என்ன?",
       "a2": "நாங்கள் திங்கள் முதல் வெள்ளி வரை காலை 7:00 மணி முதல் இரவு 7:00 மணி வரையிலும், சனிக்கிழமை காலை 7:00 முதல் மதியம் 1:00 வரையிலும் திறந்திருக்கும். ஞாயிறு மற்றும் பொது விடுமுறை நாட்களில் மூடப்பட்டிருக்கும்.",
       "q3": "குழந்தைப் பராமரிப்பு கட்டணம் எவ்வளவு?",
@@ -1205,7 +1242,18 @@
       "tour_t": "ஜீனியஸ் ஜெம்ஸை நீங்களே வந்து பாருங்கள்",
       "tour_d": "உங்கள் குழந்தைக்கு ஜீனியஸ் ஜெம்ஸ் சரியானதா என்பதை அறிய சிறந்த வழி நேரில் வருவதே. எங்கள் வகுப்பறைகளில் நடந்து, எங்கள் குழுவைச் சந்தித்து, எங்கள் மையத்தின் இதம் தாயக நேரில் உணருங்கள்.",
       "tour_btn": "சுற்றுப்பயண முன்பதிவு",
-      "tour_wa": "WhatsApp மூலம் தொடர்பு கொள்ளுங்கள்"
+      "tour_wa": "WhatsApp மூலம் தொடர்பு கொள்ளுங்கள்",
+      "areas_t": "நாங்கள் சேவை செய்யும் பகுதிகள்",
+      "areas_d": "சிங்கப்பூரின் கிழக்குப் பகுதி முழுவதிலுமிருந்து குடும்பங்கள் Genius Gems-க்கு வருகின்றன. வழித்தடங்கள், அருகிலுள்ள பேருந்து நிறுத்தங்கள் மற்றும் வருகை விவரங்களுக்கு உங்கள் பகுதியைத் தேர்ந்தெடுக்கவும்.",
+      "area_flora_t": "Flora Drive அருகில் சிறுவர் பராமரிப்பு",
+      "area_flora_d": "காரில் சில நிமிடங்கள்",
+      "area_loyang_t": "Loyang அருகில் சிறுவர் பராமரிப்பு",
+      "area_loyang_d": "Loyang Avenue-ஐ ஒட்டி",
+      "area_pasirris_t": "Pasir Ris அருகில் சிறுவர் பராமரிப்பு",
+      "area_pasirris_d": "Pasir Ris MRT-லிருந்து சுமார் 3.5 கி.மீ",
+      "area_changi_t": "Changi அருகில் சிறுவர் பராமரிப்பு",
+      "area_changi_d": "எங்கள் சொந்தப் பகுதி",
+      "areas_more": "Tampines, Bedok, Simei, Changi Village மற்றும் Changi Business Park பகுதிகளிலிருந்தும் குடும்பங்களை வரவேற்கிறோம். <a href=\"/location/\">அனைத்துப் பகுதிகளையும் காண்க</a>."
     },
     "contact": {
       "label": "எங்களைத் தொடர்பு கொள்ளுங்கள்",
