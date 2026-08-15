@@ -25,7 +25,7 @@
       "stat_1": "Years of Excellence",
       "stat_2": "Bilingual Programme",
       "stat_3": "Enrichment Programmes",
-      "title_kicker": "Bilingual Childcare Centre in Changi, Singapore — serving Flora Drive, Loyang & Pasir Ris"
+      "title_kicker": "A bilingual childcare centre in Changi, Singapore — minutes from Flora Drive, Loyang & Pasir Ris"
     },
     "about": {
       "label": "About Us",
@@ -214,17 +214,13 @@
       "tour_d": "The best way to know if Genius Gems is right for your child is to visit. Walk our classrooms, meet our team, and feel the warmth of our centre in person.",
       "tour_btn": "Schedule a Tour",
       "tour_wa": "WhatsApp Us",
-      "areas_t": "Areas We Serve",
-      "areas_d": "Genius Gems draws families from right across the East of Singapore. Pick your neighbourhood for directions, nearby bus stops and what to expect on arrival.",
-      "area_flora_t": "Childcare near Flora Drive",
-      "area_flora_d": "A few minutes by car",
-      "area_loyang_t": "Childcare near Loyang",
-      "area_loyang_d": "Just off Loyang Avenue",
-      "area_pasirris_t": "Childcare near Pasir Ris",
-      "area_pasirris_d": "Approx. 3.5 km from Pasir Ris MRT",
-      "area_changi_t": "Childcare near Changi",
-      "area_changi_d": "Our home neighbourhood",
-      "areas_more": "We also welcome families from Tampines, Bedok, Simei, Changi Village and the Changi Business Park area. <a href=\"/location/\">See all areas we serve</a>."
+      "nearby_t": "Minutes From Your Neighbourhood",
+      "nearby_d": "Genius Gems is one centre, at 26 Mariam Close. If you live in any of these neighbourhoods, we are a short drive away — tap yours for directions.",
+      "nearby_flora": "Flora Drive",
+      "nearby_loyang": "Loyang",
+      "nearby_pasirris": "Pasir Ris",
+      "nearby_changi": "Changi",
+      "nearby_more": "Families also travel to us from Tampines, Bedok and Simei. <a href=\"/location/changi/\">Full directions by car, bus and MRT</a>."
     },
     "contact": {
       "label": "Get In Touch",
@@ -368,7 +364,7 @@
       "stat_1": "卓越年份",
       "stat_2": "双语课程",
       "stat_3": "充实项目",
-      "title_kicker": "新加坡樟宜双语幼儿保育中心 — 服务 Flora Drive、Loyang 与 Pasir Ris 一带家庭"
+      "title_kicker": "位于新加坡樟宜的双语幼儿保育中心 — 距 Flora Drive、Loyang 与 Pasir Ris 仅数分钟"
     },
     "about": {
       "label": "关于我们",
@@ -557,17 +553,13 @@
       "tour_d": "了解天才宝石是否适合您孩子的最好方式就是亲自参观。走进我们的教室、认识我们的团队，亲身感受我们中心的温暖。",
       "tour_btn": "预约参观",
       "tour_wa": "WhatsApp 联系我们",
-      "areas_t": "我们服务的地区",
-      "areas_d": "Genius Gems 迎接来自新加坡东部各处的家庭。请选择您的社区，查看路线、附近巴士站以及到访须知。",
-      "area_flora_t": "Flora Drive 附近的幼儿保育",
-      "area_flora_d": "驾车仅几分钟",
-      "area_loyang_t": "Loyang 附近的幼儿保育",
-      "area_loyang_d": "就在 Loyang Avenue 旁",
-      "area_pasirris_t": "Pasir Ris 附近的幼儿保育",
-      "area_pasirris_d": "距 Pasir Ris 地铁站约 3.5 公里",
-      "area_changi_t": "Changi 附近的幼儿保育",
-      "area_changi_d": "我们所在的社区",
-      "areas_more": "我们同样欢迎来自 Tampines、Bedok、Simei、Changi Village 及 Changi Business Park 一带的家庭。<a href=\"/location/\">查看所有服务地区</a>。"
+      "nearby_t": "离您的社区只需几分钟",
+      "nearby_d": "Genius Gems 只有一间中心，位于 26 Mariam Close。若您住在以下任一社区，驾车片刻即可抵达 — 点击您的社区查看路线。",
+      "nearby_flora": "Flora Drive",
+      "nearby_loyang": "Loyang",
+      "nearby_pasirris": "Pasir Ris",
+      "nearby_changi": "Changi",
+      "nearby_more": "也有家庭从 Tampines、Bedok 和 Simei 前来。<a href=\"/location/changi/\">查看驾车、巴士与地铁完整路线</a>。"
     },
     "contact": {
       "label": "联系我们",
@@ -711,7 +703,7 @@
       "stat_1": "Tahun Kecemerlangan",
       "stat_2": "Program Dwibahasa",
       "stat_3": "Program Pengayaan",
-      "title_kicker": "Pusat Jagaan Kanak-Kanak Dwibahasa di Changi, Singapura — melayani Flora Drive, Loyang & Pasir Ris"
+      "title_kicker": "Pusat jagaan kanak-kanak dwibahasa di Changi, Singapura — beberapa minit dari Flora Drive, Loyang & Pasir Ris"
     },
     "about": {
       "label": "Tentang Kami",
@@ -900,17 +892,13 @@
       "tour_d": "Cara terbaik untuk mengetahui sama ada Genius Gems sesuai untuk anak anda ialah dengan melawat. Lihat bilik darjah kami, temui pasukan kami dan rasakan kemesraan pusat kami secara peribadi.",
       "tour_btn": "Tempah Lawatan",
       "tour_wa": "WhatsApp Kami",
-      "areas_t": "Kawasan Yang Kami Layani",
-      "areas_d": "Genius Gems menerima keluarga dari seluruh kawasan Timur Singapura. Pilih kawasan anda untuk arah perjalanan, perhentian bas berdekatan dan apa yang boleh dijangka apabila tiba.",
-      "area_flora_t": "Jagaan kanak-kanak berhampiran Flora Drive",
-      "area_flora_d": "Beberapa minit dengan kereta",
-      "area_loyang_t": "Jagaan kanak-kanak berhampiran Loyang",
-      "area_loyang_d": "Betul-betul di sisi Loyang Avenue",
-      "area_pasirris_t": "Jagaan kanak-kanak berhampiran Pasir Ris",
-      "area_pasirris_d": "Kira-kira 3.5 km dari MRT Pasir Ris",
-      "area_changi_t": "Jagaan kanak-kanak berhampiran Changi",
-      "area_changi_d": "Kawasan kami sendiri",
-      "areas_more": "Kami juga mengalu-alukan keluarga dari Tampines, Bedok, Simei, Changi Village dan kawasan Changi Business Park. <a href=\"/location/\">Lihat semua kawasan yang kami layani</a>."
+      "nearby_t": "Beberapa Minit Dari Kawasan Anda",
+      "nearby_d": "Genius Gems ialah satu pusat sahaja, di 26 Mariam Close. Jika anda tinggal di mana-mana kawasan ini, kami hanya beberapa minit memandu — tekan kawasan anda untuk arah perjalanan.",
+      "nearby_flora": "Flora Drive",
+      "nearby_loyang": "Loyang",
+      "nearby_pasirris": "Pasir Ris",
+      "nearby_changi": "Changi",
+      "nearby_more": "Keluarga juga datang dari Tampines, Bedok dan Simei. <a href=\"/location/changi/\">Arah penuh dengan kereta, bas dan MRT</a>."
     },
     "contact": {
       "label": "Hubungi Kami",
@@ -1054,7 +1042,7 @@
       "stat_1": "சிறப்பான ஆண்டுகள்",
       "stat_2": "இருமொழி திட்டம்",
       "stat_3": "செழுமை திட்டங்கள்",
-      "title_kicker": "சிங்கப்பூர், சாங்கியில் இருமொழி சிறுவர் பராமரிப்பு மையம் — Flora Drive, Loyang மற்றும் Pasir Ris பகுதிகளுக்கு சேவை"
+      "title_kicker": "சிங்கப்பூர், சாங்கியில் ஓர் இருமொழி சிறுவர் பராமரிப்பு மையம் — Flora Drive, Loyang, Pasir Ris-லிருந்து சில நிமிடங்கள்"
     },
     "about": {
       "label": "எங்களைப் பற்றி",
@@ -1243,17 +1231,13 @@
       "tour_d": "உங்கள் குழந்தைக்கு ஜீனியஸ் ஜெம்ஸ் சரியானதா என்பதை அறிய சிறந்த வழி நேரில் வருவதே. எங்கள் வகுப்பறைகளில் நடந்து, எங்கள் குழுவைச் சந்தித்து, எங்கள் மையத்தின் இதம் தாயக நேரில் உணருங்கள்.",
       "tour_btn": "சுற்றுப்பயண முன்பதிவு",
       "tour_wa": "WhatsApp மூலம் தொடர்பு கொள்ளுங்கள்",
-      "areas_t": "நாங்கள் சேவை செய்யும் பகுதிகள்",
-      "areas_d": "சிங்கப்பூரின் கிழக்குப் பகுதி முழுவதிலுமிருந்து குடும்பங்கள் Genius Gems-க்கு வருகின்றன. வழித்தடங்கள், அருகிலுள்ள பேருந்து நிறுத்தங்கள் மற்றும் வருகை விவரங்களுக்கு உங்கள் பகுதியைத் தேர்ந்தெடுக்கவும்.",
-      "area_flora_t": "Flora Drive அருகில் சிறுவர் பராமரிப்பு",
-      "area_flora_d": "காரில் சில நிமிடங்கள்",
-      "area_loyang_t": "Loyang அருகில் சிறுவர் பராமரிப்பு",
-      "area_loyang_d": "Loyang Avenue-ஐ ஒட்டி",
-      "area_pasirris_t": "Pasir Ris அருகில் சிறுவர் பராமரிப்பு",
-      "area_pasirris_d": "Pasir Ris MRT-லிருந்து சுமார் 3.5 கி.மீ",
-      "area_changi_t": "Changi அருகில் சிறுவர் பராமரிப்பு",
-      "area_changi_d": "எங்கள் சொந்தப் பகுதி",
-      "areas_more": "Tampines, Bedok, Simei, Changi Village மற்றும் Changi Business Park பகுதிகளிலிருந்தும் குடும்பங்களை வரவேற்கிறோம். <a href=\"/location/\">அனைத்துப் பகுதிகளையும் காண்க</a>."
+      "nearby_t": "உங்கள் பகுதியிலிருந்து சில நிமிடங்கள்",
+      "nearby_d": "Genius Gems என்பது 26 Mariam Close-இல் உள்ள ஒரே மையம். இந்தப் பகுதிகளில் ஏதேனும் ஒன்றில் நீங்கள் வசித்தால், சில நிமிட காரோட்டத்தில் எங்களை அடையலாம் — வழிகளுக்கு உங்கள் பகுதியைத் தட்டவும்.",
+      "nearby_flora": "Flora Drive",
+      "nearby_loyang": "Loyang",
+      "nearby_pasirris": "Pasir Ris",
+      "nearby_changi": "Changi",
+      "nearby_more": "Tampines, Bedok, Simei-லிருந்தும் குடும்பங்கள் வருகின்றன. <a href=\"/location/changi/\">கார், பேருந்து, MRT வழிகள் முழுவதும்</a>."
     },
     "contact": {
       "label": "எங்களைத் தொடர்பு கொள்ளுங்கள்",
