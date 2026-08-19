@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en-SG">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Internal tool: keep OUT of search results -->
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+  <meta name="googlebot" content="noindex, nofollow" />
+
+  <title>SEO Tracker — Genius Gems (Internal)</title>
+  <meta name="description" content="Internal SEO &amp; performance dashboard for Genius Gems Childcare Centre." />
+
+  <link rel="icon" type="image/png" href="images/Logo_1.png" />
+  <link rel="apple-touch-icon" href="images/Logo_1.png" />
+  <meta name="theme-color" content="#7a5a96" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary: #FF8FAB; --primary-dark: #e8729a;
+      --secondary: #93D9D4; --accent: #FFE066; --purple: #C9B8F0;
+      --dark: #4a3f5c; --text: #5c5273; --text-light: #8c82a8;
+      --gray: #6e6585; --white: #fff; --off-white: #fffcf8; --bg-light: #fef6fb;
+      --border: #f0e8f8; --shadow: 0 4px 20px rgba(180,140,200,0.12);
+      --shadow-lg: 0 8px 40px rgba(180,140,200,0.18);
+      --radius: 20px; --radius-sm: 12px;
+      --good: #2e9e6b; --warn: #d98a1f; --bad: #d9534f;
+      --font-main: 'Nunito', sans-serif; --font-accent: 'Poppins', sans-serif;
+    }
+    *,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-main); color: var(--text); background: var(--bg-light); line-height: 1.6; }
+    h1,h2,h3,h4 { font-family: var(--font-accent); color: var(--dark); line-height: 1.25; }
+    a { color: var(--primary-dark); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    /* Header */
+    .dash-header {
+      background: linear-gradient(120deg, #fff, var(--bg-light));
+      border-bottom: 2px solid var(--border);
+      padding: 20px 0; position: sticky; top: 0; z-index: 20;
+      backdrop-filter: blur(8px);
+    }
+    .dash-header .container { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .dash-logo { display: flex; align-items: center; gap: 12px; }
+    .dash-logo img { width: 44px; height: 44px; border-radius: 10px; }
+    .dash-logo h1 { font-size: 1.25rem; }
+    .dash-logo p { font-size: 0.78rem; color: var(--text-light); }
+    .header-spacer { flex: 1 1 auto; }
+
+    .badge-internal {
+      font-size: 0.68rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase;
+      background: rgba(217,83,79,.12); color: var(--bad); padding: 4px 12px; border-radius: 50px;
+    }
+
+    /* Controls bar */
+    .controls { background: var(--white); border-bottom: 1px solid var(--border); padding: 14px 0; }
+    .controls .container { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; border-radius: 50px;
+      font-family: var(--font-accent); font-weight: 700; font-size: 0.9rem; cursor: pointer;
+      border: none; transition: all .2s ease;
+    }
+    .btn-primary { background: var(--primary); color: #fff; box-shadow: 0 4px 16px rgba(255,143,171,.35); }
+    .btn-primary:hover { background: var(--primary-dark); text-decoration: none; }
+    .btn-ghost { background: var(--bg-light); color: var(--dark); border: 1.5px solid var(--border); }
+    .btn-ghost:hover { border-color: var(--primary); text-decoration: none; }
+    .btn:disabled { opacity: .5; cursor: not-allowed; }
+
+    select, input[type=text] {
+      font-family: var(--font-main); font-size: 0.9rem; padding: 9px 14px;
+      border: 1.5px solid var(--border); border-radius: var(--radius-sm); background: #fff; color: var(--text);
+    }
+
+    /* View toggle */
+    .view-toggle { display: inline-flex; background: var(--bg-light); border: 1.5px solid var(--border); border-radius: 50px; padding: 4px; }
+    .view-toggle button { padding: 7px 18px; border-radius: 50px; font-family: var(--font-accent); font-weight: 700; font-size: 0.85rem; color: var(--text-light); background: none; }
+    .view-toggle button.active { background: var(--purple); color: var(--dark); box-shadow: var(--shadow); }
+
+    .signed-in-as { font-size: 0.82rem; color: var(--text-light); }
+    .signed-in-as b { color: var(--dark); }
+
+    /* Status / alerts */
+    .alert { border-radius: var(--radius-sm); padding: 14px 18px; margin: 20px 0; font-size: 0.9rem; }
+    .alert-info { background: #eef7ff; border: 1px solid #cfe6ff; color: #2c5d8a; }
+    .alert-warn { background: #fff8ec; border: 1px solid #ffe4b8; color: #8a5d1f; }
+    .alert-error { background: #fdecec; border: 1px solid #f8cdcd; color: #a13c39; }
+    .alert code { background: rgba(0,0,0,.05); padding: 1px 6px; border-radius: 5px; font-size: 0.85em; }
+
+    /* Setup panel */
+    .setup { background: #fff; border: 1.5px dashed var(--purple); border-radius: var(--radius); padding: 22px; margin: 20px 0; }
+    .setup h3 { margin-bottom: 10px; }
+    .setup ol { margin: 10px 0 14px 20px; }
+    .setup li { margin-bottom: 7px; font-size: 0.9rem; }
+    .setup label { display:block; font-weight:700; font-size:0.82rem; color: var(--dark); margin: 12px 0 5px; }
+    .setup input[type=text] { width: 100%; max-width: 620px; }
+
+    main { padding: 28px 0 80px; }
+    .muted { color: var(--text-light); }
+    .hidden { display: none !important; }
+
+    /* Section */
+    .dash-section { margin-bottom: 40px; }
+    .dash-section > h2 { font-size: 1.35rem; display: flex; align-items: center; gap: 10px; margin-bottom: 4px; }
+    .dash-section > .sec-sub { color: var(--text-light); font-size: 0.9rem; margin-bottom: 18px; }
+    .sec-icon { width: 34px; height: 34px; display: inline-grid; place-items: center; border-radius: 10px; background: var(--purple); color:#fff; font-size: 1rem; }
+
+    /* KPI cards */
+    .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+    .kpi {
+      background: #fff; border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+    .kpi .kpi-label { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--text-light); }
+    .kpi .kpi-value { font-family: var(--font-accent); font-weight: 700; font-size: 2rem; color: var(--dark); margin: 6px 0 2px; }
+    .kpi .kpi-delta { font-size: 0.82rem; font-weight: 700; }
+    .kpi .kpi-delta.up { color: var(--good); }
+    .kpi .kpi-delta.down { color: var(--bad); }
+    .kpi .kpi-help { font-size: 0.76rem; color: var(--text-light); margin-top: 6px; }
+
+    /* Tables */
+    .card { background:#fff; border:1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; margin-top: 18px; }
+    .card h3 { font-size: 1rem; padding: 16px 18px; border-bottom: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+    th, td { text-align: left; padding: 11px 18px; border-bottom: 1px solid var(--border); }
+    th { font-size: 0.72rem; text-transform: uppercase; letter-spacing: .05em; color: var(--text-light); background: var(--bg-light); }
+    td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+    tbody tr:last-child td { border-bottom: none; }
+    .table-scroll { max-height: 420px; overflow: auto; }
+
+    /* PageSpeed gauges */
+    .ps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+    .ps-card { background:#fff; border:1px solid var(--border); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
+    .ps-card h4 { font-size: 0.92rem; margin-bottom: 12px; word-break: break-word; }
+    .gauges { display:flex; gap: 14px; flex-wrap: wrap; }
+    .gauge { text-align:center; }
+    .gauge .ring {
+      width: 62px; height: 62px; border-radius: 50%; display:grid; place-items:center;
+      font-family: var(--font-accent); font-weight: 700; font-size: 1.05rem; color: var(--dark);
+      margin: 0 auto 5px;
+    }
+    .gauge small { font-size: 0.68rem; color: var(--text-light); display:block; }
+    .cwv { margin-top: 14px; font-size: 0.82rem; }
+    .cwv div { display:flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px dashed var(--border); }
+    .pill { font-size: 0.7rem; font-weight: 800; padding: 2px 9px; border-radius: 50px; }
+    .pill.good { background: rgba(46,158,107,.13); color: var(--good); }
+    .pill.warn { background: rgba(217,138,31,.14); color: var(--warn); }
+    .pill.bad  { background: rgba(217,83,79,.13); color: var(--bad); }
+
+    /* Client-friendly explainer */
+    .plain-summary { background: linear-gradient(120deg,#fff, #f7fff9); border:1px solid var(--border); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow); margin-bottom: 24px; }
+    .plain-summary h2 { font-size: 1.2rem; margin-bottom: 8px; }
+    .plain-summary p { color: var(--gray); }
+
+    .spinner { display:inline-block; width:16px; height:16px; border:2.5px solid var(--border); border-top-color: var(--primary); border-radius:50%; animation: spin .7s linear infinite; vertical-align: -3px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    footer.dash-foot { text-align:center; padding: 24px; color: var(--text-light); font-size: 0.8rem; }
+
+    @media (max-width: 640px) {
+      .kpi .kpi-value { font-size: 1.6rem; }
+      .controls .container { gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="dash-header">
+    <div class="container">
+      <div class="dash-logo">
+        <img src="images/Logo_1.png" alt="Genius Gems logo" onerror="this.style.display='none'" />
+        <div>
+          <h1>SEO &amp; Performance Tracker</h1>
+          <p>Genius Gems Childcare Centre · geniusgems.com.sg</p>
+        </div>
+      </div>
+      <div class="header-spacer"></div>
+      <span class="badge-internal">Internal · not indexed</span>
+    </div>
+  </header>
+
+  <div class="controls">
+    <div class="container">
+      <div class="view-toggle" role="tablist" aria-label="View mode">
+        <button id="viewClient" class="active" role="tab" aria-selected="true">Owner view</button>
+        <button id="viewAdmin" role="tab" aria-selected="false">Admin view</button>
+      </div>
+
+      <label class="muted" for="rangeSelect" style="font-size:.82rem;">Period</label>
+      <select id="rangeSelect" aria-label="Date range">
+        <option value="7">Last 7 days</option>
+        <option value="28" selected>Last 28 days</option>
+        <option value="90">Last 90 days</option>
+      </select>
+
+      <div class="header-spacer"></div>
+
+      <span id="authState" class="signed-in-as">Not connected to Google</span>
+      <button id="signInBtn" class="btn btn-primary">Sign in with Google</button>
+      <button id="signOutBtn" class="btn btn-ghost hidden">Sign out</button>
+      <button id="refreshBtn" class="btn btn-ghost hidden">Refresh</button>
+    </div>
+  </div>
+
+  <main class="container">
+
+    <!-- First-run setup: OAuth Client ID + API key -->
+    <section id="setupPanel" class="setup">
+      <h3>One-time setup</h3>
+      <p class="muted" style="font-size:.9rem;">
+        Because this site has no server, the dashboard fetches your data <b>directly in your browser</b>
+        after you sign in with the Google account that owns Search Console &amp; Analytics.
+        Paste your credentials once — they are stored only in this browser (localStorage), never in the website code.
+      </p>
+      <ol>
+        <li>Go to <a href="https://console.cloud.google.com/" target="_blank" rel="noopener">Google Cloud Console</a> → create a project (e.g. "Genius Gems SEO").</li>
+        <li>Under <b>APIs &amp; Services → Library</b>, enable: <code>Google Search Console API</code>, <code>Google Analytics Data API</code>, and <code>PageSpeed Insights API</code>.</li>
+        <li><b>Credentials → Create OAuth client ID → Web application.</b> Add this page's origin to <em>Authorised JavaScript origins</em> (e.g. <code id="originHint">https://geniusgems.com.sg</code> and <code>http://localhost:8000</code>). Copy the <b>Client ID</b>.</li>
+        <li>Also create an <b>API key</b> (used for PageSpeed Insights). You can restrict it to the PageSpeed Insights API.</li>
+        <li>On the OAuth consent screen, add your Google account as a <b>Test user</b> (keeps it private — no Google review needed).</li>
+      </ol>
+      <label for="clientIdInput">OAuth Client ID</label>
+      <input type="text" id="clientIdInput" placeholder="xxxxxxxx.apps.googleusercontent.com" autocomplete="off" />
+      <label for="apiKeyInput">API key (for PageSpeed Insights)</label>
+      <input type="text" id="apiKeyInput" placeholder="AIza..." autocomplete="off" />
+      <label for="gaPropInput">GA4 Property ID (numeric — find in GA Admin → Property Settings)</label>
+      <input type="text" id="gaPropInput" placeholder="e.g. 123456789" autocomplete="off" />
+      <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+        <button id="saveConfigBtn" class="btn btn-primary">Save &amp; continue</button>
+        <button id="clearConfigBtn" class="btn btn-ghost">Clear saved config</button>
+      </div>
+    </section>
+
+    <div id="globalAlert"></div>
+
+    <!-- ================= CLIENT (owner) VIEW ================= -->
+    <div id="clientView">
+      <div class="plain-summary">
+        <h2>How is our website doing? <span id="clientPeriodLabel" class="muted" style="font-size:.85rem;"></span></h2>
+        <p id="clientHeadline">Sign in to load the latest numbers for geniusgems.com.sg.</p>
+      </div>
+
+      <section class="dash-section">
+        <h2><span class="sec-icon">🔎</span> Being found on Google</h2>
+        <p class="sec-sub">How often we appear in Google search and how many people click through to visit the site.</p>
+        <div class="kpi-grid" id="clientSearchKpis">
+          <div class="kpi"><div class="kpi-label">Clicks from Google</div><div class="kpi-value">—</div><div class="kpi-help">Visits that came from a Google search result.</div></div>
+          <div class="kpi"><div class="kpi-label">Times shown</div><div class="kpi-value">—</div><div class="kpi-help">How many times we appeared in search results.</div></div>
+          <div class="kpi"><div class="kpi-label">Average position</div><div class="kpi-value">—</div><div class="kpi-help">Our typical ranking (1 = top of page).</div></div>
+        </div>
+      </section>
+
+      <section class="dash-section">
+        <h2><span class="sec-icon">👥</span> Visitors to the website</h2>
+        <p class="sec-sub">People browsing the site and how they arrived.</p>
+        <div class="kpi-grid" id="clientTrafficKpis">
+          <div class="kpi"><div class="kpi-label">Total visitors</div><div class="kpi-value">—</div></div>
+          <div class="kpi"><div class="kpi-label">Visits (sessions)</div><div class="kpi-value">—</div></div>
+          <div class="kpi"><div class="kpi-label">Enquiry actions</div><div class="kpi-value">—</div><div class="kpi-help">Calls, WhatsApp &amp; form clicks (conversions).</div></div>
+        </div>
+      </section>
+
+      <section class="dash-section">
+        <h2><span class="sec-icon">⚡</span> Website health</h2>
+        <p class="sec-sub">A simple grade for speed and search-friendliness (from Google's own PageSpeed test).</p>
+        <div class="ps-grid" id="clientHealth"><div class="ps-card muted">Sign in to run the check.</div></div>
+      </section>
+    </div>
+
+    <!-- ================= ADMIN VIEW ================= -->
+    <div id="adminView" class="hidden">
+
+      <section class="dash-section">
+        <h2><span class="sec-icon">🔎</span> Google Search Console <span id="scPeriod" class="muted" style="font-size:.75rem;font-weight:400;"></span></h2>
+        <p class="sec-sub">Organic search performance for the verified property.</p>
+        <div class="kpi-grid" id="scKpis"></div>
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:18px;">
+          <div class="card">
+            <h3>Top queries</h3>
+            <div class="table-scroll">
+              <table id="scQueries"><thead><tr><th>Query</th><th class="num">Clicks</th><th class="num">Impr.</th><th class="num">CTR</th><th class="num">Pos.</th></tr></thead><tbody></tbody></table>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Top pages</h3>
+            <div class="table-scroll">
+              <table id="scPages"><thead><tr><th>Page</th><th class="num">Clicks</th><th class="num">Impr.</th><th class="num">CTR</th><th class="num">Pos.</th></tr></thead><tbody></tbody></table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="dash-section">
+        <h2><span class="sec-icon">📊</span> Google Analytics (GA4)</h2>
+        <p class="sec-sub">Traffic, engagement and conversions from property <span id="gaPropLabel" class="muted"></span>.</p>
+        <div class="kpi-grid" id="gaKpis"></div>
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:18px;">
+          <div class="card">
+            <h3>Traffic sources</h3>
+            <div class="table-scroll">
+              <table id="gaChannels"><thead><tr><th>Channel</th><th class="num">Sessions</th><th class="num">Users</th></tr></thead><tbody></tbody></table>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Top pages</h3>
+            <div class="table-scroll">
+              <table id="gaPages"><thead><tr><th>Page</th><th class="num">Views</th><th class="num">Users</th></tr></thead><tbody></tbody></table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="dash-section">
+        <h2><span class="sec-icon">⚡</span> PageSpeed Insights &amp; Core Web Vitals</h2>
+        <p class="sec-sub">Lighthouse lab scores for key pages. Runs on demand (each page takes a few seconds).</p>
+        <div style="margin-bottom:12px;">
+          <select id="psStrategy" aria-label="Device">
+            <option value="mobile" selected>Mobile</option>
+            <option value="desktop">Desktop</option>
+          </select>
+          <button id="runPsBtn" class="btn btn-ghost">Run PageSpeed check</button>
+        </div>
+        <div class="ps-grid" id="psResults"><div class="ps-card muted">Sign in and click “Run PageSpeed check”.</div></div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="dash-foot">
+    Internal dashboard · data fetched live from your Google account · nothing is stored on the server.
+  </footer>
+
+  <!-- Google Identity Services (OAuth token client) -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="js/seo-dashboard.js?v=20260811a" defer></script>
+</body>
+</html>

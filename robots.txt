@@ -2,6 +2,9 @@
 User-agent: *
 Allow: /
 
+# Internal SEO dashboard — keep out of search results
+Disallow: /seo-dashboard.html
+
 # Block AI training crawlers (optional - remove these lines if you want AI tools to cite you)
 User-agent: GPTBot
 Disallow: /
