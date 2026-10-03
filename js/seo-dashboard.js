@@ -15,7 +15,6 @@
   // Pages we care about for PageSpeed checks
   var KEY_PAGES = [
     { label: 'Home', url: SITE_URL },
-    { label: 'Open House', url: SITE_URL + 'open-house.html' },
     { label: 'Gallery', url: SITE_URL + 'gallery.html' },
     { label: 'Blog', url: SITE_URL + 'blog/' },
     { label: 'Location', url: SITE_URL + 'location/changi/' }
