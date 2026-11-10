@@ -73,8 +73,8 @@
     },
     "curr": {
       "label": "Our Curriculum",
-      "title": "A Framework Built for Bright Futures",
-      "desc": "We adopt the Blossom curriculum framework — thoughtfully designed to nurture each of our gems to their fullest potential.",
+      "title": "A-LIVE: Learning That Grows With Your Child",
+      "desc": "From story-led discovery to confident literacy and numeracy, every stage is purposeful, hands-on, and built around how young children learn best.",
       "tab_char": "Character Development",
       "tab_core": "Core Learning",
       "tab_sup": "Supporting Learning",
@@ -109,7 +109,7 @@
       "comp_d": "Early digital awareness and essential computer skills, preparing children for a technology-enabled world.",
       "mus": "Music Appreciation",
       "mus_d": "Listening, rhythm, and creative music-making experiences that develop a lifelong love for the arts.",
-      "cta_p": "Want to see our curriculum in action?",
+      "cta_p": "Come see purposeful, joyful learning in action.",
       "cta_btn": "Book a Centre Tour"
     },
     "faq": {
@@ -129,7 +129,7 @@
       "q6": "Are meals provided?",
       "a6": "Yes — Full Day enrolment includes nutritious meals and snacks. We accommodate common dietary requirements; please let us know during enrolment.",
       "q7": "How do I enrol my child?",
-      "a7": "You can enrol by calling +65 6542 3898, messaging us on WhatsApp at +65 9655 3213, emailing nicole@geniusgems.com.sg, or filling out the enquiry form below. We typically respond within 1–2 business days.",
+      "a7": "You can enrol by calling or messaging us on WhatsApp at +65 9655 3213, emailing nicole@geniusgems.com.sg, or filling out the enquiry form below. We typically respond within 1–2 business days.",
       "q8": "Can I visit the centre before enrolling?",
       "a8": "Absolutely — we encourage every family to visit. Contact us to schedule a tour and meet our team in person."
     },
@@ -403,8 +403,8 @@
     },
     "curr": {
       "label": "我们的课程",
-      "title": "为光明未来打造的课程框架",
-      "desc": "我们采用 Blossom 课程框架——精心设计以培育每颗宝石发挥最大潜力。",
+      "title": "A-LIVE：与孩子共同成长的学习",
+      "desc": "从故事引导的探索到自信的读写与数感，每个阶段都目标明确、重视实践，并依照幼儿最自然的学习方式设计。",
       "tab_char": "品格发展",
       "tab_core": "核心学习",
       "tab_sup": "辅助学习",
@@ -439,7 +439,7 @@
       "comp_d": "早期数字意识和基础电脑技能，为孩子迎接科技时代做好准备。",
       "mus": "音乐欣赏",
       "mus_d": "聆听、节奏和创意音乐体验，培养对艺术的终身热爱。",
-      "cta_p": "想看看我们的课程实际进行的样子吗？",
+      "cta_p": "亲临中心，感受有目标又充满乐趣的学习。",
       "cta_btn": "预约参观"
     },
     "faq": {
@@ -459,7 +459,7 @@
       "q6": "是否提供餐食？",
       "a6": "是的 — 全天班包含营养均衡的正餐和点心。我们会照顾常见的饮食需求，请在报名时告知我们。",
       "q7": "如何为孩子报名？",
-      "a7": "您可以拨打 +65 6542 3898、透过 WhatsApp +65 9655 3213 联系我们、发送电邮至 nicole@geniusgems.com.sg，或填写下方的咨询表。我们通常会在 1–2 个工作日内回复。",
+      "a7": "您可以拨打或透过 WhatsApp +65 9655 3213 联系我们、发送电邮至 nicole@geniusgems.com.sg，或填写下方的咨询表。我们通常会在 1–2 个工作日内回复。",
       "q8": "报名前可以参观中心吗？",
       "a8": "当然可以 — 我们鼓励每个家庭亲自来参观。请联系我们安排参观时间，与我们的团队面对面交流。"
     },
@@ -733,8 +733,8 @@
     },
     "curr": {
       "label": "Kurikulum Kami",
-      "title": "Rangka Kerja untuk Masa Depan Cerah",
-      "desc": "Kami menggunakan rangka kerja kurikulum Blossom — direka dengan teliti untuk memupuk setiap permata kami ke potensi sepenuhnya.",
+      "title": "A-LIVE: Pembelajaran yang Berkembang Bersama Anak Anda",
+      "desc": "Daripada penerokaan melalui cerita hingga literasi dan numerasi yang yakin, setiap peringkat bermatlamat, praktikal dan dibina mengikut cara kanak-kanak belajar dengan terbaik.",
       "tab_char": "Pembangunan Sahsiah",
       "tab_core": "Pembelajaran Teras",
       "tab_sup": "Pembelajaran Sokongan",
@@ -769,7 +769,7 @@
       "comp_d": "Kesedaran digital awal dan kemahiran komputer asas, menyediakan anak-anak untuk dunia yang dipacu teknologi.",
       "mus": "Apresiasi Muzik",
       "mus_d": "Pengalaman mendengar, irama, dan penciptaan muzik kreatif yang membentuk kasih sayang sepanjang hayat terhadap seni.",
-      "cta_p": "Ingin lihat kurikulum kami beraksi?",
+      "cta_p": "Lihat sendiri pembelajaran yang bermakna dan menyeronokkan.",
       "cta_btn": "Tempah Lawatan ke Pusat"
     },
     "faq": {
@@ -789,7 +789,7 @@
       "q6": "Adakah makanan disediakan?",
       "a6": "Ya — pendaftaran Sehari Penuh termasuk makanan berkhasiat dan snek. Kami menerima keperluan pemakanan biasa; sila beritahu kami semasa pendaftaran.",
       "q7": "Bagaimanakah saya mendaftarkan anak saya?",
-      "a7": "Anda boleh mendaftar dengan menelefon +65 6542 3898, menghantar mesej WhatsApp ke +65 9655 3213, e-mel kepada nicole@geniusgems.com.sg, atau mengisi borang pertanyaan di bawah. Kami biasanya membalas dalam masa 1–2 hari bekerja.",
+      "a7": "Anda boleh mendaftar dengan menelefon atau menghantar mesej WhatsApp ke +65 9655 3213, e-mel kepada nicole@geniusgems.com.sg, atau mengisi borang pertanyaan di bawah. Kami biasanya membalas dalam masa 1–2 hari bekerja.",
       "q8": "Bolehkah saya melawat pusat sebelum mendaftar?",
       "a8": "Sudah tentu — kami menggalakkan setiap keluarga melawat. Hubungi kami untuk menjadualkan lawatan dan bertemu pasukan kami secara peribadi."
     },
@@ -1063,8 +1063,8 @@
     },
     "curr": {
       "label": "எங்கள் பாடத்திட்டம்",
-      "title": "பிரகாசமான எதிர்காலத்திற்கான கட்டமைப்பு",
-      "desc": "Blossom பாடத்திட்ட கட்டமைப்பை நாங்கள் ஏற்றுக்கொள்கிறோம் — எங்கள் ஒவ்வொரு சிறப்பும் அவர்களின் முழு திறனுக்கும் வளர சிந்தனையுடன் வடிவமைக்கப்பட்டுள்ளது.",
+      "title": "A-LIVE: உங்கள் குழந்தையுடன் வளரும் கற்றல்",
+      "desc": "கதை வழி ஆராய்ச்சியிலிருந்து தன்னம்பிக்கையான எழுத்தறிவு மற்றும் எண்ணறிவு வரை, ஒவ்வொரு கட்டமும் நோக்கமுள்ள, செய்முறை சார்ந்த கற்றலாக வடிவமைக்கப்பட்டுள்ளது.",
       "tab_char": "குணநல வளர்ச்சி",
       "tab_core": "முக்கிய கற்றல்",
       "tab_sup": "ஆதரவு கற்றல்",
@@ -1099,7 +1099,7 @@
       "comp_d": "ஆரம்ப எண்ணிமம் விழிப்புணர்வு மற்றும் அத்தியாவசிய கணினித் திறன்கள் — தொழில்நுட்பம் இயக்கும் உலகுக்கு குழந்தைகளைத் தயார்படுத்துகின்றன.",
       "mus": "இசை மதிப்பீடு",
       "mus_d": "கேட்டல், தாளம், மற்றும் ஆக்கப்பூர்வ இசை அனுபவங்கள் — கலைகளின் மீது வாழ்நாள் காதலை வளர்க்கின்றன.",
-      "cta_p": "எங்கள் பாடத்திட்டத்தை செயலில் காண விரும்புகிறீர்களா?",
+      "cta_p": "நோக்கமுள்ள, மகிழ்ச்சியான கற்றலை நேரில் காண வாருங்கள்.",
       "cta_btn": "மையச் சுற்றுப்பயணத்தை முன்பதிவு செய்க"
     },
     "faq": {
@@ -1119,7 +1119,7 @@
       "q6": "உணவு வழங்கப்படுகிறதா?",
       "a6": "ஆம் — முழு நாள் பதிவில் சத்தான உணவுகள் மற்றும் சிற்றுண்டிகள் அடங்கும். பொதுவான உணவுத் தேவைகளைக் கருத்தில் கொள்வோம்; பதிவு செய்யும் போது எங்களுக்குத் தெரியப்படுத்தவும்.",
       "q7": "என் குழந்தையை எவ்வாறு பதிவு செய்வது?",
-      "a7": "+65 6542 3898 ஐ அழைப்பதன் மூலமாகவோ, WhatsApp +65 9655 3213 ஐத் தொடர்புகொள்வதன் மூலமாகவோ, nicole@geniusgems.com.sg க்கு மின்னஞ்சல் அனுப்புவதன் மூலமாகவோ, அல்லது கீழே உள்ள படிவத்தை நிரப்புவதன் மூலமாகவோ பதிவு செய்யலாம். நாங்கள் பொதுவாக 1–2 வேலை நாட்களில் பதிலளிக்கிறோம்.",
+      "a7": "+65 9655 3213 ஐ அழைப்பதன் மூலமாகவோ அல்லது WhatsApp மூலம் தொடர்புகொள்வதன் மூலமாகவோ, nicole@geniusgems.com.sg க்கு மின்னஞ்சல் அனுப்புவதன் மூலமாகவோ, அல்லது கீழே உள்ள படிவத்தை நிரப்புவதன் மூலமாகவோ பதிவு செய்யலாம். நாங்கள் பொதுவாக 1–2 வேலை நாட்களில் பதிலளிக்கிறோம்.",
       "q8": "பதிவு செய்யும் முன் மையத்தைப் பார்வையிட முடியுமா?",
       "a8": "நிச்சயமாக — ஒவ்வொரு குடும்பத்தையும் வந்து பார்க்க ஊக்குவிக்கிறோம். ஒரு சுற்றுப்பயணத்தை திட்டமிட்டு எங்கள் குழுவைச் சந்திக்க எங்களைத் தொடர்பு கொள்ளவும்."
     },

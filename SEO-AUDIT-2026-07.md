@@ -86,7 +86,7 @@ New pages (blog article, mobile): SEO 100, Accessibility 96, Best Practices 100.
   `1.3739,103.9502`; the street (26 Mariam Close) is actually at ≈ `1.3615,103.9689`
   (verified against OpenStreetMap and visually against the corrected embed). Updated in
   meta geo tags + all JSON-LD on every page, added `hasMap`.
-- **Added** `EducationalOccupationalProgram` node for the Blossom Curriculum (homepage).
+- **Added** `EducationalOccupationalProgram` node for the A-LIVE Curriculum (homepage).
 - **Added** `BlogPosting` + `BreadcrumbList` schema on all 5 articles, `Blog` schema on
   the index, and `Preschool/LocalBusiness` + breadcrumbs on the location page.
 - Existing FAQPage, Event (4 open-house dates), VideoObject, WebSite, Organization
@@ -104,14 +104,14 @@ links to the blog on every page.
 |---|---|
 | `blog/bilingual-childcare-centre-changi-guide.html` | bilingual childcare Changi |
 | `blog/why-small-class-sizes-matter.html` | small class size preschool |
-| `blog/inside-the-blossom-curriculum.html` | Blossom curriculum, play-based learning |
+| `blog/inside-the-blossom-curriculum.html` | A-LIVE curriculum, phonics, Singapore Math |
 | `blog/preparing-your-child-for-preschool-checklist.html` | preparing child for preschool Singapore |
 | `blog/questions-to-ask-when-visiting-a-preschool.html` | preschool visit questions |
 
 ## 6. Local SEO
 
 - **NAP consistency confirmed** across all pages: 26 Mariam Close, Singapore 508668 ·
-  +65 6542 3898 · +65 9655 3213 · nicole@geniusgems.com.sg. Phone numbers are now
+  +65 9655 3213 · nicole@geniusgems.com.sg. Phone numbers are now
   `tel:` links and addresses link to Google Maps everywhere (footer, location section).
 - **Map embed fixed**: the old iframe used a hand-built URL with fabricated place-ID and
   wrong coordinates; replaced with a keyless `output=embed` URL that pins the actual

@@ -32,19 +32,6 @@ document.querySelectorAll('.faq-question').forEach(btn => {
   });
 });
 
-// ---------- Curriculum tabs ----------
-const tabBtns = document.querySelectorAll('.tab-btn');
-const tabContents = document.querySelectorAll('.tab-content');
-tabBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    const target = btn.dataset.tab;
-    tabBtns.forEach(b => b.classList.remove('active'));
-    tabContents.forEach(c => c.classList.remove('active'));
-    btn.classList.add('active');
-    document.getElementById(`tab-${target}`).classList.add('active');
-  });
-});
-
 // ---------- Scroll-triggered fade-in ----------
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -56,7 +43,7 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
 document.querySelectorAll(
-  '.value-card, .curriculum-card, .team-card, .fee-card, .discount-card, .location-block, .about-features .feature-item, .contact-method'
+  '.value-card, .curriculum-stage-card, .curriculum-theme, .curriculum-programme-card, .team-card, .fee-card, .discount-card, .location-block, .about-features .feature-item, .contact-method'
 ).forEach((el, i) => {
   el.classList.add('fade-in');
   el.style.transitionDelay = `${(i % 4) * 80}ms`;
