@@ -256,14 +256,12 @@ if (yearEl) {
   const caption = document.getElementById('heroSlideCaption');
   const previous = document.getElementById('heroSlidePrev');
   const next = document.getElementById('heroSlideNext');
-  const toggle = document.getElementById('heroSlideToggle');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
   let current = 0;
   let timer;
   let inView = true;
   let interactionPaused = false;
-  let manuallyPaused = reduceMotion.matches;
 
   const showSlide = (index) => {
     current = (index + slides.length) % slides.length;
@@ -287,7 +285,7 @@ if (yearEl) {
 
   const scheduleNext = () => {
     window.clearTimeout(timer);
-    if (manuallyPaused || interactionPaused || !inView || document.hidden) return;
+    if (reduceMotion.matches || interactionPaused || !inView || document.hidden) return;
     timer = window.setTimeout(() => {
       showSlide(current + 1);
       scheduleNext();
@@ -299,23 +297,8 @@ if (yearEl) {
     scheduleNext();
   };
 
-  const updateToggle = () => {
-    const icon = toggle.querySelector('i');
-    const labelKey = manuallyPaused ? 'hero.slideshow_play' : 'hero.slideshow_pause';
-    const fallbackLabel = manuallyPaused ? 'Play slideshow' : 'Pause slideshow';
-    icon.className = manuallyPaused ? 'fas fa-play' : 'fas fa-pause';
-    toggle.dataset.i18nAria = labelKey;
-    toggle.setAttribute('aria-label', window.geniusGemsT?.(labelKey) || fallbackLabel);
-    caption.setAttribute('aria-live', manuallyPaused ? 'polite' : 'off');
-  };
-
   previous.addEventListener('click', () => moveTo(current - 1));
   next.addEventListener('click', () => moveTo(current + 1));
-  toggle.addEventListener('click', () => {
-    manuallyPaused = !manuallyPaused;
-    updateToggle();
-    scheduleNext();
-  });
   dots.forEach((dot, index) => {
     dot.addEventListener('click', () => moveTo(index));
   });
@@ -349,6 +332,7 @@ if (yearEl) {
   });
 
   document.addEventListener('visibilitychange', scheduleNext);
+  reduceMotion.addEventListener('change', scheduleNext);
   if ('IntersectionObserver' in window) {
     const visibilityObserver = new IntersectionObserver(([entry]) => {
       inView = entry.isIntersecting;
@@ -357,7 +341,6 @@ if (yearEl) {
     visibilityObserver.observe(slideshow);
   }
 
-  updateToggle();
   showSlide(0);
   scheduleNext();
 })();

@@ -8,7 +8,7 @@ let currentLang = localStorage.getItem('geniusGems_language') || 'en';
 async function loadTranslations() {
   try {
     // Absolute path so pages in subdirectories (/blog/, /location/) resolve correctly
-    const response = await fetch('/js/translations.json?v=20261111d');
+    const response = await fetch('/js/translations.json?v=20261111e');
     translations = await response.json();
     applyLanguage(currentLang);
   } catch (error) {

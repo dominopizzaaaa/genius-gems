@@ -514,30 +514,34 @@ html[lang="ta"] .nav-links { gap: 2px; }
 }
 .hero-slide-controls {
   position: absolute;
-  top: 18px;
-  right: 18px;
+  top: 50%;
+  left: 16px;
+  right: 16px;
   z-index: 4;
   display: flex;
-  gap: 7px;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
 }
 .hero-slide-controls button {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   display: grid;
   place-items: center;
   border: 1px solid rgba(255,255,255,0.5);
   border-radius: 50%;
   background: rgba(47,36,62,0.58);
   color: var(--white);
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   cursor: pointer;
+  pointer-events: auto;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   transition: background 0.2s ease, transform 0.2s ease;
 }
 .hero-slide-controls button:hover {
   background: var(--primary-dark);
-  transform: translateY(-2px);
+  transform: scale(1.08);
 }
 .hero-slide-controls button:focus-visible,
 .hero-slide-dots button:focus-visible {
@@ -584,8 +588,8 @@ html[lang="ta"] .nav-links { gap: 2px; }
     border-width: 5px;
     border-radius: 21px;
   }
-  .hero-slide-controls { top: 12px; right: 12px; gap: 5px; }
-  .hero-slide-controls button { width: 36px; height: 36px; }
+  .hero-slide-controls { left: 9px; right: 9px; }
+  .hero-slide-controls button { width: 40px; height: 40px; }
   .hero-slide-meta { left: 16px; bottom: 42px; max-width: 82%; }
   .hero-slide-meta p { font-size: 1rem; }
   .hero-slide-dots { left: 16px; right: auto; bottom: 17px; }

@@ -30,8 +30,6 @@
       "slideshow_choose": "Choose a photo",
       "slideshow_prev": "Show previous photo",
       "slideshow_next": "Show next photo",
-      "slideshow_pause": "Pause slideshow",
-      "slideshow_play": "Play slideshow",
       "slide_1": "A warm welcome at Genius Gems",
       "slide_2": "Bilingual culture comes alive",
       "slide_3": "Learning through celebration",
@@ -39,7 +37,8 @@
       "slide_5": "Joyful moments beyond the classroom",
       "slide_6": "Learning through play, every day",
       "slide_7": "Active play builds happy, confident children",
-      "slide_8": "Space to explore, move and grow"
+      "slide_8": "Space to explore, move and grow",
+      "slide_9": "Learning from the world around us"
     },
     "about": {
       "label": "About Us",
@@ -376,8 +375,6 @@
       "slideshow_choose": "选择照片",
       "slideshow_prev": "显示上一张照片",
       "slideshow_next": "显示下一张照片",
-      "slideshow_pause": "暂停幻灯片",
-      "slideshow_play": "播放幻灯片",
       "slide_1": "欢迎来到 Genius Gems",
       "slide_2": "让双语文化鲜活起来",
       "slide_3": "在欢庆中学习",
@@ -385,7 +382,8 @@
       "slide_5": "课堂之外的欢乐时光",
       "slide_6": "每天在游戏中学习",
       "slide_7": "活力游戏，让孩子快乐又自信",
-      "slide_8": "自由探索、运动与成长的空间"
+      "slide_8": "自由探索、运动与成长的空间",
+      "slide_9": "从身边的世界中学习"
     },
     "about": {
       "label": "关于我们",
@@ -722,8 +720,6 @@
       "slideshow_choose": "Pilih foto",
       "slideshow_prev": "Tunjukkan foto sebelumnya",
       "slideshow_next": "Tunjukkan foto seterusnya",
-      "slideshow_pause": "Jeda tayangan slaid",
-      "slideshow_play": "Mainkan tayangan slaid",
       "slide_1": "Selamat datang ke Genius Gems",
       "slide_2": "Budaya dwibahasa dihidupkan",
       "slide_3": "Belajar melalui sambutan",
@@ -731,7 +727,8 @@
       "slide_5": "Detik ceria di luar bilik darjah",
       "slide_6": "Belajar melalui bermain, setiap hari",
       "slide_7": "Permainan aktif membina kanak-kanak yang ceria dan yakin",
-      "slide_8": "Ruang untuk meneroka, bergerak dan membesar"
+      "slide_8": "Ruang untuk meneroka, bergerak dan membesar",
+      "slide_9": "Belajar daripada dunia di sekeliling kita"
     },
     "about": {
       "label": "Tentang Kami",
@@ -1068,8 +1065,6 @@
       "slideshow_choose": "ஒரு படத்தைத் தேர்ந்தெடுக்கவும்",
       "slideshow_prev": "முந்தைய படத்தைக் காட்டு",
       "slideshow_next": "அடுத்த படத்தைக் காட்டு",
-      "slideshow_pause": "படத்தொகுப்பை இடைநிறுத்து",
-      "slideshow_play": "படத்தொகுப்பை இயக்கு",
       "slide_1": "Genius Gems க்கு அன்பான வரவேற்பு",
       "slide_2": "இருமொழிக் கலாசாரம் உயிர்ப்புடன் மலர்கிறது",
       "slide_3": "கொண்டாட்டங்களின் வழியே கற்றல்",
@@ -1077,7 +1072,8 @@
       "slide_5": "வகுப்பறைக்கு அப்பாற்பட்ட மகிழ்ச்சியான தருணங்கள்",
       "slide_6": "ஒவ்வொரு நாளும் விளையாட்டின் வழியே கற்றல்",
       "slide_7": "சுறுசுறுப்பான விளையாட்டு மகிழ்ச்சியும் தன்னம்பிக்கையும் வளர்க்கிறது",
-      "slide_8": "ஆராயவும், இயங்கவும், வளரவும் இடம்"
+      "slide_8": "ஆராயவும், இயங்கவும், வளரவும் இடம்",
+      "slide_9": "நம்மைச் சுற்றியுள்ள உலகிலிருந்து கற்றல்"
     },
     "about": {
       "label": "எங்களைப் பற்றி",
