@@ -71,7 +71,7 @@
   <link rel="preload" as="image" href="images/Excursion_poster.jpg" fetchpriority="high" />
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/style.css?v=20261111a" />
+  <link rel="stylesheet" href="css/style.css?v=20261111b" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <!-- Font Awesome is non-critical (decorative icons) — load async to unblock first paint -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'" />
@@ -632,15 +632,40 @@
     <div class="container">
       <div class="section-header centered">
         <div class="section-label" data-i18n="curr.label">Our Curriculum</div>
-        <h2 class="section-title" data-i18n="curr.title">Integrated Curriculum with Lots of Hands-On Activities</h2>
-        <p class="section-desc" data-i18n="curr.desc">A-LIVE connects stories, themes, literacy, numeracy, and social development through active experiences that invite children to explore, interact, and learn by doing.</p>
+        <h2 class="section-title" data-i18n="curr.title">Meet A-LIVE: Our Integrated, Hands-On Curriculum</h2>
+        <p class="section-desc" data-i18n="curr.desc">A-LIVE is the name of our curriculum from Toddlers to K2. It connects stories, themes, literacy, numeracy, and social development so children learn through meaningful experiences, not isolated subjects.</p>
+      </div>
+
+      <div class="curriculum-definition">
+        <div class="curriculum-definition-copy">
+          <span class="curriculum-kicker">A-LIVE, simply explained</span>
+          <h3>One connected curriculum for the whole child</h3>
+          <p>Each story or theme becomes a shared context for reading, early maths, discovery, creativity, movement, and interaction. Children understand why they are learning something because they can see, touch, discuss, and use it.</p>
+        </div>
+        <div class="curriculum-principle-grid" aria-label="Three principles of the A-LIVE curriculum">
+          <article class="curriculum-principle-card">
+            <span aria-hidden="true">01</span>
+            <h4>Connected</h4>
+            <p>Learning areas come together through one story or theme.</p>
+          </article>
+          <article class="curriculum-principle-card">
+            <span aria-hidden="true">02</span>
+            <h4>Hands-on</h4>
+            <p>Children explore through play, movement, talk, and practical activities.</p>
+          </article>
+          <article class="curriculum-principle-card">
+            <span aria-hidden="true">03</span>
+            <h4>Progressive</h4>
+            <p>Experiences deepen with age and prepare children for primary school.</p>
+          </article>
+        </div>
       </div>
 
       <div class="curriculum-stage-section">
         <div class="curriculum-subhead">
-          <span class="curriculum-kicker">One connected journey from Toddlers to K2</span>
-          <h3>Relational, dynamic, and designed for active learners</h3>
-          <p>Every experience brings learning areas together while building curiosity, reasoning, communication, practical skills, and the social confidence to learn alongside others.</p>
+          <span class="curriculum-kicker">How A-LIVE grows with your child</span>
+          <h3>What will my child experience at each stage?</h3>
+          <p>The learning stays connected and hands-on throughout. As children grow, teaching becomes more structured and builds toward confident school readiness.</p>
         </div>
         <div class="curriculum-stage-grid">
           <article class="curriculum-stage-card" data-stage="early">
@@ -656,10 +681,10 @@
           <article class="curriculum-stage-card" data-stage="older">
             <span class="curriculum-stage-number" aria-hidden="true">02</span>
             <p class="curriculum-stage-age">N2 to K2</p>
-            <h4>Thematic exploration</h4>
+            <h4>Themes plus specialist programmes</h4>
             <ul>
               <li>Integrated themes connect language, maths, inquiry, and everyday life.</li>
-              <li>Jolly Phonics and Thalespin provide structured literacy and numeracy learning.</li>
+              <li>Jolly Phonics provides structured literacy; Thalespin develops numeracy.</li>
               <li>Reasoning, independence, and confidence deepen toward primary school.</li>
             </ul>
           </article>
@@ -723,27 +748,11 @@
       </div>
 
       <div class="curriculum-programmes">
-        <article class="curriculum-programme-card" data-programme="alive">
-          <div class="curriculum-programme-visual">
-            <img src="images/a-live-literacy-learning.jpg" alt="Storybook, letter cards, number blocks and matching pieces representing A-LIVE hands-on learning" loading="lazy" width="1200" height="896" />
-            <span class="curriculum-visual-label">A-LIVE Foundations</span>
-          </div>
-          <div class="curriculum-programme-content">
-            <p class="curriculum-programme-eyebrow">Integrated, relational, and hands-on</p>
-            <h3>Learning begins with meaningful connections</h3>
-            <p>Stories and themes bring learning areas together, while interaction and practical experiences intentionally strengthen children's social skills and love of learning.</p>
-            <div class="curriculum-pill-row" aria-label="A-LIVE learning outcomes">
-              <span>Knowledge</span>
-              <span>Skills</span>
-              <span>Dispositions</span>
-            </div>
-            <ul class="curriculum-point-list">
-              <li>Familiar stories give new ideas context.</li>
-              <li>Play turns early concepts into real experiences.</li>
-              <li>Curiosity and confidence grow alongside ability.</li>
-            </ul>
-          </div>
-        </article>
+        <div class="curriculum-subhead">
+          <span class="curriculum-kicker">Specialist learning from N2 to K2</span>
+          <h3>Two trusted programmes within A-LIVE</h3>
+          <p>A-LIVE is the overall curriculum. From N2 onward, these specialist programmes add a clear, structured progression for mathematics and English literacy.</p>
+        </div>
 
         <article class="curriculum-programme-card" data-programme="maths">
           <div class="curriculum-programme-visual">
@@ -766,6 +775,10 @@
               <li><strong>Hands-on practice:</strong> children reason with manipulatives before using an activity book.</li>
               <li><strong>Home partnership:</strong> a shared parent-child activity extends learning every five weeks.</li>
             </ul>
+            <a class="curriculum-programme-link" href="https://www.singaporepreschoolmath.com/" target="_blank" rel="noopener noreferrer" aria-label="Explore the official Thalespin website (opens in a new tab)">
+              Explore the official Thalespin website
+              <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
           </div>
         </article>
 
@@ -783,6 +796,10 @@
               <li><span>2</span><div><strong>Blend &amp; recognise</strong><small>Word building, sight words, and playful practice</small></div></li>
               <li><span>3</span><div><strong>Write &amp; apply</strong><small>Letter formation, spelling patterns, and creative writing</small></div></li>
             </ol>
+            <a class="curriculum-programme-link" href="https://www.jollyphonics.com.sg/" target="_blank" rel="noopener noreferrer" aria-label="Explore Jolly Phonics Singapore (opens in a new tab)">
+              Explore Jolly Phonics Singapore
+              <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
           </div>
         </article>
       </div>
@@ -1573,7 +1590,7 @@
 
   <!-- Hidden iframe for Google Forms submission -->
   <iframe id="formIframe" name="formIframe" style="display:none" aria-hidden="true"></iframe>
-  <script src="js/language-switcher.js?v=20261111a"></script>
-  <script src="js/main.js?v=20261111a"></script>
+  <script src="js/language-switcher.js?v=20261111b"></script>
+  <script src="js/main.js?v=20261111b"></script>
 </body>
 </html>
