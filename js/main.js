@@ -246,54 +246,121 @@ if (yearEl) {
   yearEl.textContent = now > 2024 ? `2024–${now}` : '2024';
 }
 
-// ---------- Hero video — deferred source loading ----------
-// The excursion video is ~12 MB and sits below the first viewport on mobile.
-// Attaching the source only when the video nears the viewport keeps it off
-// the critical path; the poster image displays identically in the meantime.
+// ---------- Hero photo slideshow ----------
 (function () {
-  const video = document.getElementById('heroVideo');
-  if (!video) return;
-  const source = video.querySelector('source[data-src]');
-  if (!source) return;
-  const loadVideo = () => {
-    if (source.src) return;
-    source.src = source.dataset.src;
-    video.load();
-    video.play().catch(() => {});
-  };
-  if ('IntersectionObserver' in window) {
-    const io = new IntersectionObserver((entries) => {
-      if (entries.some((e) => e.isIntersecting)) {
-        loadVideo();
-        io.disconnect();
-      }
-    }, { rootMargin: '600px 0px' });
-    io.observe(video);
-  } else {
-    loadVideo();
-  }
-})();
+  const slideshow = document.getElementById('heroSlideshow');
+  if (!slideshow) return;
 
-// ---------- Hero video — mute toggle ----------
-const heroVideo = document.getElementById('heroVideo');
-const heroVideoMute = document.getElementById('heroVideoMute');
-if (heroVideo && heroVideoMute) {
-  const muteIcon = heroVideoMute.querySelector('i');
-  const setMuteState = (muted) => {
-    heroVideo.muted = muted;
-    if (muteIcon) {
-      muteIcon.className = muted ? 'fas fa-volume-mute' : 'fas fa-volume-up';
-    }
-    heroVideoMute.setAttribute('aria-label', muted ? 'Unmute video' : 'Mute video');
+  const slides = [...slideshow.querySelectorAll('.hero-slide')];
+  const dots = [...slideshow.querySelectorAll('.hero-slide-dots button')];
+  const caption = document.getElementById('heroSlideCaption');
+  const previous = document.getElementById('heroSlidePrev');
+  const next = document.getElementById('heroSlideNext');
+  const toggle = document.getElementById('heroSlideToggle');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  let current = 0;
+  let timer;
+  let inView = true;
+  let interactionPaused = false;
+  let manuallyPaused = reduceMotion.matches;
+
+  const showSlide = (index) => {
+    current = (index + slides.length) % slides.length;
+    slides.forEach((slide, slideIndex) => {
+      const isActive = slideIndex === current;
+      slide.classList.toggle('is-active', isActive);
+      slide.setAttribute('aria-hidden', String(!isActive));
+    });
+    dots.forEach((dot, dotIndex) => {
+      if (dotIndex === current) {
+        dot.setAttribute('aria-current', 'true');
+      } else {
+        dot.removeAttribute('aria-current');
+      }
+    });
+    const captionKey = slides[current].dataset.captionKey;
+    const translatedCaption = window.geniusGemsT?.(captionKey);
+    caption.dataset.i18n = captionKey;
+    caption.textContent = translatedCaption || slides[current].dataset.caption;
   };
-  heroVideoMute.addEventListener('click', () => {
-    setMuteState(!heroVideo.muted);
-    // Ensure playback continues after unmuting
-    if (!heroVideo.muted && heroVideo.paused) {
-      heroVideo.play().catch(() => {});
+
+  const scheduleNext = () => {
+    window.clearTimeout(timer);
+    if (manuallyPaused || interactionPaused || !inView || document.hidden) return;
+    timer = window.setTimeout(() => {
+      showSlide(current + 1);
+      scheduleNext();
+    }, 5200);
+  };
+
+  const moveTo = (index) => {
+    showSlide(index);
+    scheduleNext();
+  };
+
+  const updateToggle = () => {
+    const icon = toggle.querySelector('i');
+    const labelKey = manuallyPaused ? 'hero.slideshow_play' : 'hero.slideshow_pause';
+    const fallbackLabel = manuallyPaused ? 'Play slideshow' : 'Pause slideshow';
+    icon.className = manuallyPaused ? 'fas fa-play' : 'fas fa-pause';
+    toggle.dataset.i18nAria = labelKey;
+    toggle.setAttribute('aria-label', window.geniusGemsT?.(labelKey) || fallbackLabel);
+    caption.setAttribute('aria-live', manuallyPaused ? 'polite' : 'off');
+  };
+
+  previous.addEventListener('click', () => moveTo(current - 1));
+  next.addEventListener('click', () => moveTo(current + 1));
+  toggle.addEventListener('click', () => {
+    manuallyPaused = !manuallyPaused;
+    updateToggle();
+    scheduleNext();
+  });
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => moveTo(index));
+  });
+
+  slideshow.addEventListener('mouseenter', () => {
+    interactionPaused = true;
+    window.clearTimeout(timer);
+  });
+  slideshow.addEventListener('mouseleave', () => {
+    interactionPaused = false;
+    scheduleNext();
+  });
+  slideshow.addEventListener('focusin', () => {
+    interactionPaused = true;
+    window.clearTimeout(timer);
+  });
+  slideshow.addEventListener('focusout', (event) => {
+    if (!slideshow.contains(event.relatedTarget)) {
+      interactionPaused = false;
+      scheduleNext();
     }
   });
-}
+  slideshow.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowLeft') {
+      event.preventDefault();
+      moveTo(current - 1);
+    } else if (event.key === 'ArrowRight') {
+      event.preventDefault();
+      moveTo(current + 1);
+    }
+  });
+
+  document.addEventListener('visibilitychange', scheduleNext);
+  if ('IntersectionObserver' in window) {
+    const visibilityObserver = new IntersectionObserver(([entry]) => {
+      inView = entry.isIntersecting;
+      scheduleNext();
+    }, { threshold: 0.2 });
+    visibilityObserver.observe(slideshow);
+  }
+
+  updateToggle();
+  showSlide(0);
+  scheduleNext();
+})();
 
 // ---------- Gallery video — custom play overlay ----------
 const galleryVideo = document.getElementById('galleryVideo');

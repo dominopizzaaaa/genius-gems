@@ -68,10 +68,10 @@
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
   <link rel="preconnect" href="https://www.googletagmanager.com" />
   <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-  <link rel="preload" as="image" href="images/Excursion_poster.jpg" fetchpriority="high" />
+  <link rel="preload" as="image" href="images/genius-gems-centre-welcome.jpeg" fetchpriority="high" />
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/style.css?v=20261111c" />
+  <link rel="stylesheet" href="css/style.css?v=20261111d" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <!-- Font Awesome is non-critical (decorative icons) — load async to unblock first paint -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'" />
@@ -227,28 +227,6 @@
       "@type": "Preschool",
       "name": "Genius Gems Childcare Centre",
       "url": "https://geniusgems.com.sg/"
-    }
-  }
-  </script>
-
-  <!-- Structured Data: VideoObject (hero excursion video) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "VideoObject",
-    "name": "Genius Gems Excursion Highlights",
-    "description": "Highlights from a recent excursion with children from Genius Gems Childcare Centre, a bilingual preschool in Changi, Singapore.",
-    "thumbnailUrl": "https://geniusgems.com.sg/images/Excursion_poster.jpg",
-    "contentUrl": "https://geniusgems.com.sg/videos/Excursion.mp4",
-    "uploadDate": "2026-06-16",
-    "duration": "PT1M9S",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Genius Gems Childcare Centre",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://geniusgems.com.sg/images/Logo_1.png"
-      }
     }
   }
   </script>
@@ -409,30 +387,56 @@
       <p class="hero-subtitle" data-i18n="hero.subtitle">
         A warm, enriching childcare environment where curiosity thrives, friendships blossom, and every child discovers the brilliance within.
       </p>
-      <!-- Hero video — featured excursion highlights -->
-      <div class="hero-video">
-        <video
-          id="heroVideo"
-          class="hero-video-el"
-          autoplay
-          muted
-          loop
-          playsinline
-          preload="metadata"
-          width="464"
-          height="832"
-          poster="images/Excursion_poster.jpg"
-          aria-label="Genius Gems Childcare Centre excursion highlights — children enjoying a day out in Changi, Singapore">
-          <!-- src applied by main.js when the video nears the viewport — keeps ~12 MB off the critical path -->
-          <source data-src="videos/Excursion.mp4" type="video/mp4" />
-          <picture>
-            <source srcset="images/Excursion_poster.webp" type="image/webp" />
-            <img src="images/Excursion_poster.jpg" alt="Children on an excursion with Genius Gems Childcare Centre in Changi, Singapore" width="464" height="832" />
-          </picture>
-        </video>
-        <button class="hero-video-mute" id="heroVideoMute" aria-label="Unmute video">
-          <i class="fas fa-volume-mute"></i>
-        </button>
+      <!-- A welcoming snapshot of life at Genius Gems -->
+      <div class="hero-slideshow" id="heroSlideshow" role="region" aria-roledescription="carousel" aria-label="Life at Genius Gems" data-i18n-aria="hero.slideshow_aria">
+        <div class="hero-slides">
+          <figure class="hero-slide is-active" data-caption="A warm welcome at Genius Gems" data-caption-key="hero.slide_1" aria-hidden="false">
+            <img src="images/genius-gems-centre-welcome.jpeg" alt="Children and educators welcoming families outside Genius Gems Childcare Centre" width="2048" height="2031" fetchpriority="high" />
+          </figure>
+          <figure class="hero-slide" data-caption="Bilingual culture comes alive" data-caption-key="hero.slide_2" aria-hidden="true">
+            <img src="images/bilingual-immersion-mid-autumn.jpeg" alt="Children and educators celebrating Mid-Autumn Festival together at Genius Gems" width="2048" height="1547" loading="lazy" />
+          </figure>
+          <figure class="hero-slide" data-caption="Learning through celebration" data-caption-key="hero.slide_3" aria-hidden="true">
+            <img src="images/bilingual-immersion-cultural-celebration.jpeg" alt="Children and educators taking part in a cultural classroom celebration at Genius Gems" width="2048" height="1998" loading="lazy" />
+          </figure>
+          <figure class="hero-slide" data-caption="Growing together as one community" data-caption-key="hero.slide_4" aria-hidden="true">
+            <img src="images/bilingual-immersion-national-day.jpeg" alt="Children and educators celebrating Singapore National Day at Genius Gems" width="2048" height="2048" loading="lazy" />
+          </figure>
+          <figure class="hero-slide" data-caption="Joyful moments beyond the classroom" data-caption-key="hero.slide_5" aria-hidden="true">
+            <img src="images/bilingual-immersion-community-activity.jpeg" alt="Children and educators enjoying a community activity outside Genius Gems" width="2048" height="2034" loading="lazy" />
+          </figure>
+          <figure class="hero-slide" data-caption="Learning through play, every day" data-caption-key="hero.slide_6" aria-hidden="true">
+            <img src="images/kids-learning-through-play.webp" alt="Children learning together through purposeful play at Genius Gems" width="1467" height="1600" loading="lazy" />
+          </figure>
+          <figure class="hero-slide" data-caption="Active play builds happy, confident children" data-caption-key="hero.slide_7" aria-hidden="true">
+            <img src="images/kids-playing-in-pool.webp" alt="Children enjoying supervised water play at Genius Gems" width="1600" height="1600" loading="lazy" />
+          </figure>
+          <figure class="hero-slide" data-caption="Space to explore, move and grow" data-caption-key="hero.slide_8" aria-hidden="true">
+            <img src="images/large-outdoor-playground.webp" alt="The spacious outdoor playground at Genius Gems Childcare Centre" width="1200" height="1600" loading="lazy" />
+          </figure>
+        </div>
+
+        <div class="hero-slide-meta">
+          <span data-i18n="hero.slideshow_label">Life at Genius Gems</span>
+          <p id="heroSlideCaption" data-i18n="hero.slide_1" aria-live="polite">A warm welcome at Genius Gems</p>
+        </div>
+
+        <div class="hero-slide-controls" aria-label="Slideshow controls" data-i18n-aria="hero.slideshow_controls">
+          <button type="button" id="heroSlidePrev" aria-label="Show previous photo" data-i18n-aria="hero.slideshow_prev"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+          <button type="button" id="heroSlideToggle" aria-label="Pause slideshow" data-i18n-aria="hero.slideshow_pause"><i class="fas fa-pause" aria-hidden="true"></i></button>
+          <button type="button" id="heroSlideNext" aria-label="Show next photo" data-i18n-aria="hero.slideshow_next"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+        </div>
+
+        <div class="hero-slide-dots" aria-label="Choose a photo" data-i18n-aria="hero.slideshow_choose">
+          <button type="button" aria-label="1" aria-current="true"></button>
+          <button type="button" aria-label="2"></button>
+          <button type="button" aria-label="3"></button>
+          <button type="button" aria-label="4"></button>
+          <button type="button" aria-label="5"></button>
+          <button type="button" aria-label="6"></button>
+          <button type="button" aria-label="7"></button>
+          <button type="button" aria-label="8"></button>
+        </div>
       </div>
       <div class="hero-actions">
         <a href="#contact" class="btn btn-primary" data-i18n="hero.btn_enrol">Enrol Your Child</a>
@@ -1598,7 +1602,7 @@
 
   <!-- Hidden iframe for Google Forms submission -->
   <iframe id="formIframe" name="formIframe" style="display:none" aria-hidden="true"></iframe>
-  <script src="js/language-switcher.js?v=20261111b"></script>
-  <script src="js/main.js?v=20261111b"></script>
+  <script src="js/language-switcher.js?v=20261111d"></script>
+  <script src="js/main.js?v=20261111d"></script>
 </body>
 </html>
