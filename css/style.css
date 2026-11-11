@@ -151,7 +151,13 @@ p { color: var(--text-light); line-height: 1.8; }
   justify-content: space-between;
 }
 .nav-logo { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
-.logo-img { height: 54px; width: auto; flex-shrink: 0; }
+.logo-img {
+  height: 78px;
+  width: auto;
+  flex-shrink: 0;
+  transition: height 0.25s ease;
+}
+.navbar.scrolled .logo-img { height: 56px; }
 .logo-fallback { display: flex; align-items: center; gap: 8px; }
 .logo-gem { font-size: 1.6rem; }
 .logo-text {
@@ -361,7 +367,7 @@ html[lang="ta"] .nav-links { gap: 2px; }
 .hero-content {
   position: relative;
   z-index: 2;
-  padding: 180px 24px 90px;
+  padding: 120px 24px 90px;
   max-width: 720px;
   margin: 0 auto;
   text-align: center;
@@ -2145,7 +2151,7 @@ html[lang="ta"] .nav-links { gap: 2px; }
    RESPONSIVE
    ============================================================ */
 @media (max-width: 1024px) {
-  .hero-content { max-width: 100%; padding: 170px 24px 90px; }
+  .hero-content { max-width: 100%; padding: 118px 24px 90px; }
   .values-grid { grid-template-columns: 1fr 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .curriculum-definition { grid-template-columns: 1fr; }
@@ -2229,6 +2235,8 @@ html[lang="ta"] .nav-links { gap: 2px; }
 
 @media (max-width: 768px) {
   .section { padding: 68px 0; }
+  .logo-img,
+  .navbar.scrolled .logo-img { height: 52px; }
   .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 36px; }
   .about-photo-grid { height: auto; gap: 10px; }
   .about-photo { max-height: none; max-width: none; margin: 0; }
@@ -2251,7 +2259,8 @@ html[lang="ta"] .nav-links { gap: 2px; }
   .fee-card { max-width: 100%; }
   .team-card { min-width: 150px; }
   .contact-form-wrap { padding: 22px 18px; }
-  .logo-img { height: 42px; }
+  .logo-img,
+  .navbar.scrolled .logo-img { height: 42px; }
 }
 
 /* ============================================================
