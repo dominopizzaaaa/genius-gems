@@ -4,7 +4,7 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://geniusgems.com.sg/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <video:video>
@@ -30,6 +30,21 @@
       <image:loc>https://geniusgems.com.sg/images/a-live-literacy-learning.jpg</image:loc>
       <image:title>A-LIVE curriculum at Genius Gems Childcare Centre</image:title>
       <image:caption>Story-led, hands-on early childhood curriculum in Singapore</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://geniusgems.com.sg/images/a-live-storybook-invitation-hd.jpg</image:loc>
+      <image:title>Storybook-led integrated learning in the A-LIVE curriculum</image:title>
+      <image:caption>A storybook invitation connecting literacy, numeracy, play and discovery</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://geniusgems.com.sg/images/a-live-play-exploration-hd.jpg</image:loc>
+      <image:title>Hands-on exploration in the A-LIVE curriculum</image:title>
+      <image:caption>Purposeful play materials for active early childhood learning</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://geniusgems.com.sg/images/a-live-practical-activity-hd.jpg</image:loc>
+      <image:title>Practical learning activity in the A-LIVE curriculum</image:title>
+      <image:caption>Children build understanding through hands-on materials and experiences</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://geniusgems.com.sg/images/Logo_1.png</image:loc>

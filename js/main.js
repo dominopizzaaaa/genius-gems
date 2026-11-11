@@ -43,7 +43,7 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
 document.querySelectorAll(
-  '.value-card, .curriculum-stage-card, .curriculum-theme, .curriculum-programme-card, .team-card, .fee-card, .discount-card, .location-block, .about-features .feature-item, .contact-method'
+  '.value-card, .curriculum-stage-card, .curriculum-action-card, .curriculum-theme, .curriculum-programme-card, .team-card, .fee-card, .discount-card, .location-block, .about-features .feature-item, .contact-method'
 ).forEach((el, i) => {
   el.classList.add('fade-in');
   el.style.transitionDelay = `${(i % 4) * 80}ms`;
