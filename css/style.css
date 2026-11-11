@@ -673,6 +673,27 @@ html[lang="ta"] .nav-links { gap: 2px; }
   display: block;
   border-radius: var(--radius-lg);
 }
+.difference-media.bilingual-collage {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  background: var(--white);
+}
+.bilingual-collage figure {
+  aspect-ratio: 1;
+  border-radius: calc(var(--radius-lg) - 10px);
+  overflow: hidden;
+}
+.difference-media.bilingual-collage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  object-fit: cover;
+}
+.bilingual-collage figure:first-child img { object-position: center 44%; }
 .difference-content { padding: 8px 0; }
 .difference-eyebrow {
   display: inline-block;
