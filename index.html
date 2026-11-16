@@ -137,12 +137,6 @@
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
         "opens": "07:00",
         "closes": "19:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
-        "opens": "07:00",
-        "closes": "13:00"
       }
     ],
     "foundingDate": "2009",
@@ -250,7 +244,7 @@
         "name": "What are the operating hours of Genius Gems?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We are open Monday to Friday from 7:00am to 7:00pm, and Saturday from 7:00am to 1:00pm. Closed on Sundays and public holidays."
+          "text": "We are open Monday to Friday from 7:00am to 7:00pm. We are closed on Saturdays, Sundays, and public holidays."
         }
       },
       {
@@ -938,6 +932,20 @@
           <div class="team-card">
             <div class="team-photo">
               <picture>
+                <source srcset="images/Teacher_Jen.webp" type="image/webp" />
+                <img src="images/Teacher_Jen.jpg" alt="Teacher Jen at Genius Gems Childcare Centre" loading="lazy" width="1058" height="1600" onerror="this.parentElement.parentElement.classList.add('photo-placeholder'); this.style.display='none'" />
+              </picture>
+              <div class="photo-placeholder-icon"><i class="fas fa-user"></i></div>
+            </div>
+            <div class="team-info">
+              <h3>Teacher Jen</h3>
+              <span class="team-role teacher" data-i18n="team.teacher">Teacher</span>
+              <a href="mailto:jen@geniusgems.com.sg" class="team-email"><i class="fas fa-envelope"></i> jen@geniusgems.com.sg</a>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-photo">
+              <picture>
                 <source srcset="images/Mei_Xin_Laoshi.webp" type="image/webp" />
                 <img src="images/Mei_Xin_Laoshi.png" alt="Mei Xin Laoshi, Mandarin teacher at Genius Gems Childcare Centre" loading="lazy" width="314" height="342" onerror="this.parentElement.parentElement.classList.add('photo-placeholder'); this.style.display='none'" />
               </picture>
@@ -1248,7 +1256,7 @@
             <i class="fas fa-chevron-down faq-icon"></i>
           </button>
           <div class="faq-answer">
-            <p data-i18n="faq.a2">We are open Monday to Friday from 7:00am to 7:00pm, and Saturday from 7:00am to 1:00pm. We are closed on Sundays and public holidays.</p>
+            <p data-i18n="faq.a2">We are open Monday to Friday from 7:00am to 7:00pm. We are closed on Saturdays, Sundays, and public holidays.</p>
           </div>
         </div>
 
@@ -1612,8 +1620,7 @@
         <div class="footer-hours">
           <h3 data-i18n="footer.hours_h">Operating Hours</h3>
           <div class="hours-row"><span data-i18n="footer.mf">Monday – Friday</span><span>7:00am – 7:00pm</span></div>
-          <div class="hours-row"><span data-i18n="footer.sat">Saturday</span><span>7:00am – 1:00pm</span></div>
-          <div class="hours-row closed"><span data-i18n="footer.sph">Sunday & PH</span><span data-i18n="footer.closed">Closed</span></div>
+          <div class="hours-row closed"><span data-i18n="footer.sph">Saturday, Sunday & PH</span><span data-i18n="footer.closed">Closed</span></div>
           <p class="hours-note" data-i18n="footer.hnote">Hours subject to change. Please call ahead.</p>
         </div>
       </div>
